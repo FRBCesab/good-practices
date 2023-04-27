@@ -1,0 +1,99 @@
+---
+from: markdown+emoji
+format:
+  revealjs:
+    logo: img/cesab-logo.png
+    footer: "<https://github.com/frbcesab/git-for-r-user/>"
+    smaller: true
+    theme: [default, "css/custom.scss"]
+engine: knitr
+---
+
+```{css echo=FALSE}
+.zmaller{font-size: 14px;}
+.right{text-align: right;font-size: 18px;} 
+.home-page h2{color:#2d2d2b;padding-top:20px;}
+.home-page h3{color:#6a6358;border-bottom:1px solid #6a6358;padding-bottom:10px;font-weight:400;}
+.date{font-size:80%;color:#2d2d2b}
+.authors {font-weight:300;color:#2d2d2b}
+.affiliation {font-size:80%;}
+.fa {font-size:80%;}
+```
+
+<!-- Title slide -->
+
+<br>
+<br>
+<br>
+<br>
+
+:::: {.columns .home-page .center}
+
+::: {.column width="30%"}
+![](https://raw.githubusercontent.com/rdatatoolbox/.github/main/profile/logo-rdatatoolbox_150dpi.png)
+:::
+
+::: {.column .home-page width="70%"}
+
+## Reproducible research {.smaller}
+
+### Good practices {.smaller}
+
+
+::: {.right .date}
+```{r}
+#| echo: false
+#| results: asis
+olocale <- Sys.getlocale("LC_TIME")
+invisible(Sys.setlocale("LC_TIME", "en_US.UTF-8"))
+cat(format(Sys.Date(), "%B %Y"))
+invisible(Sys.setlocale("LC_TIME", olocale))
+```
+:::
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Nicolas Casajus]{.author}
+<br>
+[{{< fa envelope >}} &nbsp;[nicolas.casajus@fondationbiodiversite.fr](mailto:nicolas.casajus@fondationbiodiversite.fr)]{.zmaller}
+:::
+
+::: {.column width="50%"}
+[Camille Coux]{.author}
+<br>
+[{{< fa envelope >}} &nbsp;[camille.coux@fondationbiodiversite.fr](mailto:nicolas.casajus@fondationbiodiversite.fr)]{.zmaller}
+:::
+
+::::
+
+::: {.zmaller}
+{{< fa house >}} &nbsp;[FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/)
+<br>
+{{< fa brands github >}} &nbsp;&nbsp;[https://github.com/frbcesab/](https://github.com/frbcesab)
+
+:::
+
+:::
+
+::::
+
+---
+
+### Introduction
+
+Work in progress...
+
+
+![](img/peng-science.jpg){fig-align="center" width="75%"}
+
+https://annakrystalli.me/talks/r-in-repro-research.html#1
+
+https://inundata.org/talks/rstd19/#/
+
+https://insileco.io/workshop_reproducibility/#1
+
+https://ram.berkeley.edu/
+
+## xxx

@@ -1,0 +1,20 @@
+Package: good-practices
+Type: Package
+Title: Reproducible Research: Good Practices
+Version: 0.0.1
+Authors@R: c(
+    person(given   = "Nicolas",
+           family  = "Casajus",
+           role    = c("aut", "cre", "cph"),
+           email   = "nicolas.casajus@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0002-5537-5294")))
+Description: A gentle introduction to reproducbile research.
+URL: https://github.com/frbcesab/good-practices
+BugReports: https://github.com/frbcesab/good-practices/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests:
+    knitr,
+    quarto
