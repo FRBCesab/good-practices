@@ -3,7 +3,7 @@ from: markdown+emoji
 format:
   revealjs:
     logo: img/cesab-logo.png
-    footer: "<https://github.com/frbcesab/git-for-r-user/>"
+    footer: "<https://github.com/frbcesab/good-practices/>"
     smaller: true
     theme: [default, "css/custom.scss"]
 engine: knitr
