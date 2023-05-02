@@ -1,0 +1,131 @@
+# Introduction
+
+
+## What is reproducibility?
+
+<br>
+
+![_Source:_ [https://eliocamp.github.io](https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/)](img/reproducible-matrix.jpg){fig-align="center" width="50%"}
+
+
+**Reproducibility** is about results that can be obtained by someone else (or you in the future) given the **same data** and the **same code**. This is a technical problem.
+
+<br/>
+
+> We can talk about **Computational reproducibility**
+
+
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
+:::
+
+<br/>
+
+
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+
+
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
+:::
+
+<br/>
+
+> Reproducibility has the potential to serve as a minimum standard for judging scientific claims (...).
+
+::: {.citation}
+Peng (2011)[^peng]
+:::
+
+
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+[^peng]: <https://doi.org/10.1126/science.1213847>
+
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
+:::
+
+<br/>
+
+> Reproducibility has the potential to serve as a minimum standard for judging scientific claims (...).
+
+::: {.citation}
+Peng (2011)[^peng]
+:::
+
+<br/>
+
+{{< fa hand-point-right >}} &nbsp;Sharing the code and the data is now a prerequisite for publishing articles.
+
+
+
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+[^peng]: <https://doi.org/10.1126/science.1213847>
+
+
+
+## Reproducibility spectrum
+
+<br>
+
+![_Source:_ Peng (2011)[^peng]](img/peng-science.jpg){fig-align="center" width="75%"}
+
+. . .
+
+<br/>
+
+Each degree of reproducibility requires additional skills and time. While some of those skills (e.g. literal programming, version control, setting up environments) pay off in the long run, they can require a high up-front investment.
+
+
+[^peng]: <https://doi.org/10.1126/science.1213847>
+
+
+## Concepts
+
+According to Wilson _et al._ (2017)[^wilson], good practices for a better reproducibility can be organized into the following six topics:
+
+<br/>
+
+:::: { .columns }
+::: { .column width="33%"}
+{{< fa database >}} &nbsp;Data management
+:::
+::: { .column width="33%"}
+{{< fa folder >}} &nbsp;Project organization
+:::
+::: { .column width="33%"}
+{{< fa brands r-project >}} &nbsp;Code & Software
+:::
+::::
+
+<br/>
+
+:::: { .columns }
+::: { .column width="33%"}
+{{< fa code-branch >}} &nbsp;Tracking changes
+:::
+::: { .column width="33%"}
+{{< fa brands github >}} &nbsp;Collaboration
+:::
+::: { .column width="33%"}
+{{< fa brands markdown >}} &nbsp;Manuscript
+:::
+::::
+
+
+[^wilson]: <https://doi.org/10.1371/journal.pcbi.1005510>
