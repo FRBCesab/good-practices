@@ -6,6 +6,7 @@ format:
     footer: "{{< fa brands github >}} &nbsp;<https://github.com/frbcesab/good-practices>"
     smaller: true
     auto-stretch: false
+    toc-depth: 1
     theme: [default, "css/custom.scss"]
 engine: knitr
 ---
@@ -132,3 +133,7 @@ engine: knitr
 <https://www.youtube.com/watch?v=KHMW8fV2NXo>
 
 <https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html>
+
+<https://annakrystalli.me/rrresearchACCE20/filenaming-view.html>
+
+<https://allisonhorst.com/other-r-fun>

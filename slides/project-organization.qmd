@@ -1,5 +1,269 @@
 # {{< fa folder >}} &nbsp;Project organization
 
-## Project organization
+## First things first
 
-Work in progress...
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+. . .
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. **Human readable**
+:::
+::: {.column width="50%"}
+- Name contains information on the content
+- Respect concept of [slug](https://en.wikipedia.org/wiki/Clean_URL#Slug) from semantic URLs
+:::
+::::
+
+[^anna]: <https://annakrystalli.me/rrresearchACCE20/slides/03_filenaming.html>
+
+
+## First things first
+
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. **Machine readable**
+:::
+::: {.column width="50%"}
+- Regular expression and globbing friendly
+  - avoid space and accented characters
+  - good use of punctuation and case
+:::
+::::
+
+
+
+## First things first
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. **Machine readable**
+:::
+::: {.column width="50%"}
+```{r}
+#| echo: true
+# File names ----
+files <- c("2020-survey_A.csv", "2021-survey_A.csv", "2021-survey_B.csv")
+
+# Extract years ----
+strsplit(files, "-") |>              # Split string by '-'
+  lapply(function(x) x[1]) |>        # Get the first element
+  unlist() |>                        # Convert to vector
+  as.numeric()                       # Convert to numeric
+```
+:::
+::::
+
+
+## First things first
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. **Machine readable**
+:::
+::: {.column width="50%"}
+```{r}
+#| echo: true
+# File names ----
+files <- c("2020-survey_A.csv", "2021-survey_A.csv", "2021-survey_B.csv")
+
+# Extract years ----
+strsplit(files, "-") |>              # Split string by '-'
+  lapply(function(x) x[1]) |>        # Get the first element
+  unlist() |>                        # Convert to vector
+  as.numeric()                       # Convert to numeric
+```
+
+<br/>
+
+```{r}
+#| echo: true
+# Extract surveys ----
+strsplit(files, "-") |>              # Split string by '-'
+  lapply(function(x) x[2]) |>        # Get the second element
+  unlist() |>                        # Convert to vector
+  gsub("survey_|\\.csv", "", x = _)  # Clean output
+```
+:::
+::::
+
+
+
+## First things first
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. Machine readable
+1. **Play well with default ordering**
+:::
+::: {.column width="50%"}
+```{r}
+#| echo: true
+# File names ----
+files <- c("1-survey_A.csv", "2-survey_B.csv", "10-survey_C.csv")
+
+# Sort file names ----
+sort(files)
+```
+:::
+::::
+
+
+## First things first
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. Machine readable
+1. **Play well with default ordering**
+:::
+::: {.column width="50%"}
+```{r}
+#| echo: true
+# File names ----
+files <- c("1-survey_A.csv", "2-survey_B.csv", "10-survey_C.csv")
+
+# Sort file names ----
+sort(files)
+```
+
+<br/>
+
+```{r}
+#| echo: true
+# File names ----
+files <- c("01-survey_A.csv", "02-survey_B.csv", "10-survey_C.csv")
+
+# Sort file names ----
+sort(files)
+```
+:::
+::::
+
+
+
+## First things first
+
+
+> « There are only two hard things in Computer Science: cache invalidation and **naming things**. »
+
+::: {.citation}
+Phil Karlton
+:::
+
+
+<br/>
+
+
+**Three principles for naming files**[^anna]
+
+:::: { .columns }
+::: {.column width="50%"}
+1. Human readable
+1. Machine readable
+1. Play well with default ordering
+:::
+::: {.column width="50%"}
+![_Source:_ [xkcd](https://xkcd.com/1179/)](https://imgs.xkcd.com/comics/iso_8601.png){width="50%"}
+:::
+::::
+
+
+
+
+
+## RStudio project
+
+
+
+:::: { .columns }
+::: { .column width="50%"}
+Use the power of RStudio project
+:::
+
+::: { .column width="50%"}
+![](img/rstudio-project.png){width="80%" fig-align="center"}
+:::
+::::
+
