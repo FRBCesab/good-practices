@@ -25,6 +25,34 @@ engine: knitr
 ```
 
 
+```{r}
+#| child: "slides/project-organization.qmd"
+```
+
+```{r}
+#| child: "slides/code-and-software.qmd"
+```
+
+
+```{r}
+#| child: "slides/tracking-changes.qmd"
+```
+
+
+```{r}
+#| child: "slides/collaboration.qmd"
+```
+
+
+```{r}
+#| child: "slides/manuscript.qmd"
+```
+
+
+
+
+
+
 ## Table of contents
 
 :::: { .columns  }
