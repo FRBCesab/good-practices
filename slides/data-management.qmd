@@ -1,5 +1,256 @@
 # {{< fa database >}} &nbsp;Data management
 
-## Data management
+## Raw data
 
-Work in progress...
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Save and backup the raw data
+- Do not modify them (even for minor changes)
+- Raw data should be in a read-only mode (🔒)
+- Any modification produces an output or a derived data
+- Write code for data acquisition (when possible)
+  - database requests
+  - api requests
+  - `utils::download.file()`, `wget`, `curl`, etc.
+- Describe and document raw data (`README`, metadata, etc.)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+:::
+::::
+
+## Raw data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Save and backup the raw data
+- Do not modify them (even for minor changes)
+- Raw data should be in a read-only mode (🔒)
+- Any modification produces an output or a derived data
+- Write code for data acquisition (when possible)
+  - database requests
+  - api requests
+  - `utils::download.file()`, `wget`, `curl`, etc.
+- Describe and document raw data (`README`, metadata, etc.)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md
+```
+:::
+::::
+
+## Derived data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Modified raw data become a derived data (or an output)
+- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Create the data you wish to see in the world
+- Create analysis-friendly data: `tidy data`
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md
+```
+:::
+::::
+
+
+
+## Derived data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Modified raw data become a derived data (or an output)
+- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Create the data you wish to see in the world
+- Create analysis-friendly data: `tidy data`
+
+![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md
+```
+:::
+::::
+
+
+## Derived data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Modified raw data become a derived data (or an output)
+- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Create the data you wish to see in the world
+- Create analysis-friendly data: `tidy data`
+
+![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+.
+├── data/
+│   ├── raw-data/
+│   │   ├── raw-data-1.csv 🔒
+│   │   ├── ...
+│   │   └── README.md
+│   │
+│   └── derived-data/
+│       ├── derived-data-1.RData
+│       └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...
+```
+:::
+::::
+
+## Derived data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**
+
+- Modified raw data become a derived data (or an output)
+- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Create the data you wish to see in the world
+- Create analysis-friendly data: `tidy data`
+
+![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+.
+├── data/
+│   ├── raw-data/
+│   │   ├── raw-data-1.csv 🔒
+│   │   ├── ...
+│   │   └── README.md
+│   │
+│   └── derived-data/
+│       ├── derived-data-1.RData
+│       └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...
+```
+
+<br/>
+
+{{< fa lightbulb >}} &nbsp;**Alternative**
+
+```
+.
+├── data/
+│   ├── raw-data-1.csv 🔒
+│   ├── ...
+│   └── README.md
+│
+├── outptus/
+│   ├── output-1.RData
+│   └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...
+```
+:::
+::::
+
+
+## Data submission
+
+
+- Submit data to a **reputable DOI-issuing repository** so that others can access and cite it
+
+<br>
+
+:::: { .columns }
+
+::: { .column width="20%"}
+[![](img/osf-logo.png)](https://osf.io/)
+:::
+
+::: { .column width="20%"}
+[![](img/zenodo-logo.png)](https://zenodo.org/)
+:::
+
+::: { .column width="60%"}
+:::
+
+::::
+
+<br>
+
+. . .
+
+- Write a **data paper**: [Scientific Data](https://www.nature.com/sdata/), [Data in Brief](https://www.sciencedirect.com/journal/data-in-brief), etc.
+
+<br>
+
+. . .
+
+- Do not forget to write good **metadata** (e.g. [EML](https://eml.ecoinformatics.org/))
+

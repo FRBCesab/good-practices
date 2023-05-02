@@ -467,9 +467,242 @@
 <h1><i class="fa-solid fa-database" aria-label="database"></i> &nbsp;Data management</h1>
 
 </section>
-<section id="data-management" class="slide level2">
-<h2>Data management</h2>
-<p>Work in progress…</p>
+<section id="raw-data" class="slide level2">
+<h2>Raw data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Save and backup the raw data</li>
+<li>Do not modify them (even for minor changes)</li>
+<li>Raw data should be in a read-only mode (🔒)</li>
+<li>Any modification produces an output or a derived data</li>
+<li>Write code for data acquisition (when possible)
+<ul>
+<li>database requests</li>
+<li>api requests</li>
+<li><code>utils::download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
+</ul></li>
+<li>Describe and document raw data (<code>README</code>, metadata, etc.)</li>
+</ul>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+
+</div>
+</div>
+</section>
+<section id="raw-data-1" class="slide level2">
+<h2>Raw data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Save and backup the raw data</li>
+<li>Do not modify them (even for minor changes)</li>
+<li>Raw data should be in a read-only mode (🔒)</li>
+<li>Any modification produces an output or a derived data</li>
+<li>Write code for data acquisition (when possible)
+<ul>
+<li>database requests</li>
+<li>api requests</li>
+<li><code>utils::download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
+</ul></li>
+<li>Describe and document raw data (<code>README</code>, metadata, etc.)</li>
+</ul>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
+<pre><code>.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md</code></pre>
+</div>
+</div>
+</section>
+<section id="derived-data" class="slide level2">
+<h2>Derived data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Modified raw data become a derived data (or an output)</li>
+<li>Record all the steps used to process data (<i class="fa-brands fa-r-project" aria-label="r-project"></i> scripts)</li>
+<li>Create the data you wish to see in the world</li>
+<li>Create analysis-friendly data: <code>tidy data</code></li>
+</ul>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
+<pre><code>.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md</code></pre>
+</div>
+</div>
+</section>
+<section id="derived-data-1" class="slide level2">
+<h2>Derived data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Modified raw data become a derived data (or an output)</li>
+<li>Record all the steps used to process data (<i class="fa-brands fa-r-project" aria-label="r-project"></i> scripts)</li>
+<li>Create the data you wish to see in the world</li>
+<li>Create analysis-friendly data: <code>tidy data</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/tidy-data.jpg"></p>
+<p></p><figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
+<pre><code>.
+└── data/
+    └── raw-data/
+        ├── raw-data-1.csv 🔒
+        ├── ...
+        └── README.md</code></pre>
+</div>
+</div>
+</section>
+<section id="derived-data-2" class="slide level2">
+<h2>Derived data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Modified raw data become a derived data (or an output)</li>
+<li>Record all the steps used to process data (<i class="fa-brands fa-r-project" aria-label="r-project"></i> scripts)</li>
+<li>Create the data you wish to see in the world</li>
+<li>Create analysis-friendly data: <code>tidy data</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/tidy-data.jpg"></p>
+<p></p><figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
+<pre><code>.
+├── data/
+│   ├── raw-data/
+│   │   ├── raw-data-1.csv 🔒
+│   │   ├── ...
+│   │   └── README.md
+│   │
+│   └── derived-data/
+│       ├── derived-data-1.RData
+│       └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...</code></pre>
+</div>
+</div>
+</section>
+<section id="derived-data-3" class="slide level2">
+<h2>Derived data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>General recommendations</strong></p>
+<ul>
+<li>Modified raw data become a derived data (or an output)</li>
+<li>Record all the steps used to process data (<i class="fa-brands fa-r-project" aria-label="r-project"></i> scripts)</li>
+<li>Create the data you wish to see in the world</li>
+<li>Create analysis-friendly data: <code>tidy data</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/tidy-data.jpg"></p>
+<p></p><figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:15%;">
+
+</div><div class="column" style="width:35%;">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
+<pre><code>.
+├── data/
+│   ├── raw-data/
+│   │   ├── raw-data-1.csv 🔒
+│   │   ├── ...
+│   │   └── README.md
+│   │
+│   └── derived-data/
+│       ├── derived-data-1.RData
+│       └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...</code></pre>
+<p><br></p>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Alternative</strong></p>
+<pre><code>.
+├── data/
+│   ├── raw-data-1.csv 🔒
+│   ├── ...
+│   └── README.md
+│
+├── outptus/
+│   ├── output-1.RData
+│   └── ...
+│
+└── code/
+    ├── process-raw-data-1.R
+    └── ...</code></pre>
+</div>
+</div>
+</section>
+<section id="data-submission" class="slide level2">
+<h2>Data submission</h2>
+<ul>
+<li>Submit data to a <strong>reputable DOI-issuing repository</strong> so that others can access and cite it</li>
+</ul>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://osf.io/"><img data-src="img/osf-logo.png"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://zenodo.org/"><img data-src="img/zenodo-logo.png"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+
+</div>
+</div>
+<p><br></p>
+<div class="fragment">
+<ul>
+<li>Write a <strong>data paper</strong>: <a href="https://www.nature.com/sdata/">Scientific Data</a>, <a href="https://www.sciencedirect.com/journal/data-in-brief">Data in Brief</a>, etc.</li>
+</ul>
+<p><br></p>
+</div>
+<div class="fragment">
+<ul>
+<li>Do not forget to write good <strong>metadata</strong> (e.g.&nbsp;<a href="https://eml.ecoinformatics.org/">EML</a>)</li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="fa-folder-project-organization" class="title-slide slide level1 center">
