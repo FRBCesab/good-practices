@@ -1,12 +1,12 @@
 <h1 align="center">
   <br>
-  <a href="https://frbcesab.github.io/git-for-r-user"><img src="img/git-logo.png" alt="Logo" width="200"></a>
-  <br>Git for R Users<br>
+  <a href="https://frbcesab.github.io/good-practices"><img src="https://raw.githubusercontent.com/rdatatoolbox/.github/main/profile/logo-rdatatoolbox_150dpi.png" alt="Logo" width="200"></a>
+  <br>Reproducible research<br>
 </h1>
 
-<h4 align="center">A gentle introduction to git for R users
+<h4 align="center">Good practices
 <br>
-<a href="https://frbcesab.github.io/git-for-r-user" target="_blank"><b>frbcesab.github.io/git-for-r-user</b></a></h4>
+<a href="https://frbcesab.github.io/good-practices" target="_blank"><b>frbcesab.github.io/good-practices</b></a></h4>
 
 <p align="center">
   <a href="https://quarto.org/">
@@ -24,7 +24,7 @@
   <a href="#code-of-conduct">Code of Conduct</a>
 </p>
 
-![screenshot](img/screenshot.png)
+![](img/screenshot.png)
 
 
 <br>
@@ -32,9 +32,8 @@
 
 ## Content
 
-This online presentation, available at [**frbcesab.github.io/git-for-r-user**](https://frbcesab.github.io/git-for-r-user)
-provides an introduction to [git](https://git-scm.com/), [GitHub](https://github.com) 
-and [GitLab](https://about.gitlab.com/) using [RStudio](https://posit.co/download/rstudio-desktop/).
+This online presentation, available at [**frbcesab.github.io/good-practices**](https://frbcesab.github.io/good-practices)
+provides an introduction to the good practices in reproducible research.
 
 
 <br>
@@ -54,10 +53,10 @@ and [GitLab](https://about.gitlab.com/) using [RStudio](https://posit.co/downloa
 
 ```sh
 ## Using the SSH protocol ----
-git clone git@github.com:frbcesab/git-for-r-user.git
+git clone git@github.com:frbcesab/good-practices.git
 
 ## Using the HTTPS protocol ----
-git clone https://github.com/frbcesab/git-for-r-user.git
+git clone https://github.com/frbcesab/good-practices.git
 ```
 
 - Install required packages
@@ -75,7 +74,7 @@ remotes::install_deps()
 ```
 
 - Edit the 
-[`index.qmd`](https://github.com/frbcesab/git-for-r-user/blob/main/index.Rmd) 
+[`index.qmd`](https://github.com/frbcesab/good-practices/blob/main/index.Rmd) 
 file
 
 ### Render HTML presentation
@@ -93,7 +92,7 @@ quarto::quarto_render("index.qmd")
 
 Please cite this presentation as:
 
-> Casajus N (2023) A gentle introduction to git for R user. URL: <https://frbcesab.github.io/git-for-r-user>.
+> Casajus N & Coux C (2023) Reproducible research - Good practices. URL: <https://frbcesab.github.io/good-practices>.
 
 
 <br>

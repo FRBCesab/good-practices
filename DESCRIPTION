@@ -7,7 +7,12 @@ Authors@R: c(
            family  = "Casajus",
            role    = c("aut", "cre", "cph"),
            email   = "nicolas.casajus@fondationbiodiversite.fr",
-           comment = c(ORCID = "0000-0002-5537-5294")))
+           comment = c(ORCID = "0000-0002-5537-5294")),
+    person(given   = "Camille",
+           family  = "Coux",
+           role    = "aut",
+           email   = "camille.coux@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0002-6346-9194")))
 Description: A gentle introduction to reproducbile research.
 URL: https://github.com/frbcesab/good-practices
 BugReports: https://github.com/frbcesab/good-practices/issues
