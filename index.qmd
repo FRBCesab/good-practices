@@ -3,97 +3,229 @@ from: markdown+emoji
 format:
   revealjs:
     logo: img/cesab-logo.png
-    footer: "<https://github.com/frbcesab/good-practices/>"
+    footer: "{{< fa brands github >}} &nbsp;<https://github.com/frbcesab/good-practices>"
     smaller: true
+    auto-stretch: false
     theme: [default, "css/custom.scss"]
 engine: knitr
 ---
 
-```{css echo=FALSE}
-.zmaller{font-size: 14px;}
-.right{text-align: right;font-size: 18px;} 
-.home-page h2{color:#2d2d2b;padding-top:20px;}
-.home-page h3{color:#6a6358;border-bottom:1px solid #6a6358;padding-bottom:10px;font-weight:400;}
-.date{font-size:80%;color:#2d2d2b}
-.authors {font-weight:300;color:#2d2d2b}
-.affiliation {font-size:80%;}
-.fa {font-size:80%;}
-```
-
-<!-- Title slide -->
-
-<br>
-<br>
-<br>
-<br>
-
-:::: {.columns .home-page .center}
-
-::: {.column width="30%"}
-![](https://raw.githubusercontent.com/rdatatoolbox/.github/main/profile/logo-rdatatoolbox_150dpi.png)
-:::
-
-::: {.column .home-page width="70%"}
-
-## Reproducible research {.smaller}
-
-### Good practices {.smaller}
-
-
-::: {.right .date}
 ```{r}
-#| echo: false
-#| results: asis
-olocale <- Sys.getlocale("LC_TIME")
-invisible(Sys.setlocale("LC_TIME", "en_US.UTF-8"))
-cat(format(Sys.Date(), "%B %Y"))
-invisible(Sys.setlocale("LC_TIME", olocale))
+#| child: "slides/title-slide.qmd"
 ```
+
+
+
+# Introduction
+
+
+## What is reproducibility?
+
+<br>
+
+![_Source:_ [https://eliocamp.github.io](https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/)](img/reproducible-matrix.jpg){fig-align="center" width="50%"}
+
+
+**Reproducibility** is about results that can be obtained by someone else (or you in the future) given the **same data** and the **same code**. This is a technical problem.
+
+<br/>
+
+> We can talk about **Computational reproducibility**
+
+
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
+:::
+
+<br/>
+
+
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+
+
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
+:::
+
+<br/>
+
+> Reproducibility has the potential to serve as a minimum standard for judging scientific claims (...).
+
+::: {.citation}
+Peng (2011)[^peng]
 :::
 
 
-:::: {.columns}
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+[^peng]: <https://doi.org/10.1126/science.1213847>
 
-::: {.column width="50%"}
-[Nicolas Casajus]{.author}
-<br>
-[{{< fa envelope >}} &nbsp;[nicolas.casajus@fondationbiodiversite.fr](mailto:nicolas.casajus@fondationbiodiversite.fr)]{.zmaller}
+## Why does it matter?
+
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.
+
+::: {.citation}
+Claerbout & Karrenbach (1992)[^claerbout]
 :::
 
-::: {.column width="50%"}
-[Camille Coux]{.author}
+<br/>
+
+> Reproducibility has the potential to serve as a minimum standard for judging scientific claims (...).
+
+::: {.citation}
+Peng (2011)[^peng]
+:::
+
+<br/>
+
+{{< fa hand-point-right >}} &nbsp;Sharing the code and the data is now a prerequisite for publishing articles.
+
+
+
+[^claerbout]: <https://doi.org/10.1190/1.1822162>
+[^peng]: <https://doi.org/10.1126/science.1213847>
+
+
+
+## Reproducibility spectrum
+
 <br>
-[{{< fa envelope >}} &nbsp;[camille.coux@fondationbiodiversite.fr](mailto:nicolas.casajus@fondationbiodiversite.fr)]{.zmaller}
+
+![_Source:_ Peng (2011)[^peng]](img/peng-science.jpg){fig-align="center" width="75%"}
+
+. . .
+
+<br/>
+
+Each degree of reproducibility requires additional skills and time. While some of those skills (e.g. literal programming, version control, setting up environments) pay off in the long run, they can require a high up-front investment.
+
+
+[^peng]: <https://doi.org/10.1126/science.1213847>
+
+
+## Concepts
+
+According to Wilson _et al._ (2017)[^wilson], good practices for a better reproducibility can be organized into the following six topics:
+
+<br/>
+
+:::: { .columns }
+::: { .column width="33%"}
+{{< fa database >}} &nbsp;Data management
+:::
+::: { .column width="33%"}
+{{< fa folder >}} &nbsp;Project organization
+:::
+::: { .column width="33%"}
+{{< fa brands r-project >}} &nbsp;Code & Software
+:::
+::::
+
+<br/>
+
+:::: { .columns }
+::: { .column width="33%"}
+{{< fa code-branch >}} &nbsp;Tracking changes
+:::
+::: { .column width="33%"}
+{{< fa brands github >}} &nbsp;Collaboration
+:::
+::: { .column width="33%"}
+{{< fa brands markdown >}} &nbsp;Manuscript
+:::
+::::
+
+
+[^wilson]: <https://doi.org/10.1371/journal.pcbi.1005510>
+
+
+## Table of contents
+
+:::: { .columns  }
+::: { .column width="33%"}
+**Data management**
+
+**Project organization**
+
+- RStudio project
+- Robust paths
+- Naming things
+
+- Research compendium
+
+  - Structure(s)
+  - The `DESCRIPTION` file
+  - The folder `R/`
+  - The `README`(s)
+  
+**Tracking changes**
+
+- Version control system
+
+**Collaboration**
+
+- Code hosting platform
+:::
+
+::: { .column width="33%"}
+**Optimization**
+
+- Literate programming
+- Functional programming
+- Pipeline toolkit
+  - `targets`
+  - `makefile`
+  
+- R package
+- Documentation
+- Licensing
+
+**Advanced tools**
+
+- Managing dependencies (`renv`)
+- CI/CD
+  - GitHub actions
+  - GitLab CI
+- Docker
 :::
 
 ::::
 
-::: {.zmaller}
-{{< fa house >}} &nbsp;[FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/)
-<br>
-{{< fa brands github >}} &nbsp;&nbsp;[https://github.com/frbcesab/](https://github.com/frbcesab)
-
-:::
-
-:::
-
-::::
-
----
-
-### Introduction
-
-Work in progress...
 
 
-![](img/peng-science.jpg){fig-align="center" width="75%"}
 
-https://annakrystalli.me/talks/r-in-repro-research.html#1
+## Notes
 
-https://inundata.org/talks/rstd19/#/
+<https://annakrystalli.me/talks/r-in-repro-research.html#1>
 
-https://insileco.io/workshop_reproducibility/#1
+<https://library.seg.org/doi/abs/10.1190/1.1822162>
 
-https://ram.berkeley.edu/
+<https://inundata.org/talks/rstd19/#/>
 
-## xxx
+<https://ropensci-archive.github.io/reproducibility-guide/sections/introduction/>
+
+<https://insileco.io/workshop_reproducibility/#1>
+
+<https://arxiv.org/pdf/1609.00037.pdf>
+
+<https://ram.berkeley.edu/>
+
+<https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745#s5>
+
+<https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097>
+
+<https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/>
+
+<https://www.youtube.com/watch?v=KHMW8fV2NXo>
+
+<https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html>

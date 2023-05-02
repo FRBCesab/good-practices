@@ -327,61 +327,214 @@
 
 <section class="slide level2">
 
-<div class="cell">
-<style type="text/css">
-.zmaller{font-size: 14px;}
-.right{text-align: right;font-size: 18px;} 
-.home-page h2{color:#2d2d2b;padding-top:20px;}
-.home-page h3{color:#6a6358;border-bottom:1px solid #6a6358;padding-bottom:10px;font-weight:400;}
-.date{font-size:80%;color:#2d2d2b}
-.authors {font-weight:300;color:#2d2d2b}
-.affiliation {font-size:80%;}
-.fa {font-size:80%;}
-</style>
-</div>
-<!-- Title slide -->
-<p><br> <br> <br> <br></p>
-<div class="columns home-page center">
-<div class="column" style="width:30%;">
+<div class="title-slide-container">
+<div class="title-slide-content">
+<div class="columns">
+<div class="column logo" style="width:30%;">
 <p><img data-src="https://raw.githubusercontent.com/rdatatoolbox/.github/main/profile/logo-rdatatoolbox_150dpi.png"></p>
-</div><div class="column home-page" style="width:70%;">
-<section id="reproducible-research" class="slide level2 smaller">
-<h2>Reproducible research</h2>
-<h3 class="smaller" id="good-practices">Good practices</h3>
-<div class="right date">
-<p>April 2023</p>
+</div><div class="column" style="width:70%;">
+<div class="title">
+<p>Reproducible research</p>
+</div>
+<div class="subtitle">
+<p>Good practices</p>
+</div>
+<div class="date">
+<p>May 2023</p>
 </div>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="author">Nicolas Casajus</span> <br> <span class="zmaller"><i class="fa-solid fa-envelope" aria-label="envelope"></i> &nbsp;<a href="mailto:nicolas.casajus@fondationbiodiversite.fr">nicolas.casajus@fondationbiodiversite.fr</a></span></p>
-</div><div class="column" style="width:50%;">
-<p><span class="author">Camille Coux</span> <br> <span class="zmaller"><i class="fa-solid fa-envelope" aria-label="envelope"></i> &nbsp;<a href="mailto:nicolas.casajus@fondationbiodiversite.fr">camille.coux@fondationbiodiversite.fr</a></span></p>
+<div class="column author" style="width:45%;">
+<p>Nicolas Casajus<br> <a href="mailto:nicolas.casajus@fondationbiodiversite.fr"><i class="fa-solid fa-paper-plane" aria-label="paper-plane"></i></a> <a href="https://github.com/ahasverus"><i class="fa-brands fa-github" aria-label="github"></i></a> <a href="https://nicolascasajus.fr"><i class="fa-solid fa-globe" aria-label="globe"></i></a></p>
+<div class="affiliation">
+<p><i class="fa-solid fa-house" aria-label="house"></i> &nbsp;<a href="https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/">FRB-CESAB</a></p>
+</div>
+</div><div class="column author" style="width:45%;">
+<p>Camille Coux<br> <a href="mailto:camille.coux@fondationbiodiversite.fr"><i class="fa-solid fa-paper-plane" aria-label="paper-plane"></i></a> <a href="https://github.com/camillecoux"><i class="fa-brands fa-github" aria-label="github"></i></a> <a href="https://www.fondationbiodiversite.fr/en/membre/camille-coux/"><i class="fa-solid fa-globe" aria-label="globe"></i></a></p>
+<div class="affiliation">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp;<a href="https://github.com/frbcesab">https://github.com/frbcesab</a></p>
 </div>
 </div>
-<div class="zmaller">
-<p><i class="fa-solid fa-house" aria-label="house"></i> &nbsp;<a href="https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/">FRB-CESAB</a> <br> <i class="fa-brands fa-github" aria-label="github"></i> &nbsp;&nbsp;<a href="https://github.com/frbcesab">https://github.com/frbcesab/</a></p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-</div>
-</div>
-</section>
-<section class="slide level2">
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
 
-<h3 id="introduction">Introduction</h3>
-<p>Work in progress…</p>
-
-<img data-src="img/peng-science.jpg" style="width:75.0%" class="r-stretch quarto-figure-center"><p>https://annakrystalli.me/talks/r-in-repro-research.html#1</p>
-<p>https://inundata.org/talks/rstd19/#/</p>
-<p>https://insileco.io/workshop_reproducibility/#1</p>
-<p>https://ram.berkeley.edu/</p>
 </section>
-<section id="xxx" class="slide level2">
-<h2>xxx</h2>
-
-<img src="img/cesab-logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p><a href="https://github.com/frbcesab/good-practices/" class="uri">https://github.com/frbcesab/good-practices/</a></p>
+<section id="what-is-reproducibility" class="slide level2">
+<h2>What is reproducibility?</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/reproducible-matrix.jpg" style="width:50.0%"></p>
+<p></p><figcaption><em>Source:</em> <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/">https://eliocamp.github.io</a></figcaption><p></p>
+</figure>
+</div>
+<p><strong>Reproducibility</strong> is about results that can be obtained by someone else (or you in the future) given the <strong>same data</strong> and the <strong>same code</strong>. This is a technical problem.</p>
+<p><br></p>
+<blockquote>
+<p>We can talk about <strong>Computational reproducibility</strong></p>
+</blockquote>
+</section>
+<section id="why-does-it-matter" class="slide level2">
+<h2>Why does it matter?</h2>
+<blockquote>
+<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+</blockquote>
+<div class="citation">
+<p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
+</div>
+<p><br></p>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://doi.org/10.1190/1.1822162" class="uri">https://doi.org/10.1190/1.1822162</a></p></li></ol></aside></section>
+<section id="why-does-it-matter-1" class="slide level2">
+<h2>Why does it matter?</h2>
+<blockquote>
+<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+</blockquote>
+<div class="citation">
+<p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
+</div>
+<p><br></p>
+<blockquote>
+<p>Reproducibility has the potential to serve as a minimum standard for judging scientific claims (…).</p>
+</blockquote>
+<div class="citation">
+<p>Peng (2011)<sup>2</sup></p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://doi.org/10.1190/1.1822162" class="uri">https://doi.org/10.1190/1.1822162</a></p></li><li id="fn3"><p><a href="https://doi.org/10.1126/science.1213847" class="uri">https://doi.org/10.1126/science.1213847</a></p></li></ol></aside></section>
+<section id="why-does-it-matter-2" class="slide level2">
+<h2>Why does it matter?</h2>
+<blockquote>
+<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+</blockquote>
+<div class="citation">
+<p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
+</div>
+<p><br></p>
+<blockquote>
+<p>Reproducibility has the potential to serve as a minimum standard for judging scientific claims (…).</p>
+</blockquote>
+<div class="citation">
+<p>Peng (2011)<sup>2</sup></p>
+</div>
+<p><br></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Sharing the code and the data is now a prerequisite for publishing articles.</p>
+<aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://doi.org/10.1190/1.1822162" class="uri">https://doi.org/10.1190/1.1822162</a></p></li><li id="fn5"><p><a href="https://doi.org/10.1126/science.1213847" class="uri">https://doi.org/10.1126/science.1213847</a></p></li></ol></aside></section>
+<section id="reproducibility-spectrum" class="slide level2">
+<h2>Reproducibility spectrum</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/peng-science.jpg" style="width:75.0%"></p>
+<p></p><figcaption><em>Source:</em> Peng (2011)<sup>1</sup></figcaption><p></p>
+</figure>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>Each degree of reproducibility requires additional skills and time. While some of those skills (e.g.&nbsp;literal programming, version control, setting up environments) pay off in the long run, they can require a high up-front investment.</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn6"><p><a href="https://doi.org/10.1126/science.1213847" class="uri">https://doi.org/10.1126/science.1213847</a></p></li></ol></aside></section>
+<section id="concepts" class="slide level2">
+<h2>Concepts</h2>
+<p>According to Wilson <em>et al.</em> (2017)<sup>1</sup>, good practices for a better reproducibility can be organized into the following six topics:</p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><i class="fa-solid fa-database" aria-label="database"></i> &nbsp;Data management</p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> &nbsp;Project organization</p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-brands fa-r-project" aria-label="r-project"></i> &nbsp;Code &amp; Software</p>
+</div>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> &nbsp;Tracking changes</p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp;Collaboration</p>
+</div><div class="column" style="width:33%;">
+<p><i class="fa-brands fa-markdown" aria-label="markdown"></i> &nbsp;Manuscript</p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn7"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
+<section id="table-of-contents" class="slide level2">
+<h2>Table of contents</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><strong>Data management</strong></p>
+<p><strong>Project organization</strong></p>
+<ul>
+<li><p>RStudio project</p></li>
+<li><p>Robust paths</p></li>
+<li><p>Naming things</p></li>
+<li><p>Research compendium</p>
+<ul>
+<li>Structure(s)</li>
+<li>The <code>DESCRIPTION</code> file</li>
+<li>The folder <code>R/</code></li>
+<li>The <code>README</code>(s)</li>
+</ul></li>
+</ul>
+<p><strong>Tracking changes</strong></p>
+<ul>
+<li>Version control system</li>
+</ul>
+<p><strong>Collaboration</strong></p>
+<ul>
+<li>Code hosting platform</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><strong>Optimization</strong></p>
+<ul>
+<li>Literate programming</li>
+<li>Functional programming</li>
+<li>Pipeline toolkit
+<ul>
+<li><code>targets</code></li>
+<li><code>makefile</code></li>
+</ul></li>
+<li>R package</li>
+<li>Documentation</li>
+<li>Licensing</li>
+</ul>
+<p><strong>Advanced tools</strong></p>
+<ul>
+<li>Managing dependencies (<code>renv</code>)</li>
+<li>CI/CD
+<ul>
+<li>GitHub actions</li>
+<li>GitLab CI</li>
+</ul></li>
+<li>Docker</li>
+</ul>
+</div>
 </div>
 </section>
+<section id="notes" class="slide level2">
+<h2>Notes</h2>
+<p><a href="https://annakrystalli.me/talks/r-in-repro-research.html#1" class="uri">https://annakrystalli.me/talks/r-in-repro-research.html#1</a></p>
+<p><a href="https://library.seg.org/doi/abs/10.1190/1.1822162" class="uri">https://library.seg.org/doi/abs/10.1190/1.1822162</a></p>
+<p><a href="https://inundata.org/talks/rstd19/#/" class="uri">https://inundata.org/talks/rstd19/#/</a></p>
+<p><a href="https://ropensci-archive.github.io/reproducibility-guide/sections/introduction/" class="uri">https://ropensci-archive.github.io/reproducibility-guide/sections/introduction/</a></p>
+<p><a href="https://insileco.io/workshop_reproducibility/#1" class="uri">https://insileco.io/workshop_reproducibility/#1</a></p>
+<p><a href="https://arxiv.org/pdf/1609.00037.pdf" class="uri">https://arxiv.org/pdf/1609.00037.pdf</a></p>
+<p><a href="https://ram.berkeley.edu/" class="uri">https://ram.berkeley.edu/</a></p>
+<p><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745#s5" class="uri">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745#s5</a></p>
+<p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097" class="uri">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097</a></p>
+<p><a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/" class="uri">https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/</a></p>
+<p><a href="https://www.youtube.com/watch?v=KHMW8fV2NXo" class="uri">https://www.youtube.com/watch?v=KHMW8fV2NXo</a></p>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html" class="uri">https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html</a></p>
+<p><img src="img/cesab-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp;<a href="https://github.com/frbcesab/good-practices" class="uri">https://github.com/frbcesab/good-practices</a></p>
+</div>
+</section></section>
+
     </div>
   </div>
 
