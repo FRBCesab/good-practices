@@ -4,7 +4,7 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Save and backup the raw data
 - Do not modify them (even for minor changes)
@@ -28,7 +28,7 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Save and backup the raw data
 - Do not modify them (even for minor changes)
@@ -62,10 +62,10 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Modified raw data become a derived data (or an output)
-- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 :::
@@ -93,10 +93,10 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Modified raw data become a derived data (or an output)
-- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
@@ -125,10 +125,10 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Modified raw data become a derived data (or an output)
-- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
@@ -164,10 +164,10 @@
 
 :::: { .columns }
 ::: { .column width="50%"}
-**General recommendations**
+**General recommendations**[^wilson]
 
 - Modified raw data become a derived data (or an output)
-- Record all the steps used to process data ({{< fa brands r-project >}} scripts)
+- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
