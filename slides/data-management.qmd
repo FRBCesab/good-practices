@@ -7,7 +7,7 @@
 **General recommendations**[^wilson]
 
 - Save and backup the raw data
-- Do not modify them (even for minor changes)
+- Do not modify raw data (even for minor changes)
 - Raw data should be in a read-only mode (🔒)
 - Any modification produces an output or a derived data
 - Write code for data acquisition (when possible)
@@ -31,7 +31,7 @@
 **General recommendations**[^wilson]
 
 - Save and backup the raw data
-- Do not modify them (even for minor changes)
+- Do not modify raw data (even for minor changes)
 - Raw data should be in a read-only mode (🔒)
 - Any modification produces an output or a derived data
 - Write code for data acquisition (when possible)
@@ -254,3 +254,8 @@
 
 - Do not forget to write good **metadata** (e.g. [EML](https://eml.ecoinformatics.org/))
 
+<br>
+
+. . .
+
+- Develop **tools** to access and handle published data (e.g. API, R package, ShinyApp, etc.)

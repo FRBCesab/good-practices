@@ -242,13 +242,21 @@ Phil Karlton
 ::: {.column width="50%"}
 1. Human readable
 1. Machine readable
-1. Play well with default ordering
+1. **Play well with default ordering**
 :::
 ::: {.column width="50%"}
 ![_Source:_ [xkcd](https://xkcd.com/1179/)](https://imgs.xkcd.com/comics/iso_8601.png){width="50%"}
 :::
 ::::
 
+
+## Naming variables
+
+
+{{< fa hand-point-right >}} &nbsp;Be consistent and follow the guidelines of your community
+
+
+![<https://allisonhorst.com/other-r-fun>](img/cases.png){width="50%"}
 
 
 
@@ -266,4 +274,10 @@ Use the power of RStudio project
 ![](img/rstudio-project.png){width="80%" fig-align="center"}
 :::
 ::::
+
+
+## Relative vs absolute paths
+
+
+## Research compendium
 

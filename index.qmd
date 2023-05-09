@@ -137,3 +137,6 @@ engine: knitr
 <https://annakrystalli.me/rrresearchACCE20/filenaming-view.html>
 
 <https://allisonhorst.com/other-r-fun>
+
+<https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>
+
