@@ -261,20 +261,115 @@ Phil Karlton
 
 
 
-## RStudio project
+## RStudio Project
 
+Use the power of RStudio Project
 
+```
+File > New Project...
+```
 
 :::: { .columns }
 ::: { .column width="50%"}
-Use the power of RStudio project
+![](img/rstudio-project.png){width="80%" fig-align="left"}
 :::
 
 ::: { .column width="50%"}
-![](img/rstudio-project.png){width="80%" fig-align="center"}
+![](img/rstudio-newproject.png){width="80%" fig-align="left"}
 :::
 ::::
 
+. . .
+
+RStudio IDE will create a `.Rproj` (simple text file) file at the root of the folder
+
+- Double-click on a `.Rproj` file to open a fresh instance of RStudio, w/ the working directory pointed at the folder root
+- This will help you to create self-contained workspace (_compendium_)
+
+{{< fa hand-point-right >}} &nbsp;In a few slides, we will talk about `setwd()`
+
+
+## In the meantime
+
+RStudio IDE - Minimal configuration for a better reproducibility
+
+```
+Tools > Global options > General
+```
+
+:::: { .columns }
+::: { .column width="50%"}
+![](img/rstudio-ideconfig.png){width="80%" fig-align="left"}
+:::
+
+::: { .column width="50%"}
+- **Never** save your workspace as `.RData`<br>
+{{< fa hand-point-right >}} &nbsp;Decide what you want to save and use<br>
+`save()`, `saveRDS()`, `write.csv()`, etc.
+:::
+::::
+
+
+## In the meantime
+
+RStudio IDE - Minimal configuration for a better reproducibility
+
+```
+Tools > Global options > General
+```
+
+:::: { .columns }
+::: { .column width="50%"}
+![](img/rstudio-ideconfig.png){width="80%" fig-align="left"}
+:::
+
+::: { .column width="50%"}
+- **Never** save your workspace as `.RData`<br>
+{{< fa hand-point-right >}} &nbsp;Decide what you want to save and use<br>
+`save()`, `saveRDS()`, `write.csv()`, etc.
+
+<br>
+
+- **Never** save your command history<br>
+{{< fa hand-point-right >}} &nbsp;Write your code in scripts not in the console
+:::
+::::
+
+
+## In the meantime
+
+RStudio IDE - Minimal configuration for a better reproducibility
+
+```
+Tools > Global options > General
+```
+
+:::: { .columns }
+::: { .column width="50%"}
+![](img/rstudio-ideconfig.png){width="80%" fig-align="left"}
+:::
+
+::: { .column width="50%"}
+- **Never** save your workspace as `.RData`<br>
+{{< fa hand-point-right >}} &nbsp;Decide what you want to save and use<br>
+`save()`, `saveRDS()`, `write.csv()`, etc.
+
+<br>
+
+- **Never** save your command history<br>
+{{< fa hand-point-right >}} &nbsp;Write your code in scripts not in the console
+
+<br>
+
+Follow these two recommendations and use RStudio Project, and you'll[^wtf]:
+
+- never use again `rm(list = ls())`
+- never use again `setwd()`
+:::
+::::
+
+
+[^wtf]: <https://rstats.wtf/projects.html>
 
 ## Relative vs absolute paths
 
