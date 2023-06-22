@@ -110,6 +110,7 @@ engine: knitr
 
 ## Notes
 
+:::{.small}
 <https://annakrystalli.me/talks/r-in-repro-research.html#1>
 
 <https://library.seg.org/doi/abs/10.1190/1.1822162>
@@ -143,3 +144,4 @@ engine: knitr
 <https://doi.org/10.7287/peerj.preprints.3159v2>
 
 <https://raps-with-r.dev/>
+:::
