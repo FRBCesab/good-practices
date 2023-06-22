@@ -1020,6 +1020,101 @@
 </figure>
 </div>
 </section>
+<section id="research-compendium" class="slide level2">
+<h2>Research compendium</h2>
+<blockquote>
+<p>The goal of a research compendium is to provide a <strong><em>standard</em></strong> and easily recognisable way for <strong><em>organizing the digital materials</em></strong> of a project to enable others to <strong><em>inspect</em></strong>, <strong><em>reproduce</em></strong>, and <strong><em>extend the research</em></strong>.</p>
+</blockquote>
+<div class="citation">
+<p>Marwick B, Boettiger C &amp; Mullen L (2018)<sup>1</sup></p>
+</div>
+<div class="fragment">
+<p><br><br></p>
+<div class="center">
+<p><strong>Three generic principles</strong></p>
+</div>
+<div class="columns">
+<div class="column center" style="width:33%;">
+<p>1.<br> Files organized according to the <strong>conventions</strong> of the community</p>
+</div><div class="column center" style="width:33%;">
+<p>2.<br> Clear <strong>separation</strong> of data, method, and output</p>
+</div><div class="column center" style="width:33%;">
+<p>3.<br> Specify the <strong>computational environment</strong> that was used</p>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn21"><p><a href="https://doi.org/10.7287/peerj.preprints.3192v2" class="uri">https://doi.org/10.7287/peerj.preprints.3192v2</a></p></li></ol></aside></section>
+<section id="research-compendium-1" class="slide level2">
+<h2>Research compendium</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Strong flexibility in the structure of a compendium</p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><strong>Small compendium</strong></p>
+<pre><code>🖿 projectname
+├── 🖿 .git
+├── 🖿 data 🔒
+├── 🖿 code
+│   └── 🖹 script.R
+├── 🖿 outputs
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+└── 🖹 README.md</code></pre>
+</div><div class="column" style="width:33%;">
+<p><strong>Medium compendium</strong></p>
+<pre><code>🖿 projectname
+├── 🖿 .git
+├── 🖿 data
+│   ├── 🖿 raw-data 🔒
+│   └── 🖿 derived-data
+├── 🖿 R
+│   ├── 🖹 function-x.R
+│   └── 🖹 function-y.R
+├── 🖿 analyses
+│   ├── 🖹 script-1.R
+│   └── 🖹 script-n.R
+├── 🖿 outputs
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+├── 🖹 DESCRIPTION
+├── 🖹 LICENSE
+├── 🖹 make.R
+└── 🖹 README.md</code></pre>
+</div><div class="column" style="width:33%;">
+<p><strong>Large compendium</strong></p>
+<pre><code>🖿 projectname
+├── 🖿 .git
+├── 🖿 .github
+│   └── 🖿 workflows
+│       ├── 🖹 workflow-1.yaml
+│       └── 🖹 workflow-n.yaml
+├── 🖿 .renv
+├── 🖿 data
+│   ├── 🖿 raw-data 🔒
+│   └── 🖿 derived-data
+├── 🖿 R
+│   ├── 🖹 function-x.R
+│   └── 🖹 function-y.R
+├── 🖿 analyses
+│   ├── 🖹 script-x.R
+│   └── 🖹 script-n.R
+├── 🖿 outputs
+├── 🖿 paper
+│   ├── 🖹 references.bib
+│   ├── 🖹 style.csl
+│   └── 🖹 paper.Rmd
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+├── 🖹 DESCRIPTION
+├── 🖹 LICENSE
+├── 🖹 CITATION.cff
+├── 🖹 make.R
+├── 🖹 dockerfile
+├── 🖹 renv.lock
+└── 🖹 README.md</code></pre>
+</div>
+</div>
+</section>
 <section id="rstudio-project" class="slide level2">
 <h2>RStudio Project</h2>
 <p>Use the power of RStudio Project</p>
@@ -1043,7 +1138,7 @@
 <p>RStudio IDE will create a <code>.Rproj</code> (simple text file) file at the root of the folder</p>
 <ul>
 <li>Double-click on a <code>.Rproj</code> file to open a fresh instance of RStudio, w/ the working directory pointed at the folder root</li>
-<li>This will help you to create self-contained workspace (<em>compendium</em>)</li>
+<li>This will help you to create self-contained workspace (= <em>compendium</em>)</li>
 </ul>
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;In a few slides, we will talk about <code>setwd()</code></p>
 </div>
@@ -1115,12 +1210,57 @@
 </ul>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn21"><p><a href="https://rstats.wtf/projects.html" class="uri">https://rstats.wtf/projects.html</a></p></li></ol></aside></section>
-<section id="relative-vs-absolute-paths" class="slide level2">
-<h2>Relative vs absolute paths</h2>
-</section>
-<section id="research-compendium" class="slide level2">
-<h2>Research compendium</h2>
+<aside><ol class="aside-footnotes"><li id="fn22"><p><a href="https://rstats.wtf/projects.html" class="uri">https://rstats.wtf/projects.html</a></p></li></ol></aside></section>
+<section id="whats-wrong-with-rmlist-lsrmlist" class="slide level2">
+<h2>What’s wrong with <code>rm(list = ls())</code>?<sup>1</sup></h2>
+<div class="fragment">
+<p>Does NOT create a fresh <i class="fa-brands fa-r-project" aria-label="r-project"></i> session</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;It just deletes user-created objects from the global workspace</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>Other changes may have been made to the <i class="fa-brands fa-r-project" aria-label="r-project"></i> session, like: <code>options()</code>, <code>library()</code>, etc.</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;You may get a wrong impression of reproducibility</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>The solution?</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Write every script assuming it will be run in a fresh <i class="fa-brands fa-r-project" aria-label="r-project"></i> session</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn23"><p><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-rmlist-ls" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-rmlist-ls</a></p></li></ol></aside></section>
+<section id="whats-wrong-with-setwdsetwd" class="slide level2">
+<h2>What’s wrong with <code>setwd()</code>?<sup>1</sup></h2>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Usually used to create absolute paths</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="co"># Absolute path on Windows</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="fu">setwd</span>(<span class="st">"C:</span><span class="sc">\\</span><span class="st">Users</span><span class="sc">\\</span><span class="st">janedoe</span><span class="sc">\\</span><span class="st">Documents</span><span class="sc">\\</span><span class="st">projectname"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3"></a></span>
+<span id="cb26-4"><a href="#cb26-4"></a><span class="co"># Absolute path on MacOS</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a><span class="fu">setwd</span>(<span class="st">"/Users/johndoe/Dropbox/work/projectname"</span>)</span>
+<span id="cb26-6"><a href="#cb26-6"></a></span>
+<span id="cb26-7"><a href="#cb26-7"></a><span class="co"># Absolute path on GNU/Linux</span></span>
+<span id="cb26-8"><a href="#cb26-8"></a><span class="fu">setwd</span>(<span class="st">"/home/johnsmith/git-projects/projectname"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Not portable and not reproducible (for others)</p>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+<p><br></p>
+<blockquote>
+<p>The chance of the <code>setwd()</code> command having the desired effect – making the file paths work – for anyone besides its author is 0%. It’s also unlikely to work for the author one or two years or computers from now. The project is not self-contained and portable.</p>
+</blockquote>
+<div class="citation">
+<p><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Jenny Bryan</a></p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn24"><p><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-setwd" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-setwd</a></p></li></ol></aside></section>
+<section id="building-relative-paths" class="slide level2">
+<h2>Building relative paths</h2>
+<p>…</p>
 </section></section>
 <section>
 <section id="fa-brands-r-project-code-software" class="title-slide slide level1 center">
@@ -1228,6 +1368,8 @@
 <p><a href="https://annakrystalli.me/rrresearchACCE20/filenaming-view.html" class="uri">https://annakrystalli.me/rrresearchACCE20/filenaming-view.html</a></p>
 <p><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></p>
 <p><a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a></p>
+<p><a href="https://doi.org/10.7287/peerj.preprints.3159v2" class="uri">https://doi.org/10.7287/peerj.preprints.3159v2</a></p>
+<p><a href="https://raps-with-r.dev/" class="uri">https://raps-with-r.dev/</a></p>
 <p><img src="img/cesab-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp;<a href="https://github.com/frbcesab/good-practices" class="uri">https://github.com/frbcesab/good-practices</a></p>

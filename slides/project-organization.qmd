@@ -259,6 +259,128 @@ Phil Karlton
 ![<https://allisonhorst.com/other-r-fun>](img/cases.png){width="50%"}
 
 
+## Research compendium
+
+> The goal of a research compendium is to provide a ***standard*** and easily 
+recognisable way for ***organizing the digital materials*** of a project to enable 
+others to ***inspect***, ***reproduce***, and ***extend the research***.
+
+::: {.citation}
+Marwick B, Boettiger C & Mullen L (2018)[^marwick] 
+:::
+
+. . .
+
+<br><br>
+
+::: {.center}
+**Three  generic  principles**
+:::
+
+:::: { .columns }
+::: { .column .center width="33%"}
+1.<br>
+Files organized according to the **conventions** of the community
+:::
+::: { .column .center width="33%"}
+2.<br>
+Clear **separation** of data, method, and output
+:::
+::: { .column .center width="33%"}
+3.<br>
+Specify the **computational environment** that was used
+:::
+::::
+
+
+[^marwick]: <https://doi.org/10.7287/peerj.preprints.3192v2>
+
+
+## Research compendium
+
+{{< fa hand-point-right >}} &nbsp;Strong flexibility in the structure of a compendium
+
+<br>
+
+:::: { .columns }
+::: { .column width="33%"}
+**Small compendium**
+
+```
+🖿 projectname
+├── 🖿 .git
+├── 🖿 data 🔒
+├── 🖿 code
+│   └── 🖹 script.R
+├── 🖿 outputs
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+└── 🖹 README.md
+```
+:::
+
+::: { .column width="33%"}
+**Medium compendium**
+
+```
+🖿 projectname
+├── 🖿 .git
+├── 🖿 data
+│   ├── 🖿 raw-data 🔒
+│   └── 🖿 derived-data
+├── 🖿 R
+│   ├── 🖹 function-x.R
+│   └── 🖹 function-y.R
+├── 🖿 analyses
+│   ├── 🖹 script-1.R
+│   └── 🖹 script-n.R
+├── 🖿 outputs
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+├── 🖹 DESCRIPTION
+├── 🖹 LICENSE
+├── 🖹 make.R
+└── 🖹 README.md
+```
+:::
+
+::: { .column width="33%"}
+**Large compendium**
+
+```
+🖿 projectname
+├── 🖿 .git
+├── 🖿 .github
+│   └── 🖿 workflows
+│       ├── 🖹 workflow-1.yaml
+│       └── 🖹 workflow-n.yaml
+├── 🖿 .renv
+├── 🖿 data
+│   ├── 🖿 raw-data 🔒
+│   └── 🖿 derived-data
+├── 🖿 R
+│   ├── 🖹 function-x.R
+│   └── 🖹 function-y.R
+├── 🖿 analyses
+│   ├── 🖹 script-x.R
+│   └── 🖹 script-n.R
+├── 🖿 outputs
+├── 🖿 paper
+│   ├── 🖹 references.bib
+│   ├── 🖹 style.csl
+│   └── 🖹 paper.Rmd
+├── 🖹 projectname.Rproj
+├── 🖹 .gitignore
+├── 🖹 DESCRIPTION
+├── 🖹 LICENSE
+├── 🖹 CITATION.cff
+├── 🖹 make.R
+├── 🖹 dockerfile
+├── 🖹 renv.lock
+└── 🖹 README.md
+```
+:::
+::::
 
 
 ## RStudio Project
@@ -284,7 +406,7 @@ File > New Project...
 RStudio IDE will create a `.Rproj` (simple text file) file at the root of the folder
 
 - Double-click on a `.Rproj` file to open a fresh instance of RStudio, w/ the working directory pointed at the folder root
-- This will help you to create self-contained workspace (_compendium_)
+- This will help you to create self-contained workspace (= _compendium_)
 
 {{< fa hand-point-right >}} &nbsp;In a few slides, we will talk about `setwd()`
 
@@ -371,8 +493,81 @@ Follow these two recommendations and use RStudio Project, and you'll[^wtf]:
 
 [^wtf]: <https://rstats.wtf/projects.html>
 
-## Relative vs absolute paths
+
+## What’s wrong with `rm(list = ls())`?[^rmlist]
 
 
-## Research compendium
+. . .
+
+Does NOT create a fresh {{< fa brands r-project >}} session
+
+{{< fa hand-point-right >}} &nbsp;It just deletes user-created objects from the global workspace
+
+. . .
+
+<br>
+
+Other changes may have been made to the {{< fa brands r-project >}} session, like: `options()`, `library()`, etc.
+
+{{< fa hand-point-right >}} &nbsp;You may get a wrong impression of reproducibility
+
+. . .
+
+<br>
+
+The solution?
+
+{{< fa hand-point-right >}} &nbsp;Write every script assuming it will be run in a fresh {{< fa brands r-project >}} session
+
+[^rmlist]: <https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-rmlist-ls>
+
+
+## What’s wrong with `setwd()`?[^setwd]
+
+. . .
+
+:::: { .columns }
+::: { .column width="50%"}
+Usually used to create absolute paths
+
+```{r}
+#| echo: true
+#| eval: false
+# Absolute path on Windows
+setwd("C:\\Users\\janedoe\\Documents\\projectname")
+
+# Absolute path on MacOS
+setwd("/Users/johndoe/Dropbox/work/projectname")
+
+# Absolute path on GNU/Linux
+setwd("/home/johnsmith/git-projects/projectname")
+```
+
+{{< fa hand-point-right >}} &nbsp;Not portable and not reproducible (for others)
+:::
+::: { .column width="50%"}
+:::
+::::
+
+<br>
+
+
+> The chance of the `setwd()` command having the desired effect – making the 
+file paths work – for anyone besides its author is 0%. It’s also unlikely to 
+work for the author one or two years or computers from now. The project is not 
+self-contained and portable.
+
+::: {.citation}
+[Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+:::
+
+
+[^setwd]: <https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-setwd>
+
+
+
+## Building relative paths
+
+...
+
 

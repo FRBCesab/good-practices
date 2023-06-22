@@ -140,3 +140,6 @@ engine: knitr
 
 <https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>
 
+<https://doi.org/10.7287/peerj.preprints.3159v2>
+
+<https://raps-with-r.dev/>
