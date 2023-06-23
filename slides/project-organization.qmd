@@ -167,7 +167,7 @@ Phil Karlton
 ::: {.column width="50%"}
 ```{r}
 #| echo: true
-# File names ----
+# File names (bad) ----
 files <- c("1-survey_A.csv", "2-survey_B.csv", "10-survey_C.csv")
 
 # Sort file names ----
@@ -201,7 +201,7 @@ Phil Karlton
 ::: {.column width="50%"}
 ```{r}
 #| echo: true
-# File names ----
+# File names (bad) ----
 files <- c("1-survey_A.csv", "2-survey_B.csv", "10-survey_C.csv")
 
 # Sort file names ----
@@ -212,7 +212,7 @@ sort(files)
 
 ```{r}
 #| echo: true
-# File names ----
+# File names (better) ----
 files <- c("01-survey_A.csv", "02-survey_B.csv", "10-survey_C.csv")
 
 # Sort file names ----
@@ -292,6 +292,11 @@ Specify the **computational environment** that was used
 :::
 ::::
 
+. . .
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;A research compendium must be **self-contained**
 
 [^marwick]: <https://doi.org/10.7287/peerj.preprints.3192v2>
 
@@ -307,15 +312,15 @@ Specify the **computational environment** that was used
 **Small compendium**
 
 ```
-🖿 projectname
-├── 🖿 .git
-├── 🖿 data 🔒
-├── 🖿 code
-│   └── 🖹 script.R
-├── 🖿 outputs
-├── 🖹 projectname.Rproj
-├── 🖹 .gitignore
-└── 🖹 README.md
+🖿 project
+├─ 🖿 .git
+├─ 🖿 data 🔒
+├─ 🖿 code
+│  └─ 🖹 script.R
+├─ 🖿 outputs
+├─ 🖹 projectname.Rproj
+├─ 🖹 .gitignore
+└─ 🖹 README.md
 ```
 :::
 
@@ -323,24 +328,24 @@ Specify the **computational environment** that was used
 **Medium compendium**
 
 ```
-🖿 projectname
-├── 🖿 .git
-├── 🖿 data
-│   ├── 🖿 raw-data 🔒
-│   └── 🖿 derived-data
-├── 🖿 R
-│   ├── 🖹 function-x.R
-│   └── 🖹 function-y.R
-├── 🖿 analyses
-│   ├── 🖹 script-1.R
-│   └── 🖹 script-n.R
-├── 🖿 outputs
-├── 🖹 projectname.Rproj
-├── 🖹 .gitignore
-├── 🖹 DESCRIPTION
-├── 🖹 LICENSE
-├── 🖹 make.R
-└── 🖹 README.md
+🖿 project
+├─ 🖿 .git
+├─ 🖿 data
+│  ├─ 🖿 raw-data 🔒
+│  └─ 🖿 derived-data
+├─ 🖿 R
+│  ├─ 🖹 function-x.R
+│  └─ 🖹 function-y.R
+├─ 🖿 analyses
+│  ├─ 🖹 script-1.R
+│  └─ 🖹 script-n.R
+├─ 🖿 outputs
+├─ 🖹 projectname.Rproj
+├─ 🖹 .gitignore
+├─ 🖹 DESCRIPTION
+├─ 🖹 LICENSE
+├─ 🖹 make.R
+└─ 🖹 README.md
 ```
 :::
 
@@ -348,36 +353,36 @@ Specify the **computational environment** that was used
 **Large compendium**
 
 ```
-🖿 projectname
-├── 🖿 .git
-├── 🖿 .github
-│   └── 🖿 workflows
-│       ├── 🖹 workflow-1.yaml
-│       └── 🖹 workflow-n.yaml
-├── 🖿 .renv
-├── 🖿 data
-│   ├── 🖿 raw-data 🔒
-│   └── 🖿 derived-data
-├── 🖿 R
-│   ├── 🖹 function-x.R
-│   └── 🖹 function-y.R
-├── 🖿 analyses
-│   ├── 🖹 script-x.R
-│   └── 🖹 script-n.R
-├── 🖿 outputs
-├── 🖿 paper
-│   ├── 🖹 references.bib
-│   ├── 🖹 style.csl
-│   └── 🖹 paper.Rmd
-├── 🖹 projectname.Rproj
-├── 🖹 .gitignore
-├── 🖹 DESCRIPTION
-├── 🖹 LICENSE
-├── 🖹 CITATION.cff
-├── 🖹 make.R
-├── 🖹 dockerfile
-├── 🖹 renv.lock
-└── 🖹 README.md
+🖿 project
+├─ 🖿 .git
+├─ 🖿 .github
+│  └─ 🖿 workflows
+│     ├─ 🖹 workflow-1.yaml
+│     └─ 🖹 workflow-n.yaml
+├─ 🖿 .renv
+├─ 🖿 data
+│  ├─ 🖿 raw-data 🔒
+│  └─ 🖿 derived-data
+├─ 🖿 R
+│  ├─ 🖹 function-x.R
+│  └─ 🖹 function-y.R
+├─ 🖿 analyses
+│  ├─ 🖹 script-x.R
+│  └─ 🖹 script-n.R
+├─ 🖿 outputs
+├─ 🖿 paper
+│  ├─ 🖹 references.bib
+│  ├─ 🖹 style.csl
+│  └─ 🖹 paper.Rmd
+├─ 🖹 projectname.Rproj
+├─ 🖹 .gitignore
+├─ 🖹 DESCRIPTION
+├─ 🖹 LICENSE
+├─ 🖹 CITATION.cff
+├─ 🖹 make.R
+├─ 🖹 dockerfile
+├─ 🖹 renv.lock
+└─ 🖹 README.md
 ```
 :::
 ::::
@@ -558,16 +563,332 @@ work for the author one or two years or computers from now. The project is not
 self-contained and portable.
 
 ::: {.citation}
-[Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+Jenny Bryan (2017)[^bryan]
 :::
 
-
+[^bryan]: <https://www.tidyverse.org/blog/2017/12/workflow-vs-script/>
 [^setwd]: <https://www.tidyverse.org/blog/2017/12/workflow-vs-script/#whats-wrong-with-setwd>
 
 
 
-## Building relative paths
+## Building robust paths
+
+::::{ .columns }
+:::{.column width="40%"}
+![<https://allisonhorst.com/other-r-fun>](img/here.png)
+:::
+
+:::{.column width="60%"}
+
+<br>
+{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
+
+```{r}
+#| echo: true
+#| eval: false
+# Output of here::here() on Windows
+here::here()
+## [1] "C:/Users/janedoe/Documents/project"
+
+# Output of here::here() on MacOS
+here::here()
+## [1] "/Users/johndoe/Dropbox/work/project"
+
+# Output of here::here() on GNU/Linux
+here::here()
+## [1] "/home/johnsmith/git-projects/project"
+```
+:::
+::::
+
+
+
+## Building robust paths
+
+::::{ .columns }
+:::{.column width="40%"}
+![<https://allisonhorst.com/other-r-fun>](img/here.png)
+:::
+
+:::{.column width="60%"}
+
+<br>
+{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
+
+```{r}
+#| echo: true
+#| eval: false
+# Output of here::here() on Windows
+here::here()
+## [1] "C:/Users/janedoe/Documents/project"
+
+# Output of here::here() on MacOS
+here::here()
+## [1] "/Users/johndoe/Dropbox/work/project"
+
+# Output of here::here() on GNU/Linux
+here::here()
+## [1] "/home/johnsmith/git-projects/project"
+```
+
+`here` helps creating paths relative to the working directory
+
+```{r}
+#| echo: true
+#| eval: false
+# Build relative path ----
+here::here("data", "raw-data", "raw-data-1.csv")
+## [1] "/home/johnsmith/git-projects/project/data/raw-data/raw-data-1.csv"
+
+# Build relative path ----
+data <- read.csv(here::here("data", "raw-data", "raw-data-1.csv"))
+```
+:::
+::::
+
+
+
+## Building robust paths
+
+::::{ .columns }
+:::{.column width="40%"}
+![<https://allisonhorst.com/other-r-fun>](img/here.png)
+:::
+
+:::{.column width="60%"}
+
+<br>
+{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
+
+```{r}
+#| echo: true
+#| eval: false
+# Output of here::here() on Windows
+here::here()
+## [1] "C:/Users/janedoe/Documents/project"
+
+# Output of here::here() on MacOS
+here::here()
+## [1] "/Users/johndoe/Dropbox/work/project"
+
+# Output of here::here() on GNU/Linux
+here::here()
+## [1] "/home/johnsmith/git-projects/project"
+```
+
+`here` helps creating paths relative to the working directory
+
+```{r}
+#| echo: true
+#| eval: false
+# Build relative path ----
+here::here("data", "raw-data", "raw-data-1.csv")
+## [1] "/home/johnsmith/git-projects/project/data/raw-data/raw-data-1.csv"
+
+# Build relative path ----
+data <- read.csv(here::here("data", "raw-data", "raw-data-1.csv"))
+```
+:::
+::::
+
+
+<br>
+{{< fa hand-point-right >}} &nbsp;`here` will search for a `.Rproj` file (or `.here` file) to define the working directory
+
+
+## The `DESCRIPTION` file
+
+{{< fa hand-point-right >}} &nbsp;Main component of an {{< fa brands r-project >}} package, the `DESCRIPTION` file can be added to a research compendium to describe **project metadata**
+
+<br>
+
+```
+Package: projectname
+Type: Package
+Title: The Title of the Project
+Authors@R: c(
+    person(given   = "John",
+           family  = "Doe",
+           role    = c("aut", "cre", "cph"),
+           email   = "john.doe@domain.com",
+           comment = c(ORCID = "9999-9999-9999-9999")))
+Description: A paragraph providing a full description of the project.
+License: GPL (>= 2)
+```
+
+## The `DESCRIPTION` file
+
+{{< fa hand-point-right >}} &nbsp;Main component of an {{< fa brands r-project >}} package, the `DESCRIPTION` file can be added to a research compendium to describe **project metadata**
+
+<br>
+
+```
+Package: projectname
+Type: Package
+Title: The Title of the Project
+Authors@R: c(
+    person(given   = "John",
+           family  = "Doe",
+           role    = c("aut", "cre", "cph"),
+           email   = "john.doe@domain.com",
+           comment = c(ORCID = "9999-9999-9999-9999")))
+Description: A paragraph providing a full description of the project.
+License: GPL (>= 2)
+Imports:
+    devtools,
+    here
+```
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;It can be used to **list all external packages** required by the project
+
+. . .
+
+<br>
+
+> You should consider the `DESCRIPTION` file as the only file to list your external packages
+
+{{< fa hand-point-right >}} &nbsp;Do not use `library()` or `install.packages()` anymore
+
+
+## Dealing w/ dependencies
+
+To call a function (`bar()`) from an external package (`foo`), usually you use the function `bar()` after calling `library("foo")`
+
+. . .
+
+But,
+
+- for readability purposes, it's not perfect (where does the function `bar()` come from?)
+- you can have a conflict w/ a function also named `bar()` but from the package `baz` also attached with `library()`. You are not sure which function you are really using.
+
+
+```{r}
+#| echo: true
+#| eval: false
+library("tidyverse")
+## ── Attaching core tidyverse packages ──────────────────────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ## ──
+## ✔ dplyr     1.1.2     ✔ readr     2.1.4
+## ✔ forcats   1.0.0     ✔ stringr   1.5.0
+## ✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+## ✔ purrr     1.0.1     
+## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ## ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package to force all conflicts to become errors
+```
+
+. . .
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;A solution to prevent conflict is to call an external function as `foo::bar()`
+
+. . .
+
+- `library()` will load and attach a package
+- `::` will just load a package
+
+
+## Dealing w/ dependencies
+
+{{< fa hand-point-right >}} &nbsp;In the `DESCRIPTION` file, 
+
+- list external packages under the tag `Imports` if you call functions as `foo::bar()` - **recommended**
+- list external packages under the tag `Depends` if you want to attach a package (e.g. `ggplot2`)
+
+. . .
+
+<br>
+
+```
+Package: projectname
+Type: Package
+Title: The Title of the Project
+Authors@R: c(
+    person(given   = "John",
+           family  = "Doe",
+           role    = c("aut", "cre", "cph"),
+           email   = "john.doe@domain.com",
+           comment = c(ORCID = "9999-9999-9999-9999")))
+Description: A paragraph providing a full description of the project.
+License: GPL (>= 2)
+Depends:
+    ggplot2
+Imports:
+    devtools,
+    here
+```
+
+. . .
+
+<br>
+
+With this setting, you will use `ggplot()` but `here::here()` in your code
+
+. . .
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;Have a look at the tag `Remotes` to list packages only available on GitHub, GitLab, etc.
+
+
+
+## Dealing w/ dependencies
+
+Editing the `DESCRIPTION` file is not enough to install and access external packages.
+
+<br>
+
+::::{.columns}
+:::{.column width="50%"}
+{{< fa hand-point-right >}} &nbsp;You have to run these two command lines:
+
+```{r}
+#| echo: true
+#| eval: false
+# Install missing packages ----
+devtools::install_deps()
+
+# Load and attach (if Depends is used) packages ----
+devtools::load_all()
+```
+:::
+:::{.column width="50%"}
+Or
+
+```{r}
+#| echo: true
+#| eval: false
+# Install missing packages ----
+remotes::install_deps()
+
+# Load and attach (if Depends is used) packages ----
+pkgload::load_all()
+```
+:::
+::::
+
+. . .
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;If you don't want to upgrade your packages, use `remotes::install_deps(upgrade = "never")`
+
+
+. . .
+
+<br>
+
+**Wrap-up:** w/ a `DESCRIPTION` file and the functions `install_deps()` and `load_all()`, no need to use `library()` or `install.packages()` anymore
+
+
+## The README
 
 ...
 
+## LICENSE
 
+...

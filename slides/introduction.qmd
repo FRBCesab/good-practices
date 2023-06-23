@@ -12,7 +12,7 @@
 
 <br/>
 
-> We can talk about **Computational reproducibility**
+{{< fa hand-point-right >}} &nbsp;We can talk about **Computational reproducibility**
 
 
 ## Why does it matter?
@@ -70,7 +70,7 @@ Peng (2011)[^peng]
 
 <br/>
 
-{{< fa hand-point-right >}} &nbsp;Sharing the code and the data is now a prerequisite for publishing articles.
+{{< fa hand-point-right >}} &nbsp;Sharing the code and the data is now a prerequisite publishing in many journals
 
 
 
@@ -100,15 +100,17 @@ Each degree of reproducibility requires additional skills and time. While some o
 According to Wilson _et al._ (2017)[^wilson], good practices for a better reproducibility can be organized into the following six topics:
 
 <br/>
+<br/>
+<br/>
 
 :::: { .columns }
-::: { .column width="33%"}
+::: { .column .center width="33%"}
 {{< fa database >}} &nbsp;Data management
 :::
-::: { .column width="33%"}
+::: { .column .center width="33%"}
 {{< fa folder >}} &nbsp;Project organization
 :::
-::: { .column width="33%"}
+::: { .column .center width="33%"}
 {{< fa brands r-project >}} &nbsp;Code & Software
 :::
 ::::
@@ -116,14 +118,14 @@ According to Wilson _et al._ (2017)[^wilson], good practices for a better reprod
 <br/>
 
 :::: { .columns }
-::: { .column width="33%"}
+::: { .column .center width="33%"}
+{{< fa brands markdown >}} &nbsp;Manuscript
+:::
+::: { .column .center width="33%"}
 {{< fa code-branch >}} &nbsp;Tracking changes
 :::
-::: { .column width="33%"}
+::: { .column .center width="33%"}
 {{< fa brands github >}} &nbsp;Collaboration
-:::
-::: { .column width="33%"}
-{{< fa brands markdown >}} &nbsp;Manuscript
 :::
 ::::
 

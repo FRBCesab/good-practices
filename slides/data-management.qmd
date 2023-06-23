@@ -48,12 +48,12 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-.
-└── data/
-    └── raw-data/
-        ├── raw-data-1.csv 🔒
+🖿 project
+└── 🖿 data
+    └── 🖿 raw-data
+        ├── 🖹 raw-data-1.csv 🔒
         ├── ...
-        └── README.md
+        └── 🖹 README.md
 ```
 :::
 ::::
@@ -77,48 +77,16 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-.
-└── data/
-    └── raw-data/
-        ├── raw-data-1.csv 🔒
+🖿 project
+└── 🖿 data
+    └── 🖿 raw-data
+        ├── 🖹 raw-data-1.csv 🔒
         ├── ...
-        └── README.md
+        └── 🖹 README.md
 ```
 :::
 ::::
 
-
-
-## Derived data
-
-:::: { .columns }
-::: { .column width="50%"}
-**General recommendations**[^wilson]
-
-- Modified raw data become a derived data (or an output)
-- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
-- Create the data you wish to see in the world
-- Create analysis-friendly data: `tidy data`
-
-![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
-:::
-
-::: { .column width="15%"}
-:::
-
-::: { .column width="35%"}
-{{< fa lightbulb >}} &nbsp;**Proposed files organization**
-
-```
-.
-└── data/
-    └── raw-data/
-        ├── raw-data-1.csv 🔒
-        ├── ...
-        └── README.md
-```
-:::
-::::
 
 
 ## Derived data
@@ -142,19 +110,51 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-.
-├── data/
-│   ├── raw-data/
-│   │   ├── raw-data-1.csv 🔒
+🖿 project
+└── 🖿 data
+    └── 🖿 raw-data
+        ├── 🖹 raw-data-1.csv 🔒
+        ├── ...
+        └── 🖹 README.md
+```
+:::
+::::
+
+
+## Derived data
+
+:::: { .columns }
+::: { .column width="50%"}
+**General recommendations**[^wilson]
+
+- Modified raw data become a derived data (or an output)
+- Record all the steps used to process data ({{< fa brands r-project >}} `|` {{< fa brands python >}} `|` {{< fa terminal >}})
+- Create the data you wish to see in the world
+- Create analysis-friendly data: `tidy data`
+
+![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+:::
+
+::: { .column width="15%"}
+:::
+
+::: { .column width="35%"}
+{{< fa lightbulb >}} &nbsp;**Proposed files organization**
+
+```
+🖿 project
+├── 🖿 data
+│   ├── 🖿 raw-data
+│   │   ├── 🖹 raw-data-1.csv 🔒
 │   │   ├── ...
-│   │   └── README.md
+│   │   └── 🖹 README.md
 │   │
-│   └── derived-data/
-│       ├── derived-data-1.RData
+│   └── 🖿 derived-data
+│       ├── 🖹 derived-data-1.RData
 │       └── ...
 │
-└── code/
-    ├── process-raw-data-1.R
+└── 🖿 code
+    ├── 🖹 process-raw-data-1.R
     └── ...
 ```
 :::
@@ -181,19 +181,19 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-.
-├── data/
-│   ├── raw-data/
-│   │   ├── raw-data-1.csv 🔒
+🖿 project
+├── 🖿 data
+│   ├── 🖿 raw-data
+│   │   ├── 🖹 raw-data-1.csv 🔒
 │   │   ├── ...
-│   │   └── README.md
+│   │   └── 🖹 README.md
 │   │
-│   └── derived-data/
-│       ├── derived-data-1.RData
+│   └── 🖿 derived-data
+│       ├── 🖹 derived-data-1.RData
 │       └── ...
 │
-└── code/
-    ├── process-raw-data-1.R
+└── 🖿 code
+    ├── 🖹 process-raw-data-1.R
     └── ...
 ```
 
@@ -202,18 +202,18 @@
 {{< fa lightbulb >}} &nbsp;**Alternative**
 
 ```
-.
-├── data/
-│   ├── raw-data-1.csv 🔒
+🖿 project
+├── 🖿 data
+│   ├── 🖹 raw-data-1.csv 🔒
 │   ├── ...
-│   └── README.md
+│   └── 🖹 README.md
 │
-├── outptus/
-│   ├── output-1.RData
+├── 🖿 outputs
+│   ├── 🖹 output-1.RData
 │   └── ...
 │
-└── code/
-    ├── process-raw-data-1.R
+└── 🖿 code
+    ├── 🖹 process-raw-data-1.R
     └── ...
 ```
 :::
