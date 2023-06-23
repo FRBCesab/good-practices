@@ -885,10 +885,10 @@ pkgload::load_all()
 **Wrap-up:** w/ a `DESCRIPTION` file and the functions `install_deps()` and `load_all()`, no need to use `library()` or `install.packages()` anymore
 
 
-## The README
+## The `README` file
 
 ...
 
-## LICENSE
+## Choose a `LICENSE`
 
 ...
