@@ -13,7 +13,7 @@
 - Write code for data acquisition (when possible)
   - database requests
   - api requests
-  - `utils::download.file()`, `wget`, `curl`, etc.
+  - `download.file()`, `wget`, `curl`, etc.
 - Describe and document raw data (`README`, metadata, etc.)
 :::
 
@@ -37,7 +37,7 @@
 - Write code for data acquisition (when possible)
   - database requests
   - api requests
-  - `utils::download.file()`, `wget`, `curl`, etc.
+  - `download.file()`, `wget`, `curl`, etc.
 - Describe and document raw data (`README`, metadata, etc.)
 :::
 
@@ -48,12 +48,12 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md
+project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md
 ```
 :::
 ::::
@@ -77,12 +77,12 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md
+project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md
 ```
 :::
 ::::
@@ -100,7 +100,7 @@
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
-![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+![Source: <https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
 :::
 
 ::: { .column width="15%"}
@@ -110,12 +110,12 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md
+project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md
 ```
 :::
 ::::
@@ -132,7 +132,7 @@
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
-![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+![Source: <https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
 :::
 
 ::: { .column width="15%"}
@@ -142,20 +142,20 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-🖿 project
-├── 🖿 data
-│   ├── 🖿 raw-data
-│   │   ├── 🖹 raw-data-1.csv 🔒
-│   │   ├── ...
-│   │   └── 🖹 README.md
-│   │
-│   └── 🖿 derived-data
-│       ├── 🖹 derived-data-1.RData
-│       └── ...
+project/
+├─ data/
+│  ├─ raw-data/
+│  │  ├─ raw-data-1.csv 🔒
+│  │  ├─ ...
+│  │  └─ README.md
+│  │
+│  └─ derived-data/
+│     ├─ derived-data-1.RData
+│     └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...
 ```
 :::
 ::::
@@ -171,7 +171,7 @@
 - Create the data you wish to see in the world
 - Create analysis-friendly data: `tidy data`
 
-![<https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
+![Source: <https://allisonhorst.com/other-r-fun>](img/tidy-data.jpg)
 :::
 
 ::: { .column width="15%"}
@@ -181,20 +181,20 @@
 {{< fa lightbulb >}} &nbsp;**Proposed files organization**
 
 ```
-🖿 project
-├── 🖿 data
-│   ├── 🖿 raw-data
-│   │   ├── 🖹 raw-data-1.csv 🔒
-│   │   ├── ...
-│   │   └── 🖹 README.md
-│   │
-│   └── 🖿 derived-data
-│       ├── 🖹 derived-data-1.RData
-│       └── ...
+project/
+├─ data/
+│  ├─ raw-data/
+│  │  ├─ raw-data-1.csv 🔒
+│  │  ├─ ...
+│  │  └─ README.md
+│  │
+│  └─ derived-data/
+│     ├─ derived-data-1.RData
+│     └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...
 ```
 
 <br/>
@@ -202,19 +202,19 @@
 {{< fa lightbulb >}} &nbsp;**Alternative**
 
 ```
-🖿 project
-├── 🖿 data
-│   ├── 🖹 raw-data-1.csv 🔒
-│   ├── ...
-│   └── 🖹 README.md
+project/
+├─ data/
+│  ├─ raw-data-1.csv 🔒
+│  ├─ ...
+│  └─ README.md
 │
-├── 🖿 outputs
-│   ├── 🖹 output-1.RData
-│   └── ...
+├─ outputs/
+│  ├─ output-1.RData
+│  └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...
 ```
 :::
 ::::

@@ -245,7 +245,7 @@ Phil Karlton
 1. **Play well with default ordering**
 :::
 ::: {.column width="50%"}
-![_Source:_ [xkcd](https://xkcd.com/1179/)](https://imgs.xkcd.com/comics/iso_8601.png){width="50%"}
+![Source: [xkcd](https://xkcd.com/1179/)](https://imgs.xkcd.com/comics/iso_8601.png){width="50%"}
 :::
 ::::
 
@@ -256,7 +256,7 @@ Phil Karlton
 {{< fa hand-point-right >}} &nbsp;Be consistent and follow the guidelines of your community
 
 
-![<https://allisonhorst.com/other-r-fun>](img/cases.png){width="50%"}
+![Source: <https://allisonhorst.com/other-r-fun>](img/cases.png){width="50%"}
 
 
 ## Research compendium
@@ -312,15 +312,15 @@ Specify the **computational environment** that was used
 **Small compendium**
 
 ```
-🖿 project
-├─ 🖿 .git
-├─ 🖿 data 🔒
-├─ 🖿 code
-│  └─ 🖹 script.R
-├─ 🖿 outputs
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-└─ 🖹 README.md
+project/
+├─ .git/
+├─ data/ 🔒
+├─ code/
+│  └─ script.R
+├─ outputs/
+├─ project.Rproj
+├─ .gitignore
+└─ README.md
 ```
 :::
 
@@ -328,24 +328,24 @@ Specify the **computational environment** that was used
 **Medium compendium**
 
 ```
-🖿 project
-├─ 🖿 .git
-├─ 🖿 data
-│  ├─ 🖿 raw-data 🔒
-│  └─ 🖿 derived-data
-├─ 🖿 R
-│  ├─ 🖹 function-x.R
-│  └─ 🖹 function-y.R
-├─ 🖿 analyses
-│  ├─ 🖹 script-1.R
-│  └─ 🖹 script-n.R
-├─ 🖿 outputs
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-├─ 🖹 DESCRIPTION
-├─ 🖹 LICENSE
-├─ 🖹 make.R
-└─ 🖹 README.md
+project/
+├─ .git/
+├─ data/
+│  ├─ raw-data/ 🔒
+│  └─ derived-data/
+├─ R/
+│  ├─ function-x.R
+│  └─ function-y.R
+├─ analyses/
+│  ├─ script-1.R
+│  └─ script-n.R
+├─ outputs/
+├─ project.Rproj
+├─ .gitignore
+├─ DESCRIPTION
+├─ LICENSE
+├─ make.R
+└─ README.md
 ```
 :::
 
@@ -353,36 +353,36 @@ Specify the **computational environment** that was used
 **Large compendium**
 
 ```
-🖿 project
-├─ 🖿 .git
-├─ 🖿 .github
-│  └─ 🖿 workflows
-│     ├─ 🖹 workflow-1.yaml
-│     └─ 🖹 workflow-n.yaml
-├─ 🖿 .renv
-├─ 🖿 data
-│  ├─ 🖿 raw-data 🔒
-│  └─ 🖿 derived-data
-├─ 🖿 R
-│  ├─ 🖹 function-x.R
-│  └─ 🖹 function-y.R
-├─ 🖿 analyses
-│  ├─ 🖹 script-x.R
-│  └─ 🖹 script-n.R
-├─ 🖿 outputs
-├─ 🖿 paper
-│  ├─ 🖹 references.bib
-│  ├─ 🖹 style.csl
-│  └─ 🖹 paper.Rmd
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-├─ 🖹 DESCRIPTION
-├─ 🖹 LICENSE
-├─ 🖹 CITATION.cff
-├─ 🖹 make.R
-├─ 🖹 dockerfile
-├─ 🖹 renv.lock
-└─ 🖹 README.md
+project/
+├─ .git/
+├─ .github/
+│  └─ workflows/
+│     ├─ workflow-1.yaml
+│     └─ workflow-n.yaml
+├─ .renv/
+├─ data/
+│  ├─ raw-data/ 🔒
+│  └─ derived-data/
+├─ R/
+│  ├─ function-x.R
+│  └─ function-y.R
+├─ analyses/
+│  ├─ script-x.R
+│  └─ script-n.R
+├─ outputs/
+├─ paper/
+│  ├─ references.bib
+│  ├─ style.csl
+│  └─ paper.Rmd
+├─ project.Rproj
+├─ .gitignore
+├─ DESCRIPTION
+├─ LICENSE
+├─ CITATION.cff
+├─ make.R
+├─ dockerfile
+├─ renv.lock
+└─ README.md
 ```
 :::
 ::::
@@ -410,7 +410,7 @@ File > New Project...
 
 RStudio IDE will create a `.Rproj` (simple text file) file at the root of the folder
 
-- Double-click on a `.Rproj` file to open a fresh instance of RStudio, w/ the working directory pointed at the folder root
+- Double-click on a `.Rproj` file to open a fresh instance of RStudio, w/ the working directory pointing at the folder root
 - This will help you to create self-contained workspace (= _compendium_)
 
 {{< fa hand-point-right >}} &nbsp;In a few slides, we will talk about `setwd()`
@@ -442,7 +442,7 @@ Tools > Global options > General
 RStudio IDE - Minimal configuration for a better reproducibility
 
 ```
-Tools > Global options > General
+Tools > Global Options > General
 ```
 
 :::: { .columns }
@@ -468,7 +468,7 @@ Tools > Global options > General
 RStudio IDE - Minimal configuration for a better reproducibility
 
 ```
-Tools > Global options > General
+Tools > Global Options > General
 ```
 
 :::: { .columns }
@@ -512,7 +512,7 @@ Does NOT create a fresh {{< fa brands r-project >}} session
 
 <br>
 
-Other changes may have been made to the {{< fa brands r-project >}} session, like: `options()`, `library()`, etc.
+Other changes may have been made to the {{< fa brands r-project >}} session, like `options()`, `library()`, etc.
 
 {{< fa hand-point-right >}} &nbsp;You may get a wrong impression of reproducibility
 
@@ -548,7 +548,7 @@ setwd("/Users/johndoe/Dropbox/work/projectname")
 setwd("/home/johnsmith/git-projects/projectname")
 ```
 
-{{< fa hand-point-right >}} &nbsp;Not portable and not reproducible (for others)
+{{< fa hand-point-right >}} &nbsp;Not portable and not reproducible
 :::
 ::: { .column width="50%"}
 :::
@@ -575,13 +575,12 @@ Jenny Bryan (2017)[^bryan]
 
 ::::{ .columns }
 :::{.column width="40%"}
-![<https://allisonhorst.com/other-r-fun>](img/here.png)
+![Source: <https://allisonhorst.com/other-r-fun>](img/here.png)
 :::
 
 :::{.column width="60%"}
 
 <br>
-{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
 
 ```{r}
 #| echo: true
@@ -613,7 +612,6 @@ here::here()
 :::{.column width="60%"}
 
 <br>
-{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
 
 ```{r}
 #| echo: true
@@ -631,7 +629,8 @@ here::here()
 ## [1] "/home/johnsmith/git-projects/project"
 ```
 
-`here` helps creating paths relative to the working directory
+<br>
+{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
 
 ```{r}
 #| echo: true
@@ -658,7 +657,6 @@ data <- read.csv(here::here("data", "raw-data", "raw-data-1.csv"))
 :::{.column width="60%"}
 
 <br>
-{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
 
 ```{r}
 #| echo: true
@@ -676,7 +674,8 @@ here::here()
 ## [1] "/home/johnsmith/git-projects/project"
 ```
 
-`here` helps creating paths relative to the working directory
+<br>
+{{< fa hand-point-right >}} &nbsp;Use the package [`here`](https://here.r-lib.org/) to create project-relative paths
 
 ```{r}
 #| echo: true
@@ -693,7 +692,7 @@ data <- read.csv(here::here("data", "raw-data", "raw-data-1.csv"))
 
 
 <br>
-{{< fa hand-point-right >}} &nbsp;`here` will search for a `.Rproj` file (or `.here` file) to define the working directory
+{{< fa hand-point-right >}} &nbsp;`here` will search for a `.Rproj` file (or a `.here` file) to define the working directory
 
 
 ## The `DESCRIPTION` file

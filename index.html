@@ -437,17 +437,17 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/reproducible-matrix.jpg" style="width:50.0%"></p>
-<figcaption><em>Source:</em> <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/">https://eliocamp.github.io</a></figcaption>
+<figcaption>Source: <a href="https://eliocamp.github.io/reproducibility-with-r/materials/day1/01-introduction/">https://eliocamp.github.io</a></figcaption>
 </figure>
 </div>
 <p><strong>Reproducibility</strong> is about results that can be obtained by someone else (or you in the future) given the <strong>same data</strong> and the <strong>same code</strong>. This is a technical problem.</p>
 <p><br></p>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;We can talk about <strong>Computational reproducibility</strong></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;We talk about <strong>Computational reproducibility</strong></p>
 </section>
 <section id="why-does-it-matter" class="slide level2">
 <h2>Why does it matter?</h2>
 <blockquote>
-<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+<p>An <strong>article</strong> about computational results is advertising, not scholarship. The actual scholarship is the full <strong>software environment</strong>, <strong>code</strong> and <strong>data</strong>, that produced the result.</p>
 </blockquote>
 <div class="citation">
 <p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
@@ -457,14 +457,14 @@
 <section id="why-does-it-matter-1" class="slide level2">
 <h2>Why does it matter?</h2>
 <blockquote>
-<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+<p>An <strong>article</strong> about computational results is advertising, not scholarship. The actual scholarship is the full <strong>software environment</strong>, <strong>code</strong> and <strong>data</strong>, that produced the result.</p>
 </blockquote>
 <div class="citation">
 <p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
 </div>
 <p><br></p>
 <blockquote>
-<p>Reproducibility has the potential to serve as a minimum standard for judging scientific claims (…).</p>
+<p>Reproducibility has the potential to serve as a minimum standard for <strong>judging scientific claims</strong> (…).</p>
 </blockquote>
 <div class="citation">
 <p>Peng (2011)<sup>2</sup></p>
@@ -473,20 +473,20 @@
 <section id="why-does-it-matter-2" class="slide level2">
 <h2>Why does it matter?</h2>
 <blockquote>
-<p>An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.</p>
+<p>An <strong>article</strong> about computational results is advertising, not scholarship. The actual scholarship is the full <strong>software environment</strong>, <strong>code</strong> and <strong>data</strong>, that produced the result.</p>
 </blockquote>
 <div class="citation">
 <p>Claerbout &amp; Karrenbach (1992)<sup>1</sup></p>
 </div>
 <p><br></p>
 <blockquote>
-<p>Reproducibility has the potential to serve as a minimum standard for judging scientific claims (…).</p>
+<p>Reproducibility has the potential to serve as a minimum standard for <strong>judging scientific claims</strong> (…).</p>
 </blockquote>
 <div class="citation">
 <p>Peng (2011)<sup>2</sup></p>
 </div>
 <p><br></p>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Sharing the code and the data is now a prerequisite publishing in many journals</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Sharing the code and the data is now a prerequisite for publishing in many journals</p>
 <aside><ol class="aside-footnotes"><li id="fn4"><p><a href="https://doi.org/10.1190/1.1822162" class="uri">https://doi.org/10.1190/1.1822162</a></p></li><li id="fn5"><p><a href="https://doi.org/10.1126/science.1213847" class="uri">https://doi.org/10.1126/science.1213847</a></p></li></ol></aside></section>
 <section id="reproducibility-spectrum" class="slide level2">
 <h2>Reproducibility spectrum</h2>
@@ -494,7 +494,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/peng-science.jpg" style="width:75.0%"></p>
-<figcaption><em>Source:</em> Peng (2011)<sup>1</sup></figcaption>
+<figcaption>Source: Peng (2011)<sup>1</sup></figcaption>
 </figure>
 </div>
 <div class="fragment">
@@ -545,7 +545,7 @@
 <ul>
 <li>database requests</li>
 <li>api requests</li>
-<li><code>utils::download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
+<li><code>download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
 </ul></li>
 <li>Describe and document raw data (<code>README</code>, metadata, etc.)</li>
 </ul>
@@ -570,7 +570,7 @@
 <ul>
 <li>database requests</li>
 <li>api requests</li>
-<li><code>utils::download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
+<li><code>download.file()</code>, <code>wget</code>, <code>curl</code>, etc.</li>
 </ul></li>
 <li>Describe and document raw data (<code>README</code>, metadata, etc.)</li>
 </ul>
@@ -578,12 +578,12 @@
 
 </div><div class="column" style="width:35%;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
-<pre><code>🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md</code></pre>
+<pre><code>project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md</code></pre>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn9"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
@@ -602,12 +602,12 @@
 
 </div><div class="column" style="width:35%;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
-<pre><code>🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md</code></pre>
+<pre><code>project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md</code></pre>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn10"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
@@ -625,19 +625,19 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/tidy-data.jpg"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:15%;">
 
 </div><div class="column" style="width:35%;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
-<pre><code>🖿 project
-└── 🖿 data
-    └── 🖿 raw-data
-        ├── 🖹 raw-data-1.csv 🔒
-        ├── ...
-        └── 🖹 README.md</code></pre>
+<pre><code>project/
+└─ data/
+   └─ raw-data/
+      ├─ raw-data-1.csv 🔒
+      ├─ ...
+      └─ README.md</code></pre>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn11"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
@@ -655,27 +655,27 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/tidy-data.jpg"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:15%;">
 
 </div><div class="column" style="width:35%;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
-<pre><code>🖿 project
-├── 🖿 data
-│   ├── 🖿 raw-data
-│   │   ├── 🖹 raw-data-1.csv 🔒
-│   │   ├── ...
-│   │   └── 🖹 README.md
-│   │
-│   └── 🖿 derived-data
-│       ├── 🖹 derived-data-1.RData
-│       └── ...
+<pre><code>project/
+├─ data/
+│  ├─ raw-data/
+│  │  ├─ raw-data-1.csv 🔒
+│  │  ├─ ...
+│  │  └─ README.md
+│  │
+│  └─ derived-data/
+│     ├─ derived-data-1.RData
+│     └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...</code></pre>
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...</code></pre>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn12"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
@@ -693,42 +693,42 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/tidy-data.jpg"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:15%;">
 
 </div><div class="column" style="width:35%;">
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Proposed files organization</strong></p>
-<pre><code>🖿 project
-├── 🖿 data
-│   ├── 🖿 raw-data
-│   │   ├── 🖹 raw-data-1.csv 🔒
-│   │   ├── ...
-│   │   └── 🖹 README.md
-│   │
-│   └── 🖿 derived-data
-│       ├── 🖹 derived-data-1.RData
-│       └── ...
+<pre><code>project/
+├─ data/
+│  ├─ raw-data/
+│  │  ├─ raw-data-1.csv 🔒
+│  │  ├─ ...
+│  │  └─ README.md
+│  │
+│  └─ derived-data/
+│     ├─ derived-data-1.RData
+│     └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...</code></pre>
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...</code></pre>
 <p><br></p>
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Alternative</strong></p>
-<pre><code>🖿 project
-├── 🖿 data
-│   ├── 🖹 raw-data-1.csv 🔒
-│   ├── ...
-│   └── 🖹 README.md
+<pre><code>project/
+├─ data/
+│  ├─ raw-data-1.csv 🔒
+│  ├─ ...
+│  └─ README.md
 │
-├── 🖿 outputs
-│   ├── 🖹 output-1.RData
-│   └── ...
+├─ outputs/
+│  ├─ output-1.RData
+│  └─ ...
 │
-└── 🖿 code
-    ├── 🖹 process-raw-data-1.R
-    └── ...</code></pre>
+└─ code/
+   ├─ process-raw-data-1.R
+   └─ ...</code></pre>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn13"><p><a href="https://doi.org/10.1371/journal.pcbi.1005510" class="uri">https://doi.org/10.1371/journal.pcbi.1005510</a></p></li></ol></aside></section>
@@ -1002,7 +1002,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="https://imgs.xkcd.com/comics/iso_8601.png" style="width:50.0%"></p>
-<figcaption><em>Source:</em> <a href="https://xkcd.com/1179/">xkcd</a></figcaption>
+<figcaption>Source: <a href="https://xkcd.com/1179/">xkcd</a></figcaption>
 </figure>
 </div>
 </div>
@@ -1014,7 +1014,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/cases.png" style="width:50.0%"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </section>
@@ -1053,67 +1053,67 @@
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><strong>Small compendium</strong></p>
-<pre><code>🖿 project
-├─ 🖿 .git
-├─ 🖿 data 🔒
-├─ 🖿 code
-│  └─ 🖹 script.R
-├─ 🖿 outputs
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-└─ 🖹 README.md</code></pre>
+<pre><code>project/
+├─ .git/
+├─ data/ 🔒
+├─ code/
+│  └─ script.R
+├─ outputs/
+├─ project.Rproj
+├─ .gitignore
+└─ README.md</code></pre>
 </div><div class="column" style="width:33%;">
 <p><strong>Medium compendium</strong></p>
-<pre><code>🖿 project
-├─ 🖿 .git
-├─ 🖿 data
-│  ├─ 🖿 raw-data 🔒
-│  └─ 🖿 derived-data
-├─ 🖿 R
-│  ├─ 🖹 function-x.R
-│  └─ 🖹 function-y.R
-├─ 🖿 analyses
-│  ├─ 🖹 script-1.R
-│  └─ 🖹 script-n.R
-├─ 🖿 outputs
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-├─ 🖹 DESCRIPTION
-├─ 🖹 LICENSE
-├─ 🖹 make.R
-└─ 🖹 README.md</code></pre>
+<pre><code>project/
+├─ .git/
+├─ data/
+│  ├─ raw-data/ 🔒
+│  └─ derived-data/
+├─ R/
+│  ├─ function-x.R
+│  └─ function-y.R
+├─ analyses/
+│  ├─ script-1.R
+│  └─ script-n.R
+├─ outputs/
+├─ project.Rproj
+├─ .gitignore
+├─ DESCRIPTION
+├─ LICENSE
+├─ make.R
+└─ README.md</code></pre>
 </div><div class="column" style="width:33%;">
 <p><strong>Large compendium</strong></p>
-<pre><code>🖿 project
-├─ 🖿 .git
-├─ 🖿 .github
-│  └─ 🖿 workflows
-│     ├─ 🖹 workflow-1.yaml
-│     └─ 🖹 workflow-n.yaml
-├─ 🖿 .renv
-├─ 🖿 data
-│  ├─ 🖿 raw-data 🔒
-│  └─ 🖿 derived-data
-├─ 🖿 R
-│  ├─ 🖹 function-x.R
-│  └─ 🖹 function-y.R
-├─ 🖿 analyses
-│  ├─ 🖹 script-x.R
-│  └─ 🖹 script-n.R
-├─ 🖿 outputs
-├─ 🖿 paper
-│  ├─ 🖹 references.bib
-│  ├─ 🖹 style.csl
-│  └─ 🖹 paper.Rmd
-├─ 🖹 projectname.Rproj
-├─ 🖹 .gitignore
-├─ 🖹 DESCRIPTION
-├─ 🖹 LICENSE
-├─ 🖹 CITATION.cff
-├─ 🖹 make.R
-├─ 🖹 dockerfile
-├─ 🖹 renv.lock
-└─ 🖹 README.md</code></pre>
+<pre><code>project/
+├─ .git/
+├─ .github/
+│  └─ workflows/
+│     ├─ workflow-1.yaml
+│     └─ workflow-n.yaml
+├─ .renv/
+├─ data/
+│  ├─ raw-data/ 🔒
+│  └─ derived-data/
+├─ R/
+│  ├─ function-x.R
+│  └─ function-y.R
+├─ analyses/
+│  ├─ script-x.R
+│  └─ script-n.R
+├─ outputs/
+├─ paper/
+│  ├─ references.bib
+│  ├─ style.csl
+│  └─ paper.Rmd
+├─ project.Rproj
+├─ .gitignore
+├─ DESCRIPTION
+├─ LICENSE
+├─ CITATION.cff
+├─ make.R
+├─ dockerfile
+├─ renv.lock
+└─ README.md</code></pre>
 </div>
 </div>
 </section>
@@ -1139,7 +1139,7 @@
 <div class="fragment">
 <p>RStudio IDE will create a <code>.Rproj</code> (simple text file) file at the root of the folder</p>
 <ul>
-<li>Double-click on a <code>.Rproj</code> file to open a fresh instance of RStudio, w/ the working directory pointed at the folder root</li>
+<li>Double-click on a <code>.Rproj</code> file to open a fresh instance of RStudio, w/ the working directory pointing at the folder root</li>
 <li>This will help you to create self-contained workspace (= <em>compendium</em>)</li>
 </ul>
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;In a few slides, we will talk about <code>setwd()</code></p>
@@ -1166,7 +1166,7 @@
 <section id="in-the-meantime-1" class="slide level2">
 <h2>In the meantime</h2>
 <p>RStudio IDE - Minimal configuration for a better reproducibility</p>
-<pre><code>Tools &gt; Global options &gt; General</code></pre>
+<pre><code>Tools &gt; Global Options &gt; General</code></pre>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-left">
@@ -1188,7 +1188,7 @@
 <section id="in-the-meantime-2" class="slide level2">
 <h2>In the meantime</h2>
 <p>RStudio IDE - Minimal configuration for a better reproducibility</p>
-<pre><code>Tools &gt; Global options &gt; General</code></pre>
+<pre><code>Tools &gt; Global Options &gt; General</code></pre>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-left">
@@ -1221,7 +1221,7 @@
 </div>
 <div class="fragment">
 <p><br></p>
-<p>Other changes may have been made to the <i class="fa-brands fa-r-project" aria-label="r-project"></i> session, like: <code>options()</code>, <code>library()</code>, etc.</p>
+<p>Other changes may have been made to the <i class="fa-brands fa-r-project" aria-label="r-project"></i> session, like <code>options()</code>, <code>library()</code>, etc.</p>
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;You may get a wrong impression of reproducibility</p>
 </div>
 <div class="fragment">
@@ -1246,7 +1246,7 @@
 <span id="cb26-7"><a href="#cb26-7"></a><span class="co"># Absolute path on GNU/Linux</span></span>
 <span id="cb26-8"><a href="#cb26-8"></a><span class="fu">setwd</span>(<span class="st">"/home/johnsmith/git-projects/projectname"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Not portable and not reproducible (for others)</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Not portable and not reproducible</p>
 </div><div class="column" style="width:50%;">
 
 </div>
@@ -1267,11 +1267,11 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/here.png"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
-<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Use the package <a href="https://here.r-lib.org/"><code>here</code></a> to create project-relative paths</p>
+<p><br></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="co"># Output of here::here() on Windows</span></span>
 <span id="cb27-2"><a href="#cb27-2"></a>here<span class="sc">::</span><span class="fu">here</span>()</span>
@@ -1299,7 +1299,7 @@
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
-<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Use the package <a href="https://here.r-lib.org/"><code>here</code></a> to create project-relative paths</p>
+<p><br></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># Output of here::here() on Windows</span></span>
 <span id="cb28-2"><a href="#cb28-2"></a>here<span class="sc">::</span><span class="fu">here</span>()</span>
@@ -1313,7 +1313,7 @@
 <span id="cb28-10"><a href="#cb28-10"></a>here<span class="sc">::</span><span class="fu">here</span>()</span>
 <span id="cb28-11"><a href="#cb28-11"></a><span class="do">## [1] "/home/johnsmith/git-projects/project"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><code>here</code> helps creating paths relative to the working directory</p>
+<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Use the package <a href="https://here.r-lib.org/"><code>here</code></a> to create project-relative paths</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="co"># Build relative path ----</span></span>
 <span id="cb29-2"><a href="#cb29-2"></a>here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw-data"</span>, <span class="st">"raw-data-1.csv"</span>)</span>
@@ -1336,7 +1336,7 @@
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
-<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Use the package <a href="https://here.r-lib.org/"><code>here</code></a> to create project-relative paths</p>
+<p><br></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="co"># Output of here::here() on Windows</span></span>
 <span id="cb30-2"><a href="#cb30-2"></a>here<span class="sc">::</span><span class="fu">here</span>()</span>
@@ -1350,7 +1350,7 @@
 <span id="cb30-10"><a href="#cb30-10"></a>here<span class="sc">::</span><span class="fu">here</span>()</span>
 <span id="cb30-11"><a href="#cb30-11"></a><span class="do">## [1] "/home/johnsmith/git-projects/project"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><code>here</code> helps creating paths relative to the working directory</p>
+<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Use the package <a href="https://here.r-lib.org/"><code>here</code></a> to create project-relative paths</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="co"># Build relative path ----</span></span>
 <span id="cb31-2"><a href="#cb31-2"></a>here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"raw-data"</span>, <span class="st">"raw-data-1.csv"</span>)</span>
@@ -1510,12 +1510,12 @@ Imports:
 <p><strong>Wrap-up:</strong> w/ a <code>DESCRIPTION</code> file and the functions <code>install_deps()</code> and <code>load_all()</code>, no need to use <code>library()</code> or <code>install.packages()</code> anymore</p>
 </div>
 </section>
-<section id="the-readme" class="slide level2">
-<h2>The README</h2>
+<section id="the-readme-file" class="slide level2">
+<h2>The <code>README</code> file</h2>
 <p>…</p>
 </section>
-<section id="license" class="slide level2">
-<h2>LICENSE</h2>
+<section id="choose-a-license" class="slide level2">
+<h2>Choose a <code>LICENSE</code></h2>
 <p>…</p>
 </section></section>
 <section>
