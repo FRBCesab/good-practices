@@ -606,7 +606,7 @@ here::here()
 
 ::::{ .columns }
 :::{.column width="40%"}
-![<https://allisonhorst.com/other-r-fun>](img/here.png)
+![Source: <https://allisonhorst.com/other-r-fun>](img/here.png)
 :::
 
 :::{.column width="60%"}
@@ -651,7 +651,7 @@ data <- read.csv(here::here("data", "raw-data", "raw-data-1.csv"))
 
 ::::{ .columns }
 :::{.column width="40%"}
-![<https://allisonhorst.com/other-r-fun>](img/here.png)
+![Source: <https://allisonhorst.com/other-r-fun>](img/here.png)
 :::
 
 :::{.column width="60%"}
@@ -879,15 +879,180 @@ pkgload::load_all()
 
 . . .
 
-<br>
+<br><br>
 
 **Wrap-up:** w/ a `DESCRIPTION` file and the functions `install_deps()` and `load_all()`, no need to use `library()` or `install.packages()` anymore
 
 
 ## The `README` file
 
-...
+
+::::{.columns}
+:::{.column width="60%"}
+A [`README`](https://en.wikipedia.org/wiki/README) is a text file that introduces and explains your project
+
+- each research compendium should contain a `README`
+- you can write different `README` (project, data, etc.)
+:::
+:::{.column width="40%"}
+![Source: <https://github.com/frbcesab/chessboard/blob/main/README.md>](img/readme-raw.png)
+:::
+::::
+
+
+## The `README` file
+
+
+::::{.columns}
+:::{.column width="60%"}
+A [`README`](https://en.wikipedia.org/wiki/README) is a text file that introduces and explains your project
+
+- each research compendium should contain a `README`
+- you can write different `README` (project, data, etc.)
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;[GitHub](https://github.com/) and other code hosting 
+platforms recognize and interpret `README` written in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 
+(`README.md`)
+:::
+:::{.column width="40%"}
+![Source: <https://github.com/frbcesab/chessboard/blob/main/README.md>](img/readme-raw.png)
+:::
+::::
+
+
+## The `README` file
+
+
+::::{.columns}
+:::{.column width="60%"}
+A [`README`](https://en.wikipedia.org/wiki/README) is a text file that introduces and explains your project
+
+- each research compendium should contain a `README`
+- you can write different `README` (project, data, etc.)
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;[GitHub](https://github.com/) and other code hosting 
+platforms recognize and interpret `README` written in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 
+(`README.md`)
+
+:::
+:::{.column width="40%"}
+![Source: <https://github.com/frbcesab/chessboard>](img/readme-github.png)
+:::
+::::
+
+
+## The `README` file
+
+
+::::{.columns}
+:::{.column width="60%"}
+A [`README`](https://en.wikipedia.org/wiki/README) is a text file that introduces and explains your project
+
+- each research compendium should contain a `README`
+- you can write different `README` (project, data, etc.)
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;[GitHub](https://github.com/) and other code hosting 
+platforms recognize and interpret `README` written in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 
+(`README.md`)
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;If you want to run {{< fa brands r-project >}} code inside your `README`
+you can write a `README.Rmd` (or `.qmd`) and convert it to a `README.md`
+:::
+:::{.column width="40%"}
+![Source: <https://github.com/frbcesab/chessboard>](img/readme-github.png)
+:::
+::::
+
+
+## The `README` file
+
+::::{.columns}
+:::{.column width="50%"}
+A good `README` should answer the following questions[^rpkg]:
+
+- Why should I use it?
+- How do I get it?
+- How do I use it?
+:::
+:::{.column width="50%"}
+:::
+::::
+
+
+
+
+## The `README` file
+
+::::{.columns}
+:::{.column width="50%"}
+A good `README` should answer the following questions[^rpkg]:
+
+- Why should I use it?
+- How do I get it?
+- How do I use it?
+:::
+:::{.column width="50%"}
+**Main sections** (for a research compendium)
+
+- Title
+- Description
+- Content (file organization)
+- Prerequisites
+- Installation
+- Usage
+- License
+- Citation
+- Acknowledgements
+- References
+:::
+::::
+
+
+
+[^rpkg]: <https://r-pkgs.org/other-markdown.html#sec-readme>
+
 
 ## Choose a `LICENSE`
 
-...
+- By default your work will be release under exclusive copyright - [No License](https://choosealicense.com/no-permission/)
+
+. . .
+
+- **Always** select an appropriate license for your project
+
+. . .
+
+- Two major camps of **open source** licenses[^license]
+
+  - **Permissive** licenses
+  - **Copyleft** licenses
+
+. . . 
+
+<br>
+
+{{< fa hand-point-right >}} &nbsp;The [**choosealicense.com**](http://choosealicense.com/) website can help you choose
+
+
+. . .
+
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;**Examples**
+
+  - you want a **permissive** license so people can use your **code** with minimal restrictions: [`MIT`](https://choosealicense.com/licenses/mit/) / [`Apache`](https://choosealicense.com/licenses/apache-2.0/) / [`BSD`](https://choosealicense.com/licenses/bsd-3-clause-clear/)
+  - you want a **copyleft** license so that all derivatives and bundles of your **code** are also open source: [`GPLv2`](https://choosealicense.com/licenses/gpl-2.0/) / [`GPLv3`](https://choosealicense.com/licenses/gpl-3.0/)
+  - your project primarily contains **data** and you want minimal restrictions: [`CC-0`](https://choosealicense.com/licenses/cc0-1.0/) / [`CC-BY`](https://choosealicense.com/licenses/cc-by-4.0/) / [`ODbL`](https://opendatacommons.org/licenses/odbl/)
+
+[^license]: <https://r-pkgs.org/license.html>
+
+

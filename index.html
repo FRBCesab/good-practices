@@ -406,7 +406,7 @@
 <p>Good practices</p>
 </div>
 <div class="date">
-<p>June 2023</p>
+<p>July 2023</p>
 </div>
 <div class="columns">
 <div class="column author" style="width:45%;">
@@ -1295,7 +1295,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/here.png"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
@@ -1332,7 +1332,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/here.png"></p>
-<figcaption><a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
+<figcaption>Source: <a href="https://allisonhorst.com/other-r-fun" class="uri">https://allisonhorst.com/other-r-fun</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
@@ -1361,7 +1361,7 @@
 </div>
 </div>
 </div>
-<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>here</code> will search for a <code>.Rproj</code> file (or <code>.here</code> file) to define the working directory</p>
+<p><br> <i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>here</code> will search for a <code>.Rproj</code> file (or a <code>.here</code> file) to define the working directory</p>
 </section>
 <section id="the-description-file" class="slide level2">
 <h2>The <code>DESCRIPTION</code> file</h2>
@@ -1506,18 +1506,169 @@ Imports:
 <p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;If you don’t want to upgrade your packages, use <code>remotes::install_deps(upgrade = "never")</code></p>
 </div>
 <div class="fragment">
-<p><br></p>
+<p><br><br></p>
 <p><strong>Wrap-up:</strong> w/ a <code>DESCRIPTION</code> file and the functions <code>install_deps()</code> and <code>load_all()</code>, no need to use <code>library()</code> or <code>install.packages()</code> anymore</p>
 </div>
 </section>
 <section id="the-readme-file" class="slide level2">
 <h2>The <code>README</code> file</h2>
-<p>…</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>A <a href="https://en.wikipedia.org/wiki/README"><code>README</code></a> is a text file that introduces and explains your project</p>
+<ul>
+<li>each research compendium should contain a <code>README</code></li>
+<li>you can write different <code>README</code> (project, data, etc.)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/readme-raw.png"></p>
+<figcaption>Source: <a href="https://github.com/frbcesab/chessboard/blob/main/README.md" class="uri">https://github.com/frbcesab/chessboard/blob/main/README.md</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
+<section id="the-readme-file-1" class="slide level2">
+<h2>The <code>README</code> file</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>A <a href="https://en.wikipedia.org/wiki/README"><code>README</code></a> is a text file that introduces and explains your project</p>
+<ul>
+<li>each research compendium should contain a <code>README</code></li>
+<li>you can write different <code>README</code> (project, data, etc.)</li>
+</ul>
+<p><br></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<a href="https://github.com/">GitHub</a> and other code hosting platforms recognize and interpret <code>README</code> written in <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown</a> (<code>README.md</code>)</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/readme-raw.png"></p>
+<figcaption>Source: <a href="https://github.com/frbcesab/chessboard/blob/main/README.md" class="uri">https://github.com/frbcesab/chessboard/blob/main/README.md</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-readme-file-2" class="slide level2">
+<h2>The <code>README</code> file</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>A <a href="https://en.wikipedia.org/wiki/README"><code>README</code></a> is a text file that introduces and explains your project</p>
+<ul>
+<li>each research compendium should contain a <code>README</code></li>
+<li>you can write different <code>README</code> (project, data, etc.)</li>
+</ul>
+<p><br></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<a href="https://github.com/">GitHub</a> and other code hosting platforms recognize and interpret <code>README</code> written in <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown</a> (<code>README.md</code>)</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/readme-github.png"></p>
+<figcaption>Source: <a href="https://github.com/frbcesab/chessboard" class="uri">https://github.com/frbcesab/chessboard</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-readme-file-3" class="slide level2">
+<h2>The <code>README</code> file</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>A <a href="https://en.wikipedia.org/wiki/README"><code>README</code></a> is a text file that introduces and explains your project</p>
+<ul>
+<li>each research compendium should contain a <code>README</code></li>
+<li>you can write different <code>README</code> (project, data, etc.)</li>
+</ul>
+<p><br></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<a href="https://github.com/">GitHub</a> and other code hosting platforms recognize and interpret <code>README</code> written in <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown</a> (<code>README.md</code>)</p>
+<p><br></p>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;If you want to run <i class="fa-brands fa-r-project" aria-label="r-project"></i> code inside your <code>README</code> you can write a <code>README.Rmd</code> (or <code>.qmd</code>) and convert it to a <code>README.md</code></p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/readme-github.png"></p>
+<figcaption>Source: <a href="https://github.com/frbcesab/chessboard" class="uri">https://github.com/frbcesab/chessboard</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-readme-file-4" class="slide level2">
+<h2>The <code>README</code> file</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A good <code>README</code> should answer the following questions<sup>1</sup>:</p>
+<ul>
+<li>Why should I use it?</li>
+<li>How do I get it?</li>
+<li>How do I use it?</li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn26"><p><a href="https://r-pkgs.org/other-markdown.html#sec-readme" class="uri">https://r-pkgs.org/other-markdown.html#sec-readme</a></p></li></ol></aside></section>
+<section id="the-readme-file-5" class="slide level2">
+<h2>The <code>README</code> file</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A good <code>README</code> should answer the following questions<sup>1</sup>:</p>
+<ul>
+<li>Why should I use it?</li>
+<li>How do I get it?</li>
+<li>How do I use it?</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Main sections</strong> (for a research compendium)</p>
+<ul>
+<li>Title</li>
+<li>Description</li>
+<li>Content (file organization)</li>
+<li>Prerequisites</li>
+<li>Installation</li>
+<li>Usage</li>
+<li>License</li>
+<li>Citation</li>
+<li>Acknowledgements</li>
+<li>References</li>
+</ul>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn27"><p><a href="https://r-pkgs.org/other-markdown.html#sec-readme" class="uri">https://r-pkgs.org/other-markdown.html#sec-readme</a></p></li></ol></aside></section>
 <section id="choose-a-license" class="slide level2">
 <h2>Choose a <code>LICENSE</code></h2>
-<p>…</p>
-</section></section>
+<ul>
+<li>By default your work will be release under exclusive copyright - <a href="https://choosealicense.com/no-permission/">No License</a></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Always</strong> select an appropriate license for your project</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Two major camps of <strong>open source</strong> licenses<sup>1</sup></p>
+<ul>
+<li><strong>Permissive</strong> licenses</li>
+<li><strong>Copyleft</strong> licenses</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;The <a href="http://choosealicense.com/"><strong>choosealicense.com</strong></a> website can help you choose</p>
+</div>
+<div class="fragment">
+<p><br></p>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;<strong>Examples</strong></p>
+<ul>
+<li>you want a <strong>permissive</strong> license so people can use your <strong>code</strong> with minimal restrictions: <a href="https://choosealicense.com/licenses/mit/"><code>MIT</code></a> / <a href="https://choosealicense.com/licenses/apache-2.0/"><code>Apache</code></a> / <a href="https://choosealicense.com/licenses/bsd-3-clause-clear/"><code>BSD</code></a></li>
+<li>you want a <strong>copyleft</strong> license so that all derivatives and bundles of your <strong>code</strong> are also open source: <a href="https://choosealicense.com/licenses/gpl-2.0/"><code>GPLv2</code></a> / <a href="https://choosealicense.com/licenses/gpl-3.0/"><code>GPLv3</code></a></li>
+<li>your project primarily contains <strong>data</strong> and you want minimal restrictions: <a href="https://choosealicense.com/licenses/cc0-1.0/"><code>CC-0</code></a> / <a href="https://choosealicense.com/licenses/cc-by-4.0/"><code>CC-BY</code></a> / <a href="https://opendatacommons.org/licenses/odbl/"><code>ODbL</code></a></li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn28"><p><a href="https://r-pkgs.org/license.html" class="uri">https://r-pkgs.org/license.html</a></p></li></ol></aside></section></section>
 <section>
 <section id="fa-brands-r-project-code-software" class="title-slide slide level1 center">
 <h1><i class="fa-brands fa-r-project" aria-label="r-project"></i> &nbsp;Code &amp; Software</h1>
