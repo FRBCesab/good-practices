@@ -103,7 +103,7 @@ According to Wilson _et al._ (2017)[^wilson], good practices for a better reprod
 {{< fa folder >}} &nbsp;Project organization
 :::
 ::: { .column .center width="33%"}
-{{< fa brands r-project >}} &nbsp;Code & Software
+{{< fa code-branch >}} &nbsp;Tracking changes
 :::
 ::::
 
@@ -111,13 +111,13 @@ According to Wilson _et al._ (2017)[^wilson], good practices for a better reprod
 
 :::: { .columns }
 ::: { .column .center width="33%"}
+{{< fa brands github >}} &nbsp;Collaboration
+:::
+::: { .column .center width="33%"}
 {{< fa brands markdown >}} &nbsp;Manuscript
 :::
 ::: { .column .center width="33%"}
-{{< fa code-branch >}} &nbsp;Tracking changes
-:::
-::: { .column .center width="33%"}
-{{< fa brands github >}} &nbsp;Collaboration
+{{< fa brands r-project >}} &nbsp;Code & Software
 :::
 ::::
 

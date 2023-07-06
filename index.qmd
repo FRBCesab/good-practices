@@ -31,14 +31,6 @@ engine: knitr
 ```
 
 ```{r}
-#| child: "slides/code-and-software.qmd"
-```
-
-```{r}
-#| child: "slides/manuscript.qmd"
-```
-
-```{r}
 #| child: "slides/tracking-changes.qmd"
 ```
 
@@ -46,6 +38,15 @@ engine: knitr
 ```{r}
 #| child: "slides/collaboration.qmd"
 ```
+
+```{r}
+#| child: "slides/code-and-software.qmd"
+```
+
+```{r}
+#| child: "slides/manuscript.qmd"
+```
+
 
 
 
