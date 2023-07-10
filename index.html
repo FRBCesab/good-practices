@@ -1674,9 +1674,243 @@ Imports:
 <h1><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> &nbsp;Tracking changes</h1>
 
 </section>
-<section id="tracking-changes" class="slide level2">
-<h2>Tracking changes</h2>
-<p>Work in progress…</p>
+<section id="motivations" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_without_git.png"></p>
+<figcaption>Project content (without <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+</section>
+<section id="motivations-1" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_without_git.png"></p>
+<figcaption>Project content (without <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p><strong>Questions</strong></p>
+<ul>
+<li>Which version of <code>analyses.R</code> is the final one?</li>
+<li>What about <code>data.csv</code>?</li>
+<li>What are the differences between versions?</li>
+<li>Who have contributed to these versions? When?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="motivations-2" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_without_git.png"></p>
+<figcaption>Project content (without <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p><strong>Questions</strong></p>
+<ul>
+<li>Which version of <code>analyses.R</code> is the final one?</li>
+<li>What about <code>data.csv</code>?</li>
+<li>What are the differences between versions?</li>
+<li>Who have contributed to these versions? When?</li>
+</ul>
+<p><strong>Comments</strong></p>
+<ul>
+<li>It becomes difficult to find new versions names</li>
+<li>And this folder: what a mess!</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="motivations-3" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_without_git.png"></p>
+<figcaption>Project content (without <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p><strong>Questions</strong></p>
+<ul>
+<li>Which version of <code>analyses.R</code> is the final one?</li>
+<li>What about <code>data.csv</code>?</li>
+<li>What are the differences between versions?</li>
+<li>Who have contributed to these versions? When?</li>
+</ul>
+<p><strong>Comments</strong></p>
+<ul>
+<li>It becomes difficult to find new versions names</li>
+<li>And this folder: what a mess!</li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;We need a tool that deals with versions for us</p>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+</section>
+<section id="motivations-4" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_without_git.png"></p>
+<figcaption>Project content (without <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+<p><strong>Questions</strong></p>
+<ul>
+<li>Which version of <code>analyses.R</code> is the final one?</li>
+<li>What about <code>data.csv</code>?</li>
+<li>What are the differences between versions?</li>
+<li>Who have contributed to these versions? When?</li>
+</ul>
+<p><strong>Comments</strong></p>
+<ul>
+<li>It becomes difficult to find new versions names</li>
+<li>And this folder: what a mess!</li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;We need a tool that deals with versions for us</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/git-logo-long.png" style="width:50.0%"></p>
+</div>
+</div>
+</section>
+<section id="motivations-5" class="slide level2">
+<h2>Motivations</h2>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/folder_with_git.png"></p>
+<figcaption>Project content (with <code>git</code>)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;We need a tool that deals with versions for us</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/git-logo-long.png" style="width:50.0%"></p>
+</div>
+</div>
+</section>
+<section id="presentation-of-git" class="slide level2">
+<h2>Presentation of <code>git</code></h2>
+<ul>
+<li>Created by <strong>Linus Torvalds</strong> in 2005 for the development of the Linux kernel</li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_version_control">Distributed version control system</a> (DVCS) - Peer-to-peer approach</li>
+</ul>
+<p><br></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/git-logo-long.png"></p>
+</div>
+</div>
+</section>
+<section id="presentation-of-git-1" class="slide level2">
+<h2>Presentation of <code>Git</code></h2>
+<ul>
+<li>Created by <strong>Linus Torvalds</strong> in 2005 for the development of the Linux kernel</li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_version_control">Distributed version control system</a> (DVCS) - Peer-to-peer approach</li>
+</ul>
+<p><br></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:60%;">
+<p><strong>Advantages of VCS (and <code>Git</code>)</strong></p>
+<ul>
+<li>make contributions transparent (what / who / when / why)</li>
+<li>keep the entire history of a file (and project)</li>
+<li>inspect a file throughout its life time</li>
+<li>revert back to a previous version</li>
+<li>handle multiple versions (branches)</li>
+<li>keep your working copy clean</li>
+<li>facilitate collaborations w/ code hosting platforms <br>(GitHub, GitLab, Bitbucket, etc.)</li>
+<li>backup your project</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="img/git-logo-long.png"></p>
+</div>
+</div>
+</section>
+<section id="a-word-of-warning" class="slide level2">
+<h2>A word of warning</h2>
+<p><strong><code>Git</code></strong> and <strong><code>GitHub</code></strong> are <strong>not the same thing</strong></p>
+<ul>
+<li><code>Git</code> is a free and open-source <strong>software</strong></li>
+<li><code>GitHub</code> (and co) is a <strong>web platform</strong> to host and share projects that use <code>git</code></li>
+</ul>
+<div class="fragment">
+<p><br></p>
+<p>In other words:</p>
+<blockquote>
+<p>You do not need <code>GitHub</code> to use <code>git</code> but you cannot use <code>GitHub</code> without using <code>git</code></p>
+</blockquote>
+</div>
+</section>
+<section id="gui-clients" class="slide level2">
+<h2>GUI clients</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/git-cli.png" style="width:100.0%"></p>
+</div><div class="column" data-align="left" style="width:50%;">
+<p><br></p>
+<ul>
+<li><code>Git</code> is a command-line interface (CLI)</li>
+<li>You interact with <code>git</code> using a terminal</li>
+<li>All commands start w/ the keyword <code>git</code> <br>(<code>git status / log / add / commit</code>)</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;But a lot of <a href="https://git-scm.com/downloads/guis">third-party tools</a> provides a graphical interface to <code>git</code> <br>(e.g.&nbsp;<a href="https://posit.co/download/rstudio-desktop/">RStudio</a>, <a href="https://www.gitkraken.com/">GitKraken</a>, <a href="https://desktop.github.com/">GitHub Desktop</a>, extensions for <a href="https://code.visualstudio.com/">VSCode</a>, <a href="https://vscodium.com/">VSCodium</a>, <a href="https://neovim.io/">neovim</a>, etc.)</p>
+<p><br></p>
+<blockquote>
+<p>Just keep in mind that for some operations you will need to use the terminal</p>
+</blockquote>
+</div>
+</section>
+<section id="zoom-on-rstudio" class="slide level2">
+<h2>Zoom on RStudio</h2>
+<p><img data-src="img/git-rstudio.png" style="width:80.0%"></p>
+</section>
+<section id="installation-configuration" class="slide level2">
+<h2>Installation &amp; Configuration</h2>
+<p>…</p>
 </section></section>
 <section>
 <section id="fa-brands-github-collaboration" class="title-slide slide level1 center">

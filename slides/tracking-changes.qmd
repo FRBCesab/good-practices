@@ -1,5 +1,244 @@
 # {{< fa code-branch >}} &nbsp;Tracking changes
 
-## Tracking changes
+## Motivations
 
-Work in progress...
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (without `git`)](img/folder_without_git.png)
+:::
+:::{ .column width="40%" }
+:::
+::::
+
+## Motivations
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (without `git`)](img/folder_without_git.png)
+:::
+:::{ .column width="40%" }
+**Questions**
+
+- Which version of `analyses.R` is the final one?
+- What about `data.csv`?
+- What are the differences between versions?
+- Who have contributed to these versions? When?
+:::
+::::
+
+
+## Motivations
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (without `git`)](img/folder_without_git.png)
+:::
+:::{ .column width="40%" }
+**Questions**
+
+- Which version of `analyses.R` is the final one?
+- What about `data.csv`?
+- What are the differences between versions?
+- Who have contributed to these versions? When?
+
+**Comments**
+
+- It becomes difficult to find new versions names
+- And this folder: what a mess!
+:::
+::::
+
+
+## Motivations
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (without `git`)](img/folder_without_git.png)
+:::
+:::{ .column width="40%" }
+**Questions**
+
+- Which version of `analyses.R` is the final one?
+- What about `data.csv`?
+- What are the differences between versions?
+- Who have contributed to these versions? When?
+
+**Comments**
+
+- It becomes difficult to find new versions names
+- And this folder: what a mess!
+:::
+::::
+
+<br>
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+{{< fa hand-point-right >}} &nbsp;We need a tool that deals with versions for us
+:::
+:::{ .column width="40%" }
+:::
+::::
+
+
+## Motivations
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (without `git`)](img/folder_without_git.png)
+:::
+:::{ .column width="40%" }
+**Questions**
+
+- Which version of `analyses.R` is the final one?
+- What about `data.csv`?
+- What are the differences between versions?
+- Who have contributed to these versions? When?
+
+**Comments**
+
+- It becomes difficult to find new versions names
+- And this folder: what a mess!
+:::
+::::
+
+<br>
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+{{< fa hand-point-right >}} &nbsp;We need a tool that deals with versions for us
+:::
+:::{ .column width="40%" }
+![](img/git-logo-long.png){width=50%}
+:::
+::::
+
+
+
+
+## Motivations
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+![Project content (with `git`)](img/folder_with_git.png)
+:::
+:::{ .column width="40%" }
+:::
+::::
+
+<br>
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+{{< fa hand-point-right >}} &nbsp;We need a tool that deals with versions for us
+:::
+:::{ .column width="40%" }
+![](img/git-logo-long.png){width=50%}
+:::
+::::
+
+
+## Presentation of `git`
+
+- Created by **Linus Torvalds** in 2005 for the development of the Linux kernel
+- [Distributed version control system](https://en.wikipedia.org/wiki/Distributed_version_control) (DVCS) - Peer-to-peer approach
+
+
+<br>
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+:::
+:::{ .column width="40%"}
+![](img/git-logo-long.png)
+:::
+::::
+
+
+## Presentation of `Git`
+
+- Created by **Linus Torvalds** in 2005 for the development of the Linux kernel
+- [Distributed version control system](https://en.wikipedia.org/wiki/Distributed_version_control) (DVCS) - Peer-to-peer approach
+
+
+<br>
+
+::::{ .columns }
+:::{ .column width="60%" align="left"}
+**Advantages of VCS (and `Git`)**
+
+- make contributions transparent (what / who / when / why)
+- keep the entire history of a file (and project)
+- inspect a file throughout its life time
+- revert back to a previous version
+- handle multiple versions (branches)
+- keep your working copy clean
+- facilitate collaborations w/ code hosting platforms
+<br>(GitHub, GitLab, Bitbucket, etc.)
+- backup your project
+:::
+:::{ .column width="40%"}
+![](img/git-logo-long.png)
+:::
+::::
+
+
+## A word of warning
+
+
+**`Git`** and **`GitHub`** are **not the same thing**
+
+- `Git` is a free and open-source **software**
+- `GitHub` (and co) is a **web platform** to host and share projects that use `git`
+
+
+. . . 
+
+<br>
+
+In other words:
+
+> You do not need `GitHub` to use `git` but you cannot use `GitHub` without using `git`
+
+
+## GUI clients
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+![](img/git-cli.png){width=100%}
+:::
+:::{ .column width="50%" align="left"}
+<br>
+
+- `Git` is a command-line interface (CLI)
+- You interact with `git` using a terminal
+- All commands start w/ the keyword `git`
+<br>(`git status / log / add / commit`)
+:::
+::::
+
+
+. . .
+
+{{< fa lightbulb >}} &nbsp;But a lot of [third-party tools](https://git-scm.com/downloads/guis) provides a graphical interface to `git`
+<br>(e.g. [RStudio](https://posit.co/download/rstudio-desktop/), [GitKraken](https://www.gitkraken.com/), [GitHub Desktop](https://desktop.github.com/), extensions for [VSCode](https://code.visualstudio.com/), [VSCodium](https://vscodium.com/), [neovim](https://neovim.io/), etc.)
+
+
+<br>
+
+> Just keep in mind that for some operations you will need to use the terminal
+
+
+## Zoom on RStudio
+
+![](img/git-rstudio.png){width=80%}
+
+## Installation & Configuration
+
+...
+
+
+## Notes
+
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
