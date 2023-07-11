@@ -232,7 +232,7 @@ In other words:
 
 ## Zoom on RStudio
 
-![](img/git-rstudio.png){width=80%}
+![](img/git-rstudio-1.png){width=80%}
 
 ## Installation & Configuration
 
