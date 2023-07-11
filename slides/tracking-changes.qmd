@@ -230,13 +230,116 @@ In other words:
 > Just keep in mind that for some operations you will need to use the terminal
 
 
+
 ## Zoom on RStudio
 
+::::{ .columns }
+:::{ .column width="100%"}
+**Git main panel**
+
 ![](img/git-rstudio.png){width=80%}
+:::
+:::{ .column width="0%"}
+:::
+::::
+
+
+## Zoom on RStudio
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+**Stage files, view differences and commit changes**
+
+![](img/rstudio-change.png){width=100%}
+:::
+:::{ .column width="50%"}
+**View history and versions**
+
+![](img/rstudio-history.png){width=100%}
+:::
+::::
+
+
 
 ## Installation & Configuration
 
+**Installation**
+
+{{< fa hand-point-right >}} &nbsp;`Git` can be downloaded here: <https://git-scm.com/downloads>
+
+Alternatively you can follow this tutorial: <https://frbcesab.github.io/training-courses/installation.html>
+
+<br>
+
+Restart RStudio and check your installation: 
+
+::::{ .columns }
+:::{ .column width="50%"}
+```{r}
+#| echo: true
+Sys.which("git")
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+. . .
+
+<br>
+
+**Configuration**
+
+To use `git`, you need to store your credentials (username and email) that will be added to all your commits.
+Open a terminal and run:
+
+::::{ .columns }
+:::{ .column width="50%"}
+```bash
+git config --global user.name  "Jane Doe"
+git config --global user.email "jane.doe@mail.com"
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+## How `git` works?
+
 ...
+
+
+## Basic workflow
+
+...
+
+
+## The status of a file
+
+...
+
+
+## The `.gitignore`
+
+...
+
+
+## The commit
+
+...
+
+
+## The branches
+
+...
+
+
+## How to...
+
+...
+
 
 
 ## Notes
