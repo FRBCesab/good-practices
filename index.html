@@ -2242,12 +2242,80 @@ Imports:
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Template for <i class="fa-brands fa-r-project" aria-label="r-project"></i> projects available <a href="https://github.com/github/gitignore/blob/main/R.gitignore">here</a></p>
 </div>
 </section>
-<section id="the-commit" class="slide level2">
-<h2>The commit</h2>
-<p>…</p>
+<section id="commits" class="slide level2">
+<h2>Commits</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>When committing a new version (w/ <code>git commit</code>), the following information must be added:</p>
+<ul>
+<li><strong><code>WHO</code></strong> - the person who has made the changes <br>(automatically added by <code>git</code>)</li>
+<li><strong><code>WHEN</code></strong> - the date of the commit <br>(automatically added by <code>git</code>)</li>
+<li><strong><code>WHAT</code></strong> - the files that have been modified <br>(selected by the user w/ <code>git add</code>)</li>
+<li><strong><code>WHY</code></strong> - the reason of the commit, i.e.&nbsp;what has been done compared to the previous version <br>(added by the user w/ <code>git commit</code>)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
 </section>
-<section id="the-branches" class="slide level2">
-<h2>The branches</h2>
+<section id="commits-1" class="slide level2">
+<h2>Commits</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>When committing a new version (w/ <code>git commit</code>), the following information must be added:</p>
+<ul>
+<li><strong><code>WHO</code></strong> - the person who has made the changes <br>(automatically added by <code>git</code>)</li>
+<li><strong><code>WHEN</code></strong> - the date of the commit <br>(automatically added by <code>git</code>)</li>
+<li><strong><code>WHAT</code></strong> - the files that have been modified <br>(selected by the user w/ <code>git add</code>)</li>
+<li><strong><code>WHY</code></strong> - the reason of the commit, i.e.&nbsp;what has been done compared to the previous version <br>(added by the user w/ <code>git commit</code>)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Print the <code>git</code> <strong>history</strong> w/ <code>git log</code></p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">git</span> log <span class="at">--stat</span></span>
+<span id="cb56-2"><a href="#cb56-2"></a></span>
+<span id="cb56-3"><a href="#cb56-3"></a><span class="co"># (*) commit dc4366af56223f533a32ef38794b4e567b0b7422</span></span>
+<span id="cb56-4"><a href="#cb56-4"></a><span class="co"># Author: ahasverus &lt;ahasverus@users.noreply.github.com&gt;</span></span>
+<span id="cb56-5"><a href="#cb56-5"></a><span class="co"># Date:   Wed Jun 28 14:11:20 2023 +0200</span></span>
+<span id="cb56-6"><a href="#cb56-6"></a><span class="co"># </span></span>
+<span id="cb56-7"><a href="#cb56-7"></a><span class="co">#     doc: update CITATION.cff</span></span>
+<span id="cb56-8"><a href="#cb56-8"></a><span class="co"># </span></span>
+<span id="cb56-9"><a href="#cb56-9"></a><span class="co">#  CITATION.cff | 6 +++---</span></span>
+<span id="cb56-10"><a href="#cb56-10"></a><span class="co">#  1 file changed, 3 insertions(+), 3 deletions(-)</span></span>
+<span id="cb56-11"><a href="#cb56-11"></a><span class="co"># </span></span>
+<span id="cb56-12"><a href="#cb56-12"></a><span class="co"># (*) commit 75c0072892544f779105067efc17d361365554e1 </span></span>
+<span id="cb56-13"><a href="#cb56-13"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
+<span id="cb56-14"><a href="#cb56-14"></a><span class="co"># Date:   Wed Jun 28 14:00:15 2023 +0200</span></span>
+<span id="cb56-15"><a href="#cb56-15"></a><span class="co"># </span></span>
+<span id="cb56-16"><a href="#cb56-16"></a><span class="co">#     doc: update references</span></span>
+<span id="cb56-17"><a href="#cb56-17"></a><span class="co"># </span></span>
+<span id="cb56-18"><a href="#cb56-18"></a><span class="co">#  README.Rmd | 6 +++---</span></span>
+<span id="cb56-19"><a href="#cb56-19"></a><span class="co">#  README.md  | 6 +++---</span></span>
+<span id="cb56-20"><a href="#cb56-20"></a><span class="co">#  2 files changed, 6 insertions(+), 6 deletions(-)</span></span>
+<span id="cb56-21"><a href="#cb56-21"></a><span class="co"># </span></span>
+<span id="cb56-22"><a href="#cb56-22"></a><span class="co"># (*) commit 6a00f3539636726c3715a7e94eea04bd30ef8f69</span></span>
+<span id="cb56-23"><a href="#cb56-23"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
+<span id="cb56-24"><a href="#cb56-24"></a><span class="co"># Date:   Wed Jun 28 12:39:48 2023 +0000</span></span>
+<span id="cb56-25"><a href="#cb56-25"></a><span class="co"># </span></span>
+<span id="cb56-26"><a href="#cb56-26"></a><span class="co">#     style: align R code lines</span></span>
+<span id="cb56-27"><a href="#cb56-27"></a><span class="co"># </span></span>
+<span id="cb56-28"><a href="#cb56-28"></a><span class="co">#  joss-paper/paper.bib | 2 +-</span></span>
+<span id="cb56-29"><a href="#cb56-29"></a><span class="co">#  joss-paper/paper.md  | 8 ++++----</span></span>
+<span id="cb56-30"><a href="#cb56-30"></a><span class="co">#  2 files changed, 5 insertions(+), 5 deletions(-)</span></span>
+<span id="cb56-31"><a href="#cb56-31"></a><span class="co">#</span></span>
+<span id="cb56-32"><a href="#cb56-32"></a><span class="co"># (*) commit 6f7d632c7d1dad3acddfb128a2c4a07f1e8a4e9c</span></span>
+<span id="cb56-33"><a href="#cb56-33"></a><span class="co"># ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="commit-message" class="slide level2">
+<h2>Commit message</h2>
+<p><a href="https://initialcommit.com/blog/git-commit-messages-best-practices" class="uri">https://initialcommit.com/blog/git-commit-messages-best-practices</a></p>
+<p><a href="https://reflectoring.io/meaningful-commit-messages/" class="uri">https://reflectoring.io/meaningful-commit-messages/</a></p>
+<p><a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/" class="uri">https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/</a></p>
+<p><a href="https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7" class="uri">https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7</a></p>
+</section>
+<section id="branches" class="slide level2">
+<h2>Branches</h2>
 <p>…</p>
 </section>
 <section id="how-to" class="slide level2">

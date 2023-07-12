@@ -675,13 +675,99 @@ data/raw-data/raw-data.csv
 
 {{< fa hand-point-right >}} &nbsp;Template for {{< fa brands r-project >}} projects available [here](https://github.com/github/gitignore/blob/main/R.gitignore)
 
-
-## The commit
-
-...
+## Commits
 
 
-## The branches
+
+::::{.columns}
+:::{.column width=50%}
+When committing a new version (w/ `git commit`), the following information must be added:
+
+- **`WHO`** - the person who has made the changes
+<br>(automatically added by `git`)
+- **`WHEN`** - the date of the commit
+<br>(automatically added by `git`)
+- **`WHAT`** - the files that have been modified
+<br>(selected by the user w/ `git add`)
+- **`WHY`** - the reason of the commit, i.e. what has been done compared to the previous version
+<br>(added by the user w/ `git commit`)
+:::
+:::{.column width=50%}
+:::
+::::
+
+
+
+## Commits
+
+::::{.columns}
+:::{.column width=50%}
+When committing a new version (w/ `git commit`), the following information must be added:
+
+- **`WHO`** - the person who has made the changes
+<br>(automatically added by `git`)
+- **`WHEN`** - the date of the commit
+<br>(automatically added by `git`)
+- **`WHAT`** - the files that have been modified
+<br>(selected by the user w/ `git add`)
+- **`WHY`** - the reason of the commit, i.e. what has been done compared to the previous version
+<br>(added by the user w/ `git commit`)
+:::
+:::{.column width=50%}
+Print the `git` **history** w/ `git log`
+
+```bash
+git log --stat
+
+# (*) commit dc4366af56223f533a32ef38794b4e567b0b7422
+# Author: ahasverus <ahasverus@users.noreply.github.com>
+# Date:   Wed Jun 28 14:11:20 2023 +0200
+# 
+#     doc: update CITATION.cff
+# 
+#  CITATION.cff | 6 +++---
+#  1 file changed, 3 insertions(+), 3 deletions(-)
+# 
+# (*) commit 75c0072892544f779105067efc17d361365554e1 
+# Author: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
+# Date:   Wed Jun 28 14:00:15 2023 +0200
+# 
+#     doc: update references
+# 
+#  README.Rmd | 6 +++---
+#  README.md  | 6 +++---
+#  2 files changed, 6 insertions(+), 6 deletions(-)
+# 
+# (*) commit 6a00f3539636726c3715a7e94eea04bd30ef8f69
+# Author: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
+# Date:   Wed Jun 28 12:39:48 2023 +0000
+# 
+#     style: align R code lines
+# 
+#  joss-paper/paper.bib | 2 +-
+#  joss-paper/paper.md  | 8 ++++----
+#  2 files changed, 5 insertions(+), 5 deletions(-)
+#
+# (*) commit 6f7d632c7d1dad3acddfb128a2c4a07f1e8a4e9c
+# ...
+```
+:::
+::::
+
+
+## Commit message
+
+<https://initialcommit.com/blog/git-commit-messages-best-practices>
+
+<https://reflectoring.io/meaningful-commit-messages/>
+
+<https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/>
+
+<https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7>
+
+
+
+## Branches
 
 ...
 
