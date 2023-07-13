@@ -402,21 +402,6 @@ git status
 ::::
 
 
-## Basic workflow
-
-{{< fa hand-point-right >}} &nbsp;`Stage` (select) one file
-
-::::{ .columns }
-:::{ .column width="60%"}
-![](img/git-workflow-2.png){width=100%}
-:::
-:::{ .column width="40%"}
-<br>
-```bash
-git add data.csv
-```
-:::
-::::
 
 
 ## Basic workflow
@@ -455,21 +440,6 @@ git status
 
 
 
-## Basic workflow
-
-{{< fa hand-point-right >}} &nbsp;`Stage` (select) several files
-
-::::{ .columns }
-:::{ .column width="60%"}
-![](img/git-workflow-3.png){width=100%}
-:::
-:::{ .column width="40%"}
-<br>
-```bash
-git add data.csv analyses.R
-```
-:::
-::::
 
 
 ## Basic workflow
@@ -506,24 +476,6 @@ git status
 :::
 ::::
 
-
-
-
-## Basic workflow
-
-{{< fa hand-point-right >}} &nbsp;`Stage` (select) all files
-
-::::{ .columns }
-:::{ .column width="60%"}
-![](img/git-workflow-4.png){width=100%}
-:::
-:::{ .column width="40%"}
-<br>
-```bash
-git add .
-```
-:::
-::::
 
 
 ## Basic workflow
@@ -576,17 +528,6 @@ git commit -m "a good commit message"
 
 
 
-## Basic workflow
-
-{{< fa hand-point-right >}} &nbsp;Now we are `up-to-date`
-
-::::{ .columns }
-:::{ .column width="60%"}
-![](img/git-workflow-6.png){width=100%}
-:::
-:::{ .column width="40%"}
-:::
-::::
 
 ## Basic workflow
 
@@ -644,7 +585,7 @@ Which files? For instance:
 . . .
 
 
-The syntax is flexible:
+The syntax is simple:
 
 ::::{ .columns }
 :::{ .column width="50%"}
@@ -723,7 +664,7 @@ git log --stat
 # Author: ahasverus <ahasverus@users.noreply.github.com>
 # Date:   Wed Jun 28 14:11:20 2023 +0200
 # 
-#     doc: update CITATION.cff
+#     docs: update CITATION.cff file
 # 
 #  CITATION.cff | 6 +++---
 #  1 file changed, 3 insertions(+), 3 deletions(-)
@@ -732,7 +673,7 @@ git log --stat
 # Author: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
 # Date:   Wed Jun 28 14:00:15 2023 +0200
 # 
-#     doc: update references
+#     docs: update references in README
 # 
 #  README.Rmd | 6 +++---
 #  README.md  | 6 +++---
@@ -742,7 +683,7 @@ git log --stat
 # Author: Nicolas Casajus <nicolas.casajus@fondationbiodiversite.fr>
 # Date:   Wed Jun 28 12:39:48 2023 +0000
 # 
-#     style: align R code lines
+#     style: align R code lines in MS
 # 
 #  joss-paper/paper.bib | 2 +-
 #  joss-paper/paper.md  | 8 ++++----
@@ -754,27 +695,279 @@ git log --stat
 :::
 ::::
 
+## Commit message
+
+::::{.columns}
+:::{.column width=50%}
+A commit message has a title line, and an optional body
+
+```bash
+# Commit message w/ title and body
+git commit -m "title" -m "body"
+
+# Commit message w/ only title
+git commit -m "title"
+```
+:::
+:::{.column width=50%}
+:::
+::::
+
+
+
 
 ## Commit message
 
-<https://initialcommit.com/blog/git-commit-messages-best-practices>
+::::{.columns}
+:::{.column width=50%}
+A commit message has a title line, and an optional body
 
-<https://reflectoring.io/meaningful-commit-messages/>
+```bash
+# Commit message w/ title and body
+git commit -m "title" -m "body"
 
-<https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/>
+# Commit message w/ only title
+git commit -m "title"
+```
 
-<https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7>
+
+<br>
+
+**What is a good commit message?**
+
+A good commit title:
+
+- should be **capitalized** (according to the `git` [documentation](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project))
+- should be **short** (less than 50 characters)
+- should be **informative** and **unambiguous**
+- should use **active voice** and **present tense**
+:::
+:::{.column width=50%}
+:::
+::::
+
+. . .
+
+<br>
+
+An **optional body** can be added to provide **detailed information** and to link **external references** (e.g. issue, pull request, etc.)
 
 
 
-## Branches
+## Commit message
 
-...
+::::{.columns}
+:::{.column width=50%}
+A commit message has a title line, and an optional body
+
+```bash
+# Commit message w/ title and body
+git commit -m "title" -m "body"
+
+# Commit message w/ only title
+git commit -m "title"
+```
+
+
+<br>
+
+**What is a good commit message?**
+
+A good commit title:
+
+- should be **capitalized** (according to the `git` [documentation](https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project))
+- should be **short** (less than 50 characters)
+- should be **informative** and **unambiguous**
+- should use **active voice** and **present tense**
+:::
+:::{.column width=50%}
+Template provided by `git`:
+
+```txt
+Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+characters or so.  In some contexts, the first line is treated as the
+subject of an email and the rest of the text as the body.  The blank
+line separating the summary from the body is critical (unless you omit
+the body entirely); tools like rebase will confuse you if you run the
+two together.
+
+Write your commit message in the imperative: "Fix bug" and not 
+"Fixed bug" or "Fixes bug."  This convention matches up with commit 
+messages generated by commands like git merge and git revert.
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+
+- Typically a hyphen or asterisk is used for the bullet, followed by a
+  single space, with blank lines in between, but conventions vary here
+
+- Use a hanging indent
+
+Link external references as: Fix #23
+```
+:::
+::::
+
+
+<br>
+
+An **optional body** can be added to provide **detailed information** and to link **external references** (e.g. issue, pull request, etc.)
+
+
+## Conventional commits
+
+This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
+
+. . .
+
+::::{.columns}
+:::{.column width=50%}
+The general structure of a conventional commit message is:
+
+```txt
+[type] [optional scope]: [description]
+
+[optional body]
+
+[optional footer(s)]
+```
+:::
+:::{.column width=50%}
+:::
+::::
+
+
+## Conventional commits
+
+This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
+
+::::{.columns}
+:::{.column width=50%}
+The general structure of a conventional commit message is:
+
+```txt
+[type] [optional scope]: [description]
+
+[optional body]
+
+[optional footer(s)]
+```
+:::
+:::{.column width=50%}
+For example:
+
+```txt
+fix: fix foo to enable bar
+
+This fixes the broken behavior of the component by doing xyz. 
+
+Fix #999
+```
+:::
+::::
+
+
+## Conventional commits
+
+This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
+
+::::{.columns}
+:::{.column width=50%}
+The general structure of a conventional commit message is:
+
+```txt
+[type] [optional scope]: [description]
+
+[optional body]
+
+[optional footer(s)]
+```
+:::
+:::{.column width=50%}
+For example:
+
+```txt
+fix: fix foo to enable bar
+
+This fixes the broken behavior of the component by doing xyz. 
+
+Fix #999
+```
+:::
+::::
+
+<br>
+
+The **commit type** can include the following:
+
+::::{.columns}
+:::{.column width=50%}
+- `feat` - a new feature is introduced with the changes
+- `fix` - a bug fix has occurred
+- `chore` - changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)
+- `refactor` - refactored code that neither fixes a bug nor adds a feature
+- `docs` - updates to documentation such as a the README or other markdown files
+:::
+:::{.column width=50%}
+- `style` - changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
+- `test` - including new or correcting previous tests
+- `perf` - performance improvements
+- `ci` - continuous integration related
+- `build` - changes that affect the build system or external dependencies
+- `revert` - reverts a previous commit 
+:::
+::::
+
+
+## When should you commit?
+
+
+::::{.columns}
+:::{.column width=50%}
+![](img/in-case-of-fire.png){width=90%}
+:::
+:::{.column width=50%}
+:::
+::::
+
+
+## When should you commit?
+
+
+::::{.columns}
+:::{.column width=50%}
+![](img/in-case-of-fire.png){width=90%}
+:::
+:::{.column width=50%}
+<br>
+
+- Commit a new version when you reach a milestone
+- Create small and atomic commits
+- Commit a state that is working
+:::
+::::
 
 
 ## How to...
 
-...
+<!-- **Rewrite the most recent commit message?** -->
+
+. . .
+
+
+
+::::{.columns}
+:::{.column width=50%}
+```bash
+git commit --amend
+```
+:::
+:::{.column width=50%}
+:::
+::::
 
 
 

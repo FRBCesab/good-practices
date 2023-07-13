@@ -2044,57 +2044,60 @@ Imports:
 </div><div class="column" style="width:40%;">
 <p><br></p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb44-1"><a href="#cb44-1"></a><span class="fu">git</span> add data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">git</span> status</span>
+<span id="cb45-2"><a href="#cb45-2"></a></span>
+<span id="cb45-3"><a href="#cb45-3"></a><span class="co"># On branch main</span></span>
+<span id="cb45-4"><a href="#cb45-4"></a><span class="co"># </span></span>
+<span id="cb45-5"><a href="#cb45-5"></a><span class="co"># No commits yet</span></span>
+<span id="cb45-6"><a href="#cb45-6"></a><span class="co"># </span></span>
+<span id="cb45-7"><a href="#cb45-7"></a><span class="co"># Changes to be committed:</span></span>
+<span id="cb45-8"><a href="#cb45-8"></a><span class="co">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span>
+<span id="cb45-9"><a href="#cb45-9"></a><span class="co">#   new file:   data.csv</span></span>
+<span id="cb45-10"><a href="#cb45-10"></a><span class="co"># </span></span>
+<span id="cb45-11"><a href="#cb45-11"></a><span class="co"># Untracked files:</span></span>
+<span id="cb45-12"><a href="#cb45-12"></a><span class="co">#   (use "git add &lt;file&gt;..." to track)</span></span>
+<span id="cb45-13"><a href="#cb45-13"></a><span class="co">#   README.md</span></span>
+<span id="cb45-14"><a href="#cb45-14"></a><span class="co">#   analyses.R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="basic-workflow-3" class="slide level2">
 <h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) one file</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) several files</p>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-2.png" style="width:100.0%"></p>
+<p><img data-src="img/git-workflow-3.png" style="width:100.0%"></p>
 </div><div class="column" style="width:40%;">
 <p><br></p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">git</span> add data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">git</span> add data.csv analyses.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">git</span> status</span>
-<span id="cb46-2"><a href="#cb46-2"></a></span>
-<span id="cb46-3"><a href="#cb46-3"></a><span class="co"># On branch main</span></span>
-<span id="cb46-4"><a href="#cb46-4"></a><span class="co"># </span></span>
-<span id="cb46-5"><a href="#cb46-5"></a><span class="co"># No commits yet</span></span>
-<span id="cb46-6"><a href="#cb46-6"></a><span class="co"># </span></span>
-<span id="cb46-7"><a href="#cb46-7"></a><span class="co"># Changes to be committed:</span></span>
-<span id="cb46-8"><a href="#cb46-8"></a><span class="co">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span>
-<span id="cb46-9"><a href="#cb46-9"></a><span class="co">#   new file:   data.csv</span></span>
-<span id="cb46-10"><a href="#cb46-10"></a><span class="co"># </span></span>
-<span id="cb46-11"><a href="#cb46-11"></a><span class="co"># Untracked files:</span></span>
-<span id="cb46-12"><a href="#cb46-12"></a><span class="co">#   (use "git add &lt;file&gt;..." to track)</span></span>
-<span id="cb46-13"><a href="#cb46-13"></a><span class="co">#   README.md</span></span>
-<span id="cb46-14"><a href="#cb46-14"></a><span class="co">#   analyses.R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">git</span> status</span>
+<span id="cb47-2"><a href="#cb47-2"></a></span>
+<span id="cb47-3"><a href="#cb47-3"></a><span class="co"># On branch main</span></span>
+<span id="cb47-4"><a href="#cb47-4"></a><span class="co"># </span></span>
+<span id="cb47-5"><a href="#cb47-5"></a><span class="co"># No commits yet</span></span>
+<span id="cb47-6"><a href="#cb47-6"></a><span class="co"># </span></span>
+<span id="cb47-7"><a href="#cb47-7"></a><span class="co"># Changes to be committed:</span></span>
+<span id="cb47-8"><a href="#cb47-8"></a><span class="co">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span>
+<span id="cb47-9"><a href="#cb47-9"></a><span class="co">#   new file:   analyses.R</span></span>
+<span id="cb47-10"><a href="#cb47-10"></a><span class="co">#   new file:   data.csv</span></span>
+<span id="cb47-11"><a href="#cb47-11"></a><span class="co"># </span></span>
+<span id="cb47-12"><a href="#cb47-12"></a><span class="co"># Untracked files:</span></span>
+<span id="cb47-13"><a href="#cb47-13"></a><span class="co">#   (use "git add &lt;file&gt;..." to track)</span></span>
+<span id="cb47-14"><a href="#cb47-14"></a><span class="co">#   README.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="basic-workflow-4" class="slide level2">
 <h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) several files</p>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) all files</p>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-3.png" style="width:100.0%"></p>
+<p><img data-src="img/git-workflow-4.png" style="width:100.0%"></p>
 </div><div class="column" style="width:40%;">
 <p><br></p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">git</span> add data.csv analyses.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="basic-workflow-5" class="slide level2">
-<h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) several files</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-3.png" style="width:100.0%"></p>
-</div><div class="column" style="width:40%;">
-<p><br></p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">git</span> add data.csv analyses.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1"></a><span class="fu">git</span> status</span>
 <span id="cb49-2"><a href="#cb49-2"></a></span>
@@ -2106,50 +2109,11 @@ Imports:
 <span id="cb49-8"><a href="#cb49-8"></a><span class="co">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span>
 <span id="cb49-9"><a href="#cb49-9"></a><span class="co">#   new file:   analyses.R</span></span>
 <span id="cb49-10"><a href="#cb49-10"></a><span class="co">#   new file:   data.csv</span></span>
-<span id="cb49-11"><a href="#cb49-11"></a><span class="co"># </span></span>
-<span id="cb49-12"><a href="#cb49-12"></a><span class="co"># Untracked files:</span></span>
-<span id="cb49-13"><a href="#cb49-13"></a><span class="co">#   (use "git add &lt;file&gt;..." to track)</span></span>
-<span id="cb49-14"><a href="#cb49-14"></a><span class="co">#   README.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb49-11"><a href="#cb49-11"></a><span class="co">#   new file:   README.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
-<section id="basic-workflow-6" class="slide level2">
-<h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) all files</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-4.png" style="width:100.0%"></p>
-</div><div class="column" style="width:40%;">
-<p><br></p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="basic-workflow-7" class="slide level2">
-<h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> (select) all files</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-4.png" style="width:100.0%"></p>
-</div><div class="column" style="width:40%;">
-<p><br></p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">git</span> status</span>
-<span id="cb52-2"><a href="#cb52-2"></a></span>
-<span id="cb52-3"><a href="#cb52-3"></a><span class="co"># On branch main</span></span>
-<span id="cb52-4"><a href="#cb52-4"></a><span class="co"># </span></span>
-<span id="cb52-5"><a href="#cb52-5"></a><span class="co"># No commits yet</span></span>
-<span id="cb52-6"><a href="#cb52-6"></a><span class="co"># </span></span>
-<span id="cb52-7"><a href="#cb52-7"></a><span class="co"># Changes to be committed:</span></span>
-<span id="cb52-8"><a href="#cb52-8"></a><span class="co">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span>
-<span id="cb52-9"><a href="#cb52-9"></a><span class="co">#   new file:   analyses.R</span></span>
-<span id="cb52-10"><a href="#cb52-10"></a><span class="co">#   new file:   data.csv</span></span>
-<span id="cb52-11"><a href="#cb52-11"></a><span class="co">#   new file:   README.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="basic-workflow-8" class="slide level2">
+<section id="basic-workflow-5" class="slide level2">
 <h2>Basic workflow</h2>
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Commit</code> changes to create a new version</p>
 <div class="columns">
@@ -2157,22 +2121,11 @@ Imports:
 <p><img data-src="img/git-workflow-5.png" style="width:100.0%"></p>
 </div><div class="column" style="width:40%;">
 <p><br></p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"a good commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"a good commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
-<section id="basic-workflow-9" class="slide level2">
-<h2>Basic workflow</h2>
-<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Now we are <code>up-to-date</code></p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="img/git-workflow-6.png" style="width:100.0%"></p>
-</div><div class="column" style="width:40%;">
-
-</div>
-</div>
-</section>
-<section id="basic-workflow-10" class="slide level2">
+<section id="basic-workflow-6" class="slide level2">
 <h2>Basic workflow</h2>
 <p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Now we are <code>up-to-date</code></p>
 <div class="columns">
@@ -2180,10 +2133,10 @@ Imports:
 <p><img data-src="img/git-workflow-6.png" style="width:100.0%"></p>
 </div><div class="column" style="width:40%;">
 <p><br></p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">git</span> status</span>
-<span id="cb54-2"><a href="#cb54-2"></a></span>
-<span id="cb54-3"><a href="#cb54-3"></a><span class="co"># On branch main</span></span>
-<span id="cb54-4"><a href="#cb54-4"></a><span class="co"># nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">git</span> status</span>
+<span id="cb51-2"><a href="#cb51-2"></a></span>
+<span id="cb51-3"><a href="#cb51-3"></a><span class="co"># On branch main</span></span>
+<span id="cb51-4"><a href="#cb51-4"></a><span class="co"># nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -2215,23 +2168,23 @@ Imports:
 <li>large files</li>
 </ul>
 <div class="fragment">
-<p>The syntax is flexible:</p>
+<p>The syntax is simple:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb55-1"><a href="#cb55-1"></a># Ignore a specific file</span>
-<span id="cb55-2"><a href="#cb55-2"></a>README.html</span>
-<span id="cb55-3"><a href="#cb55-3"></a></span>
-<span id="cb55-4"><a href="#cb55-4"></a># Ignore all PDF</span>
-<span id="cb55-5"><a href="#cb55-5"></a>*.pdf</span>
-<span id="cb55-6"><a href="#cb55-6"></a></span>
-<span id="cb55-7"><a href="#cb55-7"></a># Ignore a folder</span>
-<span id="cb55-8"><a href="#cb55-8"></a>data/</span>
-<span id="cb55-9"><a href="#cb55-9"></a></span>
-<span id="cb55-10"><a href="#cb55-10"></a># Ignore a subfolder</span>
-<span id="cb55-11"><a href="#cb55-11"></a>data/raw-data/</span>
-<span id="cb55-12"><a href="#cb55-12"></a></span>
-<span id="cb55-13"><a href="#cb55-13"></a># Ignore a specific file in a subfolder</span>
-<span id="cb55-14"><a href="#cb55-14"></a>data/raw-data/raw-data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb52-1"><a href="#cb52-1"></a># Ignore a specific file</span>
+<span id="cb52-2"><a href="#cb52-2"></a>README.html</span>
+<span id="cb52-3"><a href="#cb52-3"></a></span>
+<span id="cb52-4"><a href="#cb52-4"></a># Ignore all PDF</span>
+<span id="cb52-5"><a href="#cb52-5"></a>*.pdf</span>
+<span id="cb52-6"><a href="#cb52-6"></a></span>
+<span id="cb52-7"><a href="#cb52-7"></a># Ignore a folder</span>
+<span id="cb52-8"><a href="#cb52-8"></a>data/</span>
+<span id="cb52-9"><a href="#cb52-9"></a></span>
+<span id="cb52-10"><a href="#cb52-10"></a># Ignore a subfolder</span>
+<span id="cb52-11"><a href="#cb52-11"></a>data/raw-data/</span>
+<span id="cb52-12"><a href="#cb52-12"></a></span>
+<span id="cb52-13"><a href="#cb52-13"></a># Ignore a specific file in a subfolder</span>
+<span id="cb52-14"><a href="#cb52-14"></a>data/raw-data/raw-data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 
 </div>
@@ -2271,56 +2224,266 @@ Imports:
 </ul>
 </div><div class="column" style="width:50%;">
 <p>Print the <code>git</code> <strong>history</strong> w/ <code>git log</code></p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">git</span> log <span class="at">--stat</span></span>
-<span id="cb56-2"><a href="#cb56-2"></a></span>
-<span id="cb56-3"><a href="#cb56-3"></a><span class="co"># (*) commit dc4366af56223f533a32ef38794b4e567b0b7422</span></span>
-<span id="cb56-4"><a href="#cb56-4"></a><span class="co"># Author: ahasverus &lt;ahasverus@users.noreply.github.com&gt;</span></span>
-<span id="cb56-5"><a href="#cb56-5"></a><span class="co"># Date:   Wed Jun 28 14:11:20 2023 +0200</span></span>
-<span id="cb56-6"><a href="#cb56-6"></a><span class="co"># </span></span>
-<span id="cb56-7"><a href="#cb56-7"></a><span class="co">#     doc: update CITATION.cff</span></span>
-<span id="cb56-8"><a href="#cb56-8"></a><span class="co"># </span></span>
-<span id="cb56-9"><a href="#cb56-9"></a><span class="co">#  CITATION.cff | 6 +++---</span></span>
-<span id="cb56-10"><a href="#cb56-10"></a><span class="co">#  1 file changed, 3 insertions(+), 3 deletions(-)</span></span>
-<span id="cb56-11"><a href="#cb56-11"></a><span class="co"># </span></span>
-<span id="cb56-12"><a href="#cb56-12"></a><span class="co"># (*) commit 75c0072892544f779105067efc17d361365554e1 </span></span>
-<span id="cb56-13"><a href="#cb56-13"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
-<span id="cb56-14"><a href="#cb56-14"></a><span class="co"># Date:   Wed Jun 28 14:00:15 2023 +0200</span></span>
-<span id="cb56-15"><a href="#cb56-15"></a><span class="co"># </span></span>
-<span id="cb56-16"><a href="#cb56-16"></a><span class="co">#     doc: update references</span></span>
-<span id="cb56-17"><a href="#cb56-17"></a><span class="co"># </span></span>
-<span id="cb56-18"><a href="#cb56-18"></a><span class="co">#  README.Rmd | 6 +++---</span></span>
-<span id="cb56-19"><a href="#cb56-19"></a><span class="co">#  README.md  | 6 +++---</span></span>
-<span id="cb56-20"><a href="#cb56-20"></a><span class="co">#  2 files changed, 6 insertions(+), 6 deletions(-)</span></span>
-<span id="cb56-21"><a href="#cb56-21"></a><span class="co"># </span></span>
-<span id="cb56-22"><a href="#cb56-22"></a><span class="co"># (*) commit 6a00f3539636726c3715a7e94eea04bd30ef8f69</span></span>
-<span id="cb56-23"><a href="#cb56-23"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
-<span id="cb56-24"><a href="#cb56-24"></a><span class="co"># Date:   Wed Jun 28 12:39:48 2023 +0000</span></span>
-<span id="cb56-25"><a href="#cb56-25"></a><span class="co"># </span></span>
-<span id="cb56-26"><a href="#cb56-26"></a><span class="co">#     style: align R code lines</span></span>
-<span id="cb56-27"><a href="#cb56-27"></a><span class="co"># </span></span>
-<span id="cb56-28"><a href="#cb56-28"></a><span class="co">#  joss-paper/paper.bib | 2 +-</span></span>
-<span id="cb56-29"><a href="#cb56-29"></a><span class="co">#  joss-paper/paper.md  | 8 ++++----</span></span>
-<span id="cb56-30"><a href="#cb56-30"></a><span class="co">#  2 files changed, 5 insertions(+), 5 deletions(-)</span></span>
-<span id="cb56-31"><a href="#cb56-31"></a><span class="co">#</span></span>
-<span id="cb56-32"><a href="#cb56-32"></a><span class="co"># (*) commit 6f7d632c7d1dad3acddfb128a2c4a07f1e8a4e9c</span></span>
-<span id="cb56-33"><a href="#cb56-33"></a><span class="co"># ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">git</span> log <span class="at">--stat</span></span>
+<span id="cb53-2"><a href="#cb53-2"></a></span>
+<span id="cb53-3"><a href="#cb53-3"></a><span class="co"># (*) commit dc4366af56223f533a32ef38794b4e567b0b7422</span></span>
+<span id="cb53-4"><a href="#cb53-4"></a><span class="co"># Author: ahasverus &lt;ahasverus@users.noreply.github.com&gt;</span></span>
+<span id="cb53-5"><a href="#cb53-5"></a><span class="co"># Date:   Wed Jun 28 14:11:20 2023 +0200</span></span>
+<span id="cb53-6"><a href="#cb53-6"></a><span class="co"># </span></span>
+<span id="cb53-7"><a href="#cb53-7"></a><span class="co">#     docs: update CITATION.cff file</span></span>
+<span id="cb53-8"><a href="#cb53-8"></a><span class="co"># </span></span>
+<span id="cb53-9"><a href="#cb53-9"></a><span class="co">#  CITATION.cff | 6 +++---</span></span>
+<span id="cb53-10"><a href="#cb53-10"></a><span class="co">#  1 file changed, 3 insertions(+), 3 deletions(-)</span></span>
+<span id="cb53-11"><a href="#cb53-11"></a><span class="co"># </span></span>
+<span id="cb53-12"><a href="#cb53-12"></a><span class="co"># (*) commit 75c0072892544f779105067efc17d361365554e1 </span></span>
+<span id="cb53-13"><a href="#cb53-13"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
+<span id="cb53-14"><a href="#cb53-14"></a><span class="co"># Date:   Wed Jun 28 14:00:15 2023 +0200</span></span>
+<span id="cb53-15"><a href="#cb53-15"></a><span class="co"># </span></span>
+<span id="cb53-16"><a href="#cb53-16"></a><span class="co">#     docs: update references in README</span></span>
+<span id="cb53-17"><a href="#cb53-17"></a><span class="co"># </span></span>
+<span id="cb53-18"><a href="#cb53-18"></a><span class="co">#  README.Rmd | 6 +++---</span></span>
+<span id="cb53-19"><a href="#cb53-19"></a><span class="co">#  README.md  | 6 +++---</span></span>
+<span id="cb53-20"><a href="#cb53-20"></a><span class="co">#  2 files changed, 6 insertions(+), 6 deletions(-)</span></span>
+<span id="cb53-21"><a href="#cb53-21"></a><span class="co"># </span></span>
+<span id="cb53-22"><a href="#cb53-22"></a><span class="co"># (*) commit 6a00f3539636726c3715a7e94eea04bd30ef8f69</span></span>
+<span id="cb53-23"><a href="#cb53-23"></a><span class="co"># Author: Nicolas Casajus &lt;nicolas.casajus@fondationbiodiversite.fr&gt;</span></span>
+<span id="cb53-24"><a href="#cb53-24"></a><span class="co"># Date:   Wed Jun 28 12:39:48 2023 +0000</span></span>
+<span id="cb53-25"><a href="#cb53-25"></a><span class="co"># </span></span>
+<span id="cb53-26"><a href="#cb53-26"></a><span class="co">#     style: align R code lines in MS</span></span>
+<span id="cb53-27"><a href="#cb53-27"></a><span class="co"># </span></span>
+<span id="cb53-28"><a href="#cb53-28"></a><span class="co">#  joss-paper/paper.bib | 2 +-</span></span>
+<span id="cb53-29"><a href="#cb53-29"></a><span class="co">#  joss-paper/paper.md  | 8 ++++----</span></span>
+<span id="cb53-30"><a href="#cb53-30"></a><span class="co">#  2 files changed, 5 insertions(+), 5 deletions(-)</span></span>
+<span id="cb53-31"><a href="#cb53-31"></a><span class="co">#</span></span>
+<span id="cb53-32"><a href="#cb53-32"></a><span class="co"># (*) commit 6f7d632c7d1dad3acddfb128a2c4a07f1e8a4e9c</span></span>
+<span id="cb53-33"><a href="#cb53-33"></a><span class="co"># ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="commit-message" class="slide level2">
 <h2>Commit message</h2>
-<p><a href="https://initialcommit.com/blog/git-commit-messages-best-practices" class="uri">https://initialcommit.com/blog/git-commit-messages-best-practices</a></p>
-<p><a href="https://reflectoring.io/meaningful-commit-messages/" class="uri">https://reflectoring.io/meaningful-commit-messages/</a></p>
-<p><a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/" class="uri">https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/</a></p>
-<p><a href="https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7" class="uri">https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7</a></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A commit message has a title line, and an optional body</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1"></a><span class="co"># Commit message w/ title and body</span></span>
+<span id="cb54-2"><a href="#cb54-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span> <span class="at">-m</span> <span class="st">"body"</span></span>
+<span id="cb54-3"><a href="#cb54-3"></a></span>
+<span id="cb54-4"><a href="#cb54-4"></a><span class="co"># Commit message w/ only title</span></span>
+<span id="cb54-5"><a href="#cb54-5"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
 </section>
-<section id="branches" class="slide level2">
-<h2>Branches</h2>
-<p>…</p>
+<section id="commit-message-1" class="slide level2">
+<h2>Commit message</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A commit message has a title line, and an optional body</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1"></a><span class="co"># Commit message w/ title and body</span></span>
+<span id="cb55-2"><a href="#cb55-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span> <span class="at">-m</span> <span class="st">"body"</span></span>
+<span id="cb55-3"><a href="#cb55-3"></a></span>
+<span id="cb55-4"><a href="#cb55-4"></a><span class="co"># Commit message w/ only title</span></span>
+<span id="cb55-5"><a href="#cb55-5"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><strong>What is a good commit message?</strong></p>
+<p>A good commit title:</p>
+<ul>
+<li>should be <strong>capitalized</strong> (according to the <code>git</code> <a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project">documentation</a>)</li>
+<li>should be <strong>short</strong> (less than 50 characters)</li>
+<li>should be <strong>informative</strong> and <strong>unambiguous</strong></li>
+<li>should use <strong>active voice</strong> and <strong>present tense</strong></li>
+</ul>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>An <strong>optional body</strong> can be added to provide <strong>detailed information</strong> and to link <strong>external references</strong> (e.g.&nbsp;issue, pull request, etc.)</p>
+</div>
+</section>
+<section id="commit-message-2" class="slide level2">
+<h2>Commit message</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A commit message has a title line, and an optional body</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1"></a><span class="co"># Commit message w/ title and body</span></span>
+<span id="cb56-2"><a href="#cb56-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span> <span class="at">-m</span> <span class="st">"body"</span></span>
+<span id="cb56-3"><a href="#cb56-3"></a></span>
+<span id="cb56-4"><a href="#cb56-4"></a><span class="co"># Commit message w/ only title</span></span>
+<span id="cb56-5"><a href="#cb56-5"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"title"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><strong>What is a good commit message?</strong></p>
+<p>A good commit title:</p>
+<ul>
+<li>should be <strong>capitalized</strong> (according to the <code>git</code> <a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project">documentation</a>)</li>
+<li>should be <strong>short</strong> (less than 50 characters)</li>
+<li>should be <strong>informative</strong> and <strong>unambiguous</strong></li>
+<li>should use <strong>active voice</strong> and <strong>present tense</strong></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Template provided by <code>git</code>:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb57-1"><a href="#cb57-1"></a>Capitalized, short (50 chars or less) summary</span>
+<span id="cb57-2"><a href="#cb57-2"></a></span>
+<span id="cb57-3"><a href="#cb57-3"></a>More detailed explanatory text, if necessary.  Wrap it to about 72</span>
+<span id="cb57-4"><a href="#cb57-4"></a>characters or so.  In some contexts, the first line is treated as the</span>
+<span id="cb57-5"><a href="#cb57-5"></a>subject of an email and the rest of the text as the body.  The blank</span>
+<span id="cb57-6"><a href="#cb57-6"></a>line separating the summary from the body is critical (unless you omit</span>
+<span id="cb57-7"><a href="#cb57-7"></a>the body entirely); tools like rebase will confuse you if you run the</span>
+<span id="cb57-8"><a href="#cb57-8"></a>two together.</span>
+<span id="cb57-9"><a href="#cb57-9"></a></span>
+<span id="cb57-10"><a href="#cb57-10"></a>Write your commit message in the imperative: "Fix bug" and not </span>
+<span id="cb57-11"><a href="#cb57-11"></a>"Fixed bug" or "Fixes bug."  This convention matches up with commit </span>
+<span id="cb57-12"><a href="#cb57-12"></a>messages generated by commands like git merge and git revert.</span>
+<span id="cb57-13"><a href="#cb57-13"></a></span>
+<span id="cb57-14"><a href="#cb57-14"></a>Further paragraphs come after blank lines.</span>
+<span id="cb57-15"><a href="#cb57-15"></a></span>
+<span id="cb57-16"><a href="#cb57-16"></a>- Bullet points are okay, too</span>
+<span id="cb57-17"><a href="#cb57-17"></a></span>
+<span id="cb57-18"><a href="#cb57-18"></a>- Typically a hyphen or asterisk is used for the bullet, followed by a</span>
+<span id="cb57-19"><a href="#cb57-19"></a>  single space, with blank lines in between, but conventions vary here</span>
+<span id="cb57-20"><a href="#cb57-20"></a></span>
+<span id="cb57-21"><a href="#cb57-21"></a>- Use a hanging indent</span>
+<span id="cb57-22"><a href="#cb57-22"></a></span>
+<span id="cb57-23"><a href="#cb57-23"></a>Link external references as: Fix #23</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><br></p>
+<p>An <strong>optional body</strong> can be added to provide <strong>detailed information</strong> and to link <strong>external references</strong> (e.g.&nbsp;issue, pull request, etc.)</p>
+</section>
+<section id="conventional-commits" class="slide level2">
+<h2>Conventional commits</h2>
+<p>This <a href="https://www.conventionalcommits.org/en/v1.0.0/">specification</a> can help you writing more robust commit messages</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The general structure of a conventional commit message is:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb58-1"><a href="#cb58-1"></a>[type] [optional scope]: [description]</span>
+<span id="cb58-2"><a href="#cb58-2"></a></span>
+<span id="cb58-3"><a href="#cb58-3"></a>[optional body]</span>
+<span id="cb58-4"><a href="#cb58-4"></a></span>
+<span id="cb58-5"><a href="#cb58-5"></a>[optional footer(s)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</div>
+</section>
+<section id="conventional-commits-1" class="slide level2">
+<h2>Conventional commits</h2>
+<p>This <a href="https://www.conventionalcommits.org/en/v1.0.0/">specification</a> can help you writing more robust commit messages</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The general structure of a conventional commit message is:</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb59-1"><a href="#cb59-1"></a>[type] [optional scope]: [description]</span>
+<span id="cb59-2"><a href="#cb59-2"></a></span>
+<span id="cb59-3"><a href="#cb59-3"></a>[optional body]</span>
+<span id="cb59-4"><a href="#cb59-4"></a></span>
+<span id="cb59-5"><a href="#cb59-5"></a>[optional footer(s)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p>For example:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb60-1"><a href="#cb60-1"></a>fix: fix foo to enable bar</span>
+<span id="cb60-2"><a href="#cb60-2"></a></span>
+<span id="cb60-3"><a href="#cb60-3"></a>This fixes the broken behavior of the component by doing xyz. </span>
+<span id="cb60-4"><a href="#cb60-4"></a></span>
+<span id="cb60-5"><a href="#cb60-5"></a>Fix #999</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="conventional-commits-2" class="slide level2">
+<h2>Conventional commits</h2>
+<p>This <a href="https://www.conventionalcommits.org/en/v1.0.0/">specification</a> can help you writing more robust commit messages</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The general structure of a conventional commit message is:</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb61-1"><a href="#cb61-1"></a>[type] [optional scope]: [description]</span>
+<span id="cb61-2"><a href="#cb61-2"></a></span>
+<span id="cb61-3"><a href="#cb61-3"></a>[optional body]</span>
+<span id="cb61-4"><a href="#cb61-4"></a></span>
+<span id="cb61-5"><a href="#cb61-5"></a>[optional footer(s)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p>For example:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb62-1"><a href="#cb62-1"></a>fix: fix foo to enable bar</span>
+<span id="cb62-2"><a href="#cb62-2"></a></span>
+<span id="cb62-3"><a href="#cb62-3"></a>This fixes the broken behavior of the component by doing xyz. </span>
+<span id="cb62-4"><a href="#cb62-4"></a></span>
+<span id="cb62-5"><a href="#cb62-5"></a>Fix #999</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><br></p>
+<p>The <strong>commit type</strong> can include the following:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><code>feat</code> - a new feature is introduced with the changes</li>
+<li><code>fix</code> - a bug fix has occurred</li>
+<li><code>chore</code> - changes that do not relate to a fix or feature and don’t modify src or test files (for example updating dependencies)</li>
+<li><code>refactor</code> - refactored code that neither fixes a bug nor adds a feature</li>
+<li><code>docs</code> - updates to documentation such as a the README or other markdown files</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><code>style</code> - changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.</li>
+<li><code>test</code> - including new or correcting previous tests</li>
+<li><code>perf</code> - performance improvements</li>
+<li><code>ci</code> - continuous integration related</li>
+<li><code>build</code> - changes that affect the build system or external dependencies</li>
+<li><code>revert</code> - reverts a previous commit</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="when-should-you-commit" class="slide level2">
+<h2>When should you commit?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/in-case-of-fire.png" style="width:90.0%"></p>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="when-should-you-commit-1" class="slide level2">
+<h2>When should you commit?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/in-case-of-fire.png" style="width:90.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><br></p>
+<ul>
+<li>Commit a new version when you reach a milestone</li>
+<li>Create small and atomic commits</li>
+<li>Commit a state that is working</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="how-to" class="slide level2">
 <h2>How to…</h2>
-<p>…</p>
+<p><strong>Rewrite the most recent commit message?</strong></p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb63"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">git</span> commit <span class="at">--amend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>git init</code></td>
+<td style="text-align: left;">Initialize a local git repository</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section>
 <section id="notes" class="slide level2">
 <h2>Notes</h2>
