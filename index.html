@@ -2459,35 +2459,166 @@ Imports:
 </div>
 </div>
 </section>
-<section id="how-to" class="slide level2">
-<h2>How to…</h2>
-<p><strong>Rewrite the most recent commit message?</strong></p>
+<section id="undoing-things" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>1. Undo recent, uncommitted and unstaged changes</strong></p>
+<p>You have modified a file but have not staged changes and you want to restore the previous version</p>
 <div class="fragment">
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="sourceCode" id="cb63"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">git</span> commit <span class="at">--amend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Command</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><code>git init</code></td>
-<td style="text-align: left;">Initialize a local git repository</td>
-</tr>
-</tbody>
-</table>
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-7.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">git</span> status</span>
+<span id="cb63-2"><a href="#cb63-2"></a></span>
+<span id="cb63-3"><a href="#cb63-3"></a><span class="co"># On branch main</span></span>
+<span id="cb63-4"><a href="#cb63-4"></a><span class="co"># Changes not staged for commit:</span></span>
+<span id="cb63-5"><a href="#cb63-5"></a><span class="co">#   (use "git add &lt;file&gt;..." to stage changes)</span></span>
+<span id="cb63-6"><a href="#cb63-6"></a><span class="co">#   (use "git restore &lt;file&gt;..." to discard changes)</span></span>
+<span id="cb63-7"><a href="#cb63-7"></a><span class="co">#   modified:   data.csv</span></span>
+<span id="cb63-8"><a href="#cb63-8"></a><span class="co">#</span></span>
+<span id="cb63-9"><a href="#cb63-9"></a><span class="co"># No changes added to commit</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="notes" class="slide level2">
-<h2>Notes</h2>
-<p>https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository</p>
+<section id="undoing-things-1" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>1. Undo recent, uncommitted and unstaged changes</strong></p>
+<p>You have modified a file but have not staged changes and you want to restore the previous version</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-8.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb64-1"><a href="#cb64-1"></a><span class="co"># Restore one file (discard unstaged changes)</span></span>
+<span id="cb64-2"><a href="#cb64-2"></a><span class="fu">git</span> restore data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb65-1"><a href="#cb65-1"></a><span class="fu">git</span> status</span>
+<span id="cb65-2"><a href="#cb65-2"></a></span>
+<span id="cb65-3"><a href="#cb65-3"></a><span class="co"># On branch main</span></span>
+<span id="cb65-4"><a href="#cb65-4"></a><span class="co"># Nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="undoing-things-2" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>1. Undo recent, uncommitted and unstaged changes</strong></p>
+<p>You have modified a file but have not staged changes and you want to restore the previous version</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-8.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb66-1"><a href="#cb66-1"></a><span class="co"># Restore one file (discard unstaged changes)</span></span>
+<span id="cb66-2"><a href="#cb66-2"></a><span class="fu">git</span> restore data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb67-1"><a href="#cb67-1"></a><span class="fu">git</span> status</span>
+<span id="cb67-2"><a href="#cb67-2"></a></span>
+<span id="cb67-3"><a href="#cb67-3"></a><span class="co"># On branch main</span></span>
+<span id="cb67-4"><a href="#cb67-4"></a><span class="co"># Nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> &nbsp;To discard all changes:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb68-1"><a href="#cb68-1"></a><span class="co"># Cancel all non-staged changes</span></span>
+<span id="cb68-2"><a href="#cb68-2"></a><span class="fu">git</span> restore .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="undoing-things-3" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>2. Unstaged uncommitted files</strong></p>
+<p>You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-9.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb69-1"><a href="#cb69-1"></a><span class="fu">git</span> status</span>
+<span id="cb69-2"><a href="#cb69-2"></a></span>
+<span id="cb69-3"><a href="#cb69-3"></a><span class="co"># On branch main</span></span>
+<span id="cb69-4"><a href="#cb69-4"></a><span class="co"># Changes to be committed:</span></span>
+<span id="cb69-5"><a href="#cb69-5"></a><span class="co">#   (use "git restore --staged &lt;file&gt;..." to unstage)</span></span>
+<span id="cb69-6"><a href="#cb69-6"></a><span class="co">#   modified:   data.csv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="undoing-things-4" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>2. Unstaged uncommitted files</strong></p>
+<p>You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-10.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1"></a><span class="co"># Unstage one file</span></span>
+<span id="cb70-2"><a href="#cb70-2"></a><span class="fu">git</span> restore <span class="at">--staged</span> data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb71-1"><a href="#cb71-1"></a><span class="fu">git</span> status</span>
+<span id="cb71-2"><a href="#cb71-2"></a></span>
+<span id="cb71-3"><a href="#cb71-3"></a><span class="co"># On branch main</span></span>
+<span id="cb71-4"><a href="#cb71-4"></a><span class="co"># Changes not staged for commit:</span></span>
+<span id="cb71-5"><a href="#cb71-5"></a><span class="co">#   (use "git add &lt;file&gt;..." to stage changes)</span></span>
+<span id="cb71-6"><a href="#cb71-6"></a><span class="co">#   (use "git restore &lt;file&gt;..." to discard changes)</span></span>
+<span id="cb71-7"><a href="#cb71-7"></a><span class="co">#   modified:   data.csv</span></span>
+<span id="cb71-8"><a href="#cb71-8"></a><span class="co">#</span></span>
+<span id="cb71-9"><a href="#cb71-9"></a><span class="co"># No changes added to commit</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="undoing-things-5" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>2. Unstaged uncommitted files</strong></p>
+<p>You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-8.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb72-1"><a href="#cb72-1"></a><span class="co"># Unstage one file</span></span>
+<span id="cb72-2"><a href="#cb72-2"></a><span class="fu">git</span> restore <span class="at">--staged</span> data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb73-1"><a href="#cb73-1"></a><span class="fu">git</span> status</span>
+<span id="cb73-2"><a href="#cb73-2"></a></span>
+<span id="cb73-3"><a href="#cb73-3"></a><span class="co"># On branch main</span></span>
+<span id="cb73-4"><a href="#cb73-4"></a><span class="co"># Changes not staged for commit:</span></span>
+<span id="cb73-5"><a href="#cb73-5"></a><span class="co">#   (use "git add &lt;file&gt;..." to stage changes)</span></span>
+<span id="cb73-6"><a href="#cb73-6"></a><span class="co">#   (use "git restore &lt;file&gt;..." to discard changes)</span></span>
+<span id="cb73-7"><a href="#cb73-7"></a><span class="co">#   modified:   data.csv</span></span>
+<span id="cb73-8"><a href="#cb73-8"></a><span class="co">#</span></span>
+<span id="cb73-9"><a href="#cb73-9"></a><span class="co"># No changes added to commit</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br> You can now restore the previous version w/:</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb74-1"><a href="#cb74-1"></a><span class="co"># Discard changes (restore previous version)</span></span>
+<span id="cb74-2"><a href="#cb74-2"></a><span class="fu">git</span> restore data.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="undoing-things-6" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>3. Change the most recent commit message</strong></p>
+<p>You have committed a new version but you want to change the commit message</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-6.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb75-1"><a href="#cb75-1"></a><span class="co"># Change message of the last commit</span></span>
+<span id="cb75-2"><a href="#cb75-2"></a><span class="fu">git</span> commit <span class="at">--amend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br> Note that this will also change the ID of the commit</p>
+</div>
+</div>
+</div>
+</section>
+<section id="undoing-things-7" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>4. Revert one commit</strong></p>
+</section>
+<section id="undoing-things-8" class="slide level2">
+<h2>Undoing things</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp; <strong>5. Deleting commits</strong></p>
 </section></section>
 <section>
 <section id="fa-brands-github-collaboration" class="title-slide slide level1 center">
@@ -2569,7 +2700,7 @@ Imports:
 </div>
 </div>
 </section>
-<section id="notes-1" class="slide level2">
+<section id="notes" class="slide level2">
 <h2>Notes</h2>
 <div class="small">
 <p><a href="https://annakrystalli.me/talks/r-in-repro-research.html#1" class="uri">https://annakrystalli.me/talks/r-in-repro-research.html#1</a></p>

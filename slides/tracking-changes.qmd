@@ -951,26 +951,239 @@ The **commit type** can include the following:
 ::::
 
 
-## How to...
+## Undoing things
 
-<!-- **Rewrite the most recent commit message?** -->
+{{< fa hand-point-right >}} &nbsp;
+**1. Undo recent, uncommitted and unstaged changes**
+
+You have modified a file but have not staged changes and you want to restore the previous version
 
 . . .
 
-
-
-::::{.columns}
-:::{.column width=50%}
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-7.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
 ```bash
-git commit --amend
+git status
+
+# On branch main
+# Changes not staged for commit:
+#   (use "git add <file>..." to stage changes)
+#   (use "git restore <file>..." to discard changes)
+# 	modified:   data.csv
+#
+# No changes added to commit
 ```
 :::
-:::{.column width=50%}
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**1. Undo recent, uncommitted and unstaged changes**
+
+You have modified a file but have not staged changes and you want to restore the previous version
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-8.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+# Restore one file (discard unstaged changes)
+git restore data.csv
+```
+<br>
+```bash
+git status
+
+# On branch main
+# Nothing to commit, working tree clean
+```
+:::
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**1. Undo recent, uncommitted and unstaged changes**
+
+You have modified a file but have not staged changes and you want to restore the previous version
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-8.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+# Restore one file (discard unstaged changes)
+git restore data.csv
+```
+<br>
+```bash
+git status
+
+# On branch main
+# Nothing to commit, working tree clean
+```
+<br>
+
+{{< fa lightbulb >}} &nbsp;To discard all changes:
+```bash
+# Cancel all non-staged changes
+git restore .
+```
 :::
 ::::
 
 
 
-## Notes
+## Undoing things
 
-https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+{{< fa hand-point-right >}} &nbsp;
+**2. Unstaged uncommitted files**
+
+You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version
+
+. . .
+
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-9.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git status
+
+# On branch main
+# Changes to be committed:
+#   (use "git restore --staged <file>..." to unstage)
+# 	modified:   data.csv
+```
+:::
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**2. Unstaged uncommitted files**
+
+You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-10.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+# Unstage one file
+git restore --staged data.csv
+```
+<br>
+```bash
+git status
+
+# On branch main
+# Changes not staged for commit:
+#   (use "git add <file>..." to stage changes)
+#   (use "git restore <file>..." to discard changes)
+# 	modified:   data.csv
+#
+# No changes added to commit
+```
+:::
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**2. Unstaged uncommitted files**
+
+You have modified and staged file(s) but have not committed changes yet and you want to unstage file(s) and restore the previous version
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-8.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+# Unstage one file
+git restore --staged data.csv
+```
+<br>
+```bash
+git status
+
+# On branch main
+# Changes not staged for commit:
+#   (use "git add <file>..." to stage changes)
+#   (use "git restore <file>..." to discard changes)
+# 	modified:   data.csv
+#
+# No changes added to commit
+```
+<br>
+You can now restore the previous version w/:
+```bash
+# Discard changes (restore previous version)
+git restore data.csv
+```
+:::
+::::
+
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**3. Change the most recent commit message**
+
+You have committed a new version but you want to change the commit message
+
+. . .
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-6.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+# Change message of the last commit
+git commit --amend
+```
+<br>
+Note that this will also change the ID of the commit
+:::
+::::
+
+
+
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**4. Revert one commit**
+
+
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**5. Deleting commits**
+
