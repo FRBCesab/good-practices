@@ -1,5 +1,102 @@
 # {{< fa brands github >}} &nbsp;Collaboration
 
-## Collaboration
+## Code hosting platforms
 
-Work in progress...
+GitHub and co are **cloud-based git repository hosting services**
+
+{{< fa hand-point-right >}} &nbsp;
+Perfect solutions to collaborate on projects tracked by `git`
+
+<br>
+
+**Services**
+
+- Version control
+- Git history
+- Pull requests
+- Issues tracking
+- Documentation (README, Wiki)
+- Website hosting
+- Automation (CI/CD)
+
+
+## Code hosting platforms
+
+**Main platforms**
+
+::::{ .columns }
+:::{ .column width="50%" .center}
+![](img/github-logo.png){width="25%"}
+<br>
+[**GitHub**](https://github.com/)
+
+<br>
+![](img/bitbucket-logo.png){width="25%"}
+<br>
+[**BitBucket**](https://bitbucket.org/)
+:::
+:::{ .column width="50%" .center}
+![](img/gitlab-logo.png){width="25%"}
+<br>
+[**GitLab**](https://gitlab.com/)
+
+<br>
+![](img/sourceforge-logo.png){width="25%"}
+<br>
+[**SourceForge**](https://sourceforge.net/)
+:::
+::::
+
+## Code hosting platforms
+
+**Main platforms**
+
+::::{ .columns }
+:::{ .column width="50%" .center}
+![](img/github-logo.png){width="25%"}
+<br>
+[**GitHub**](https://github.com/)
+:::
+:::{ .column width="50%" .center}
+:::
+::::
+
+
+## Presentation of GitHub
+
+::::{ .columns }
+:::{ .column width="50%"}
+**Overview**
+
+- Created in 2008
+- For-profit company since 2018 (property of Microsoft)
+- Used by more than 100 million developers around the world
+
+<br>
+
+**Advantages**
+
+- User-friendly interface
+- Free account (w/ unlimited public/private repositories)
+- Organization account (w/ free plan)
+- Advanced tools for collaboration
+:::
+:::{ .column width="50%" .center}
+![](img/github-logo.png){width="50%"}
+:::
+::::
+
+## Table of contents
+
+
+1. Presentation of the interface
+   1. Account Homepage
+   2. Repository page
+   3. Social network (followers/ings, stars, Contributions calendar, etc.)
+   4. Organization account
+1. Create a repository only (> RStudio)
+1. Working w/ GitHub (clone, push, pull)
+1. Resolve conflicts
+1. Collaboration: GitHub Workflow (Fork, Branch, PR)
+1. Working w/ Issues
+1. Advanced usages
