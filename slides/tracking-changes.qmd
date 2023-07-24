@@ -266,24 +266,8 @@ In other words:
 
 **Installation**
 
-{{< fa hand-point-right >}} &nbsp;`Git` can be downloaded here: <https://git-scm.com/downloads>
+To install `git` you can follow this tutorial: <https://frbcesab.github.io/training-courses/installation.html>
 
-Alternatively you can follow this tutorial: <https://frbcesab.github.io/training-courses/installation.html>
-
-<br>
-
-Restart RStudio and check your installation: 
-
-::::{ .columns }
-:::{ .column width="50%"}
-```{r}
-#| echo: true
-Sys.which("git")
-```
-:::
-:::{ .column width="50%"}
-:::
-::::
 
 . . .
 
@@ -817,110 +801,6 @@ Link external references as: Fix #23
 An **optional body** can be added to provide **detailed information** and to link **external references** (e.g. issue, pull request, etc.)
 
 
-## Conventional commits
-
-This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
-
-. . .
-
-::::{.columns}
-:::{.column width=50%}
-The general structure of a conventional commit message is:
-
-```txt
-[type] [optional scope]: [description]
-
-[optional body]
-
-[optional footer(s)]
-```
-:::
-:::{.column width=50%}
-:::
-::::
-
-
-## Conventional commits
-
-This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
-
-::::{.columns}
-:::{.column width=50%}
-The general structure of a conventional commit message is:
-
-```txt
-[type] [optional scope]: [description]
-
-[optional body]
-
-[optional footer(s)]
-```
-:::
-:::{.column width=50%}
-For example:
-
-```txt
-fix: fix foo to enable bar
-
-This fixes the broken behavior of the component by doing xyz. 
-
-Fix #999
-```
-:::
-::::
-
-
-## Conventional commits
-
-This [specification](https://www.conventionalcommits.org/en/v1.0.0/) can help you writing more robust commit messages
-
-::::{.columns}
-:::{.column width=50%}
-The general structure of a conventional commit message is:
-
-```txt
-[type] [optional scope]: [description]
-
-[optional body]
-
-[optional footer(s)]
-```
-:::
-:::{.column width=50%}
-For example:
-
-```txt
-fix: fix foo to enable bar
-
-This fixes the broken behavior of the component by doing xyz. 
-
-Fix #999
-```
-:::
-::::
-
-<br>
-
-The **commit type** can include the following:
-
-::::{.columns}
-:::{.column width=50%}
-- `feat` - a new feature is introduced with the changes
-- `fix` - a bug fix has occurred
-- `chore` - changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies)
-- `refactor` - refactored code that neither fixes a bug nor adds a feature
-- `docs` - updates to documentation such as a the README or other markdown files
-:::
-:::{.column width=50%}
-- `style` - changes that do not affect the meaning of the code, likely related to code formatting such as white-space, missing semi-colons, and so on.
-- `test` - including new or correcting previous tests
-- `perf` - performance improvements
-- `ci` - continuous integration related
-- `build` - changes that affect the build system or external dependencies
-- `revert` - reverts a previous commit 
-:::
-::::
-
 
 ## When should you commit?
 
@@ -946,7 +826,7 @@ The **commit type** can include the following:
 
 - Commit a new version when you reach a milestone
 - Create small and atomic commits
-- Commit a state that is working
+- Commit a state that is actually working
 :::
 ::::
 
@@ -1179,6 +1059,103 @@ Note that this will also change the ID of the commit
 {{< fa hand-point-right >}} &nbsp;
 **4. Revert one commit**
 
+You want to reverse the effects of a commit: use `git revert`
+
+. . .
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**4. Revert one commit**
+
+You want to reverse the effects of a commit: use `git revert`
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Revert commit dd4472c
+git revert dd4472c
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**4. Revert one commit**
+
+You want to reverse the effects of a commit: use `git revert`
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Revert commit dd4472c
+git revert dd4472c
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# d62ad3e (HEAD -> main) Revert "commit 3"
+# f960dd3 commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+`git revert` does not alter the history and create a new commit
 
 
 
@@ -1186,4 +1163,298 @@ Note that this will also change the ID of the commit
 
 {{< fa hand-point-right >}} &nbsp;
 **5. Deleting commits**
+
+You want to delete one or more commits: use `git reset --hard`
+
+. . .
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**5. Deleting commits**
+
+You want to delete one or more commits: use `git reset --hard`
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Delete the two more recent commits
+git reset --hard HEAD~2
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+## Undoing things
+
+{{< fa hand-point-right >}} &nbsp;
+**5. Deleting commits**
+
+You want to delete one or more commits: use `git reset --hard`
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Delete the two more recent commits
+git reset --hard HEAD~2
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# 2bb9bb4 (HEAD -> main) commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+`git reset --hard` alters the history. **Be careful** with this command
+
+
+
+## Back in time
+
+Use the command `git checkout` to inspect a file at a specific point in time
+
+
+. . .
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+
+## Back in time
+
+Use the command `git checkout` to inspect a file at a specific point in time
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Back in time
+git checkout 2bb9bb4
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+
+
+## Back in time
+
+Use the command `git checkout` to inspect a file at a specific point in time
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Back in time
+git checkout 2bb9bb4
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# 2bb9bb4 (HEAD) commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+:::
+::::
+
+
+## Back in time
+
+Use the command `git checkout` to inspect a file at a specific point in time
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Back in time
+git checkout 2bb9bb4
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# 2bb9bb4 (HEAD) commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+
+<br>
+```bash
+# Back to the more recent commit
+git checkout -
+```
+:::
+::::
+
+
+## Back in time
+
+Use the command `git checkout` to inspect a file at a specific point in time
+
+
+::::{ .columns }
+:::{ .column width="50%"}
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+
+<br>
+```bash
+# Back in time
+git checkout 2bb9bb4
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# 2bb9bb4 (HEAD) commit 2
+# 2d79e7e commit 1
+```
+:::
+:::{ .column width="50%"}
+
+<br>
+```bash
+# Back to the more recent commit
+git checkout -
+```
+
+<br>
+```bash
+# Print git history
+git log --oneline
+
+# f960dd3 (HEAD -> main) commit 4
+# dd4472c commit 3
+# 2bb9bb4 commit 2
+# 2d79e7e commit 1
+```
+:::
+::::
 

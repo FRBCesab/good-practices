@@ -50,63 +50,6 @@ engine: knitr
 
 
 
-
-
-
-## Table of contents
-
-:::: { .columns  }
-::: { .column width="33%"}
-**Data management**
-
-**Project organization**
-
-- RStudio project
-- Build robust paths
-- Naming things
-
-- Research compendium
-  - (Flexible) structure
-  - The `DESCRIPTION` file
-  - The folder `R/`
-  - The `README`(s)
-  
-**Tracking changes**
-
-- Version control system
-
-**Collaboration**
-
-- Code hosting platform
-:::
-
-::: { .column width="33%"}
-**Optimization**
-
-- Literate programming
-- Functional programming
-- Pipeline toolkit
-  - `targets`
-  - `makefile`
-  
-- R package
-- Documentation
-- Licensing
-
-**Advanced tools**
-
-- Managing dependencies (`renv`)
-- CI/CD
-  - GitHub actions
-  - GitLab CI
-- Docker
-:::
-
-::::
-
-
-
-
 ## Notes
 
 :::{.small}
