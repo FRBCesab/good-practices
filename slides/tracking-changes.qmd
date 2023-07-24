@@ -1155,7 +1155,7 @@ git log --oneline
 :::
 ::::
 
-`git revert` does not alter the history and create a new commit
+`git revert` does not alter the history and creates a new commit
 
 
 
