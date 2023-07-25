@@ -7,17 +7,18 @@ GitHub and co are **cloud-based git repository hosting services**
 {{< fa hand-point-right >}} &nbsp;
 Perfect solutions to collaborate on projects tracked by `git`
 
+. . .
+
 <br>
 
 **Services**
 
-- Version control
-- Git history
-- Pull requests
-- Issues tracking
-- Documentation (README, Wiki)
-- Website hosting
-- Automation (CI/CD)
+- Full integration of version control (commits, history, differences)
+- Easy collaboration w/ branches, forks, pull requests
+- Issues tracking system
+- Enhanced documentation rendering (README, Wiki)
+- Static website hosting
+- Automation & monitoring (CI/CD)
 
 
 ## Code hosting platforms
@@ -47,19 +48,6 @@ Perfect solutions to collaborate on projects tracked by `git`
 :::
 ::::
 
-## Code hosting platforms
-
-**Main platforms**
-
-::::{ .columns }
-:::{ .column width="50%" .center}
-![](img/github-logo.png){width="25%"}
-<br>
-[**GitHub**](https://github.com/)
-:::
-:::{ .column width="50%" .center}
-:::
-::::
 
 
 ## Presentation of GitHub
@@ -69,15 +57,15 @@ Perfect solutions to collaborate on projects tracked by `git`
 **Overview**
 
 - Created in 2008
-- For-profit company since 2018 (property of Microsoft)
+- For-profit company (property of Microsoft since 2018)
 - Used by more than 100 million developers around the world
 
 <br>
 
 **Advantages**
 
-- User-friendly interface
-- Free account (w/ unlimited public/private repositories)
+- User-friendly interface for `git`
+- Free account w/ unlimited public/private repositories
 - Organization account (w/ free plan)
 - Advanced tools for collaboration
 :::
@@ -86,15 +74,96 @@ Perfect solutions to collaborate on projects tracked by `git`
 :::
 ::::
 
+
+## Presentation of GitHub
+
+**Account homepage**
+
+::: {.center}
+![_Source:_ <https://github.com/ahasverus>](img/github-homepage.png){width="75%"}
+:::
+
+
+## Presentation of GitHub
+
+**Organization homepage**
+
+::: {.center}
+![_Source:_ <https://github.com/frbcesab>](img/github-organization.png){width="75%"}
+:::
+
+
+
+## Presentation of GitHub
+
+**Repository homepage**
+
+::: {.center}
+![_Source:_ <https://github.com/frbcesab/chessboard>](img/github-repo.png){width="75%"}
+:::
+
+
+## Create a repository
+
+::: {.center}
+![](img/github-newrepo-1.png){width="75%"}
+:::
+
+
+## Create a repository
+
+::: {.center}
+![](img/github-newrepo-2.png){width="75%"}
+:::
+
+
+
+## Create a repository
+
+::: {.center}
+![](img/github-newrepo-3.png){width="75%"}
+:::
+
+
+
+## Create a repository
+
+::: {.center}
+![](img/github-newrepo-4.png){width="75%"}
+:::
+
+
+
+## Clone a repository
+
+<br>
+
+:::: {.columns}
+::: {.column width="33%" .center}
+![Select `Version Control`](img/rstudio-project.png){width="100%"}
+:::
+::: {.column width="33%" .center}
+![Select `Git`](img/rstudio-clone-1.png){width="100%"}
+:::
+::: {.column width="33%" .center}
+![Copy the URL and fill all the fields](img/rstudio-clone-2.png){width="100%"}
+:::
+::::
+
+
+
+## Clone a repository
+
+::: {.center}
+![](img/rstudio-clone-3.png){width="80%"}
+:::
+
+
+
+
 ## Table of contents
 
 
-1. Presentation of the interface
-   1. Account Homepage
-   2. Repository page
-   3. Social network (followers/ings, stars, Contributions calendar, etc.)
-   4. Organization account
-1. Create a repository only (> RStudio)
 1. Working w/ GitHub (clone, push, pull)
 1. Resolve conflicts
 1. Collaboration: GitHub Workflow (Fork, Branch, PR)
