@@ -77,16 +77,12 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 ## Presentation of GitHub
 
-**Account homepage**
-
 ::: {.center}
 ![_Source:_ <https://github.com/ahasverus>](img/github-homepage.png){width="75%"}
 :::
 
 
 ## Presentation of GitHub
-
-**Organization homepage**
 
 ::: {.center}
 ![_Source:_ <https://github.com/frbcesab>](img/github-organization.png){width="75%"}
@@ -96,10 +92,9 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 ## Presentation of GitHub
 
-**Repository homepage**
 
 ::: {.center}
-![_Source:_ <https://github.com/frbcesab/chessboard>](img/github-repo.png){width="75%"}
+![_Source:_ <https://github.com/frbcesab/rwoslite>](img/github-repo.png){width="75%"}
 :::
 
 
@@ -126,7 +121,7 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 
 
-## Create a repository
+## Clone a repository
 
 ::: {.center}
 ![](img/github-newrepo-4.png){width="75%"}
@@ -135,6 +130,33 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 
 ## Clone a repository
+
+**On a terminal**
+
+::::{ .columns }
+:::{ .column width="50%" align="left"}
+```bash
+# Change path
+cd path/to/store/repository
+
+# Clone repository (SSH)
+git clone git@github.com:ahasverus/projectname.git
+
+# Clone repository (HTTPS)
+# git clone https://github.com/ahasverus/projectname.git
+
+# Go to repo
+cd projectname
+```
+:::
+:::{ .column width="50%" }
+:::
+::::
+
+
+
+
+## Clone a repository w/ RStudio
 
 <br>
 
@@ -152,7 +174,7 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 
 
-## Clone a repository
+## Clone a repository w/ RStudio
 
 ::: {.center}
 ![](img/rstudio-clone-3.png){width="80%"}
@@ -160,12 +182,174 @@ Perfect solutions to collaborate on projects tracked by `git`
 
 
 
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;Add a new file: `README.md`
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-11.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git status
+
+# On branch main
+# Your branch is up to date with 'origin/main'
+#
+# Untracked files:
+#   README.md
+# 
+# Nothing added to commit but untracked files present
+# Use "git add <file>..." to track
+```
+:::
+::::
+
+
+
+
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;`Stage` changes
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-12.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git add .
+```
+
+<br>
+```bash
+git status
+
+# On branch main
+# Your branch is up to date with 'origin/main'
+#
+# Changes to be committed:
+#   (use "git restore --staged <file>..." to unstage)
+#   new file:   README.md
+```
+:::
+::::
+
+
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;`Commit` changes
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-13.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git commit -m "add README"
+```
+
+<br>
+```bash
+git status
+
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+# 
+# nothing to commit, working tree clean
+```
+:::
+::::
+
+
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;`Push` changes to remote
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-14.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git push
+
+# Sometimes, you'll need to use:
+git push -u origin main
+```
+
+<br>
+```bash
+git status
+
+# On branch main
+# Your branch is up to date with 'origin/main'.
+# 
+# nothing to commit, working tree clean
+```
+:::
+::::
+
+
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;`Pull` changes from remote
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-15.png){width=100%}
+:::
+:::{ .column width="40%"}
+:::
+::::
+
+
+## Working w/ GitHub
+
+{{< fa hand-point-right >}} &nbsp;`Pull` changes from remote
+
+::::{ .columns }
+:::{ .column width="60%"}
+![](img/git-workflow-16.png){width=100%}
+:::
+:::{ .column width="40%"}
+<br>
+```bash
+git pull
+```
+
+<br>
+```bash
+git status
+
+# On branch main
+# Your branch is up to date with 'origin/main'.
+# 
+# nothing to commit, working tree clean
+```
+:::
+::::
+
+## Help: I can't push!
+
+...
+
+## Conflicts
+
+...
+
+
+
 
 ## Table of contents
 
 
-1. Working w/ GitHub (clone, push, pull)
-1. Resolve conflicts
 1. Collaboration: GitHub Workflow (Fork, Branch, PR)
 1. Working w/ Issues
 1. Advanced usages

@@ -2855,7 +2855,6 @@ Imports:
 </section>
 <section id="presentation-of-github-1" class="slide level2">
 <h2>Presentation of GitHub</h2>
-<p><strong>Account homepage</strong></p>
 <div class="center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -2867,7 +2866,6 @@ Imports:
 </section>
 <section id="presentation-of-github-2" class="slide level2">
 <h2>Presentation of GitHub</h2>
-<p><strong>Organization homepage</strong></p>
 <div class="center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -2879,12 +2877,11 @@ Imports:
 </section>
 <section id="presentation-of-github-3" class="slide level2">
 <h2>Presentation of GitHub</h2>
-<p><strong>Repository homepage</strong></p>
 <div class="center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/github-repo.png" style="width:75.0%"></p>
-<figcaption><em>Source:</em> <a href="https://github.com/frbcesab/chessboard" class="uri">https://github.com/frbcesab/chessboard</a></figcaption>
+<figcaption><em>Source:</em> <a href="https://github.com/frbcesab/rwoslite" class="uri">https://github.com/frbcesab/rwoslite</a></figcaption>
 </figure>
 </div>
 </div>
@@ -2907,14 +2904,35 @@ Imports:
 <p><img data-src="img/github-newrepo-3.png" style="width:75.0%"></p>
 </div>
 </section>
-<section id="create-a-repository-3" class="slide level2">
-<h2>Create a repository</h2>
+<section id="clone-a-repository" class="slide level2">
+<h2>Clone a repository</h2>
 <div class="center">
 <p><img data-src="img/github-newrepo-4.png" style="width:75.0%"></p>
 </div>
 </section>
-<section id="clone-a-repository" class="slide level2">
+<section id="clone-a-repository-1" class="slide level2">
 <h2>Clone a repository</h2>
+<p><strong>On a terminal</strong></p>
+<div class="columns">
+<div class="column" data-align="left" style="width:50%;">
+<div class="sourceCode" id="cb96"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb96-1"><a href="#cb96-1"></a><span class="co"># Change path</span></span>
+<span id="cb96-2"><a href="#cb96-2"></a><span class="bu">cd</span> path/to/store/repository</span>
+<span id="cb96-3"><a href="#cb96-3"></a></span>
+<span id="cb96-4"><a href="#cb96-4"></a><span class="co"># Clone repository (SSH)</span></span>
+<span id="cb96-5"><a href="#cb96-5"></a><span class="fu">git</span> clone git@github.com:ahasverus/projectname.git</span>
+<span id="cb96-6"><a href="#cb96-6"></a></span>
+<span id="cb96-7"><a href="#cb96-7"></a><span class="co"># Clone repository (HTTPS)</span></span>
+<span id="cb96-8"><a href="#cb96-8"></a><span class="co"># git clone https://github.com/ahasverus/projectname.git</span></span>
+<span id="cb96-9"><a href="#cb96-9"></a></span>
+<span id="cb96-10"><a href="#cb96-10"></a><span class="co"># Go to repo</span></span>
+<span id="cb96-11"><a href="#cb96-11"></a><span class="bu">cd</span> projectname</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="clone-a-repository-w-rstudio" class="slide level2">
+<h2>Clone a repository w/ RStudio</h2>
 <p><br></p>
 <div class="columns">
 <div class="column center" style="width:33%;">
@@ -2941,17 +2959,137 @@ Imports:
 </div>
 </div>
 </section>
-<section id="clone-a-repository-1" class="slide level2">
-<h2>Clone a repository</h2>
+<section id="clone-a-repository-w-rstudio-1" class="slide level2">
+<h2>Clone a repository w/ RStudio</h2>
 <div class="center">
 <p><img data-src="img/rstudio-clone-3.png" style="width:80.0%"></p>
 </div>
 </section>
+<section id="working-w-github" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;Add a new file: <code>README.md</code></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-11.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb97"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb97-1"><a href="#cb97-1"></a><span class="fu">git</span> status</span>
+<span id="cb97-2"><a href="#cb97-2"></a></span>
+<span id="cb97-3"><a href="#cb97-3"></a><span class="co"># On branch main</span></span>
+<span id="cb97-4"><a href="#cb97-4"></a><span class="co"># Your branch is up to date with 'origin/main'</span></span>
+<span id="cb97-5"><a href="#cb97-5"></a><span class="co">#</span></span>
+<span id="cb97-6"><a href="#cb97-6"></a><span class="co"># Untracked files:</span></span>
+<span id="cb97-7"><a href="#cb97-7"></a><span class="co">#   README.md</span></span>
+<span id="cb97-8"><a href="#cb97-8"></a><span class="co"># </span></span>
+<span id="cb97-9"><a href="#cb97-9"></a><span class="co"># Nothing added to commit but untracked files present</span></span>
+<span id="cb97-10"><a href="#cb97-10"></a><span class="co"># Use "git add &lt;file&gt;..." to track</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="working-w-github-1" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Stage</code> changes</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-12.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb98-1"><a href="#cb98-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb99"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb99-1"><a href="#cb99-1"></a><span class="fu">git</span> status</span>
+<span id="cb99-2"><a href="#cb99-2"></a></span>
+<span id="cb99-3"><a href="#cb99-3"></a><span class="co"># On branch main</span></span>
+<span id="cb99-4"><a href="#cb99-4"></a><span class="co"># Your branch is up to date with 'origin/main'</span></span>
+<span id="cb99-5"><a href="#cb99-5"></a><span class="co">#</span></span>
+<span id="cb99-6"><a href="#cb99-6"></a><span class="co"># Changes to be committed:</span></span>
+<span id="cb99-7"><a href="#cb99-7"></a><span class="co">#   (use "git restore --staged &lt;file&gt;..." to unstage)</span></span>
+<span id="cb99-8"><a href="#cb99-8"></a><span class="co">#   new file:   README.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="working-w-github-2" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Commit</code> changes</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-13.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb100-1"><a href="#cb100-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"add README"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb101"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb101-1"><a href="#cb101-1"></a><span class="fu">git</span> status</span>
+<span id="cb101-2"><a href="#cb101-2"></a></span>
+<span id="cb101-3"><a href="#cb101-3"></a><span class="co"># On branch main</span></span>
+<span id="cb101-4"><a href="#cb101-4"></a><span class="co"># Your branch is ahead of 'origin/main' by 1 commit.</span></span>
+<span id="cb101-5"><a href="#cb101-5"></a><span class="co">#   (use "git push" to publish your local commits)</span></span>
+<span id="cb101-6"><a href="#cb101-6"></a><span class="co"># </span></span>
+<span id="cb101-7"><a href="#cb101-7"></a><span class="co"># nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="working-w-github-3" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Push</code> changes to remote</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-14.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb102-1"><a href="#cb102-1"></a><span class="fu">git</span> push</span>
+<span id="cb102-2"><a href="#cb102-2"></a></span>
+<span id="cb102-3"><a href="#cb102-3"></a><span class="co"># Sometimes, you'll need to use:</span></span>
+<span id="cb102-4"><a href="#cb102-4"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb103-1"><a href="#cb103-1"></a><span class="fu">git</span> status</span>
+<span id="cb103-2"><a href="#cb103-2"></a></span>
+<span id="cb103-3"><a href="#cb103-3"></a><span class="co"># On branch main</span></span>
+<span id="cb103-4"><a href="#cb103-4"></a><span class="co"># Your branch is up to date with 'origin/main'.</span></span>
+<span id="cb103-5"><a href="#cb103-5"></a><span class="co"># </span></span>
+<span id="cb103-6"><a href="#cb103-6"></a><span class="co"># nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="working-w-github-4" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Pull</code> changes from remote</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-15.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+</section>
+<section id="working-w-github-5" class="slide level2">
+<h2>Working w/ GitHub</h2>
+<p><i class="fa-solid fa-hand-point-right" aria-label="hand-point-right"></i> &nbsp;<code>Pull</code> changes from remote</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="img/git-workflow-16.png" style="width:100.0%"></p>
+</div><div class="column" style="width:40%;">
+<p><br></p>
+<div class="sourceCode" id="cb104"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb104-1"><a href="#cb104-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb105"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb105-1"><a href="#cb105-1"></a><span class="fu">git</span> status</span>
+<span id="cb105-2"><a href="#cb105-2"></a></span>
+<span id="cb105-3"><a href="#cb105-3"></a><span class="co"># On branch main</span></span>
+<span id="cb105-4"><a href="#cb105-4"></a><span class="co"># Your branch is up to date with 'origin/main'.</span></span>
+<span id="cb105-5"><a href="#cb105-5"></a><span class="co"># </span></span>
+<span id="cb105-6"><a href="#cb105-6"></a><span class="co"># nothing to commit, working tree clean</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="help-i-cant-push" class="slide level2">
+<h2>Help: I can’t push!</h2>
+<p>…</p>
+</section>
+<section id="conflicts" class="slide level2">
+<h2>Conflicts</h2>
+<p>…</p>
+</section>
 <section id="table-of-contents" class="slide level2">
 <h2>Table of contents</h2>
 <ol type="1">
-<li>Working w/ GitHub (clone, push, pull)</li>
-<li>Resolve conflicts</li>
 <li>Collaboration: GitHub Workflow (Fork, Branch, PR)</li>
 <li>Working w/ Issues</li>
 <li>Advanced usages</li>
