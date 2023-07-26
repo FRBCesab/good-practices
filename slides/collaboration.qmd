@@ -336,15 +336,47 @@ git status
 :::
 ::::
 
-## Help: I can't push!
+## Help me, I can't push!
+
+When you try to push, you might see this following error message:
+
+::::{ .columns }
+:::{ .column width="60%"}
+```bash
+git push
+
+# To github.com:ahasverus/projectname.git
+#  ! [rejected]        main -> main (fetch first)
+#
+# error: failed to push some refs to 'github.com:ahasverus/projectname.git'
+#
+# hint: Updates were rejected because the remote contains work that you do
+# hint: not have locally. This is usually caused by another repository pushing
+# hint: to the same ref. You may want to first integrate the remote changes
+# hint: (e.g., 'git pull ...') before pushing again.
+# hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+:::
+:::{ .column width="40%"}
+:::
+::::
+
+. . .
+
+<br>
+
+{{< fa lightbulb >}} &nbsp;Just `git pull` and try to `git push` again
+
+
+## Help me, I can't pull!
 
 ...
 
-## Conflicts
+## Resolving conflicts
 
 ...
 
-
+<https://spin.atomicobject.com/2019/01/10/git-merging-vs-rebasing/>
 
 
 ## Table of contents
