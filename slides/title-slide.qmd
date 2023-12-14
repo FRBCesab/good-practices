@@ -42,6 +42,7 @@ Nicolas Casajus<br/>
 :::
 :::
 
+<!--
 ::: {.column .author width="45%"}
 Camille Coux<br/>
 [{{< fa paper-plane >}}](mailto:camille.coux@fondationbiodiversite.fr)
@@ -52,6 +53,8 @@ Camille Coux<br/>
 {{< fa brands github >}} &nbsp;[https://github.com/frbcesab](https://github.com/frbcesab)
 :::
 :::
+-->
+
 ::::
 :::
 ::::
